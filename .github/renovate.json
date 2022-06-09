@@ -1,0 +1,44 @@
+{
+  "extends": [
+    "config:base",
+    "docker:enableMajor"
+  ],
+  "prHourlyLimit": 0,
+  "onboarding": false,
+  "requireConfig": false,
+  "git-submodules": {
+    "enabled": true
+  },
+  "automerge": false,
+  "labels": [
+    "renovate",
+    "dependencies"
+  ],
+  "commitMessagePrefix": "Update",
+  "commitMessageAction": "",
+  "commitMessageTopic": "{{depName}}",
+  "commitMessageExtra": "from {{currentVersion}} to {{newVersion}}",
+  "commitBody": "Change-type: patch",
+  "prConcurrentLimit": 1,
+  "ignorePaths": [
+    "Dockerfile.template"
+  ],
+  "repositories": [
+    "balena-io/balena-cloud",
+    "balena-io/renovate-config"
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "globby"
+      ],
+      "enabled": false
+    },
+    {
+      "matchManagers": [
+        "git-submodules"
+      ],
+      "automerge": true
+    }
+  ]
+}
