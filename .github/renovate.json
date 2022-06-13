@@ -24,7 +24,19 @@
     "Dockerfile.template"
   ],
   "repositories": [
+    "balena-io/autohat",
+    "balena-io/balena-alertmanager",
     "balena-io/balena-cloud",
+    "balena-io/balena-mdns-publisher",
+    "balena-io/balena-monitor",
+    "balena-io/balena-sentry",
+    "balena-io/ca-private",
+    "balena-io/cert-manager",
+    "balena-io/e2e",
+    "balena-io/open-balena-db",
+    "balena-io/open-balena-haproxy",
+    "balena-io/open-balena-registry",
+    "balena-io/open-balena-s3",
     "balena-io/renovate-config"
   ],
   "packageRules": [
