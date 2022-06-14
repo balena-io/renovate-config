@@ -6,10 +6,13 @@
   "prHourlyLimit": 0,
   "onboarding": false,
   "requireConfig": false,
+  "cloneSubmodules": true,
   "git-submodules": {
     "enabled": true
   },
   "automerge": false,
+  "automergeType": "pr-comment",
+  "automergeComment": "@balena-ci I self-certify!",
   "labels": [
     "renovate",
     "dependencies"
@@ -18,8 +21,9 @@
   "commitMessageAction": "",
   "commitMessageTopic": "{{depName}}",
   "commitMessageExtra": "from {{currentVersion}} to {{newVersion}}",
-  "commitBody": "Change-type: patch",
+  "commitBody": "Change-type: {{#if isMajor}}major{{/if}}{{#if isPatch}}patch{{else}}minor{{/if}}",
   "prConcurrentLimit": 1,
+  "branchConcurrentLimit": 1,
   "ignorePaths": [
     "Dockerfile.template"
   ],
@@ -55,7 +59,7 @@
       "matchManagers": [
         "git-submodules"
       ],
-      "automerge": true,
+      "automerge": false,
       "automergeType": "pr-comment",
       "automergeComment": "@balena-ci I self-certify!"
     }
