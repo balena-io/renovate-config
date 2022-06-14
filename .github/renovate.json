@@ -21,7 +21,7 @@
   "commitMessageAction": "",
   "commitMessageTopic": "{{depName}}",
   "commitMessageExtra": "from {{currentVersion}} to {{newVersion}}",
-  "commitBody": "Change-type: {{#if isMajor}}major{{/if}}{{#if isPatch}}patch{{else}}minor{{/if}}",
+  "commitBody": "Change-type: {{#if isMajor}}major{{else}}{{#if isPatch}}patch{{else}}minor{{/if}}{{/if}}",
   "prConcurrentLimit": 1,
   "branchConcurrentLimit": 1,
   "ignorePaths": [
