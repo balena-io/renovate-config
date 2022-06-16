@@ -20,7 +20,7 @@
   "commitMessagePrefix": "Update",
   "commitMessageAction": "",
   "commitMessageTopic": "{{depName}}",
-  "commitMessageExtra": "from {{currentVersion}} to {{newVersion}}",
+  "commitMessageExtra": "from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}",
   "commitBody": "Change-type: {{#if isMajor}}major{{else}}{{#if isPatch}}patch{{else}}minor{{/if}}{{/if}}",
   "prConcurrentLimit": 1,
   "branchConcurrentLimit": 1,
