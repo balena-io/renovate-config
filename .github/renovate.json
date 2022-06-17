@@ -22,7 +22,7 @@
   "commitMessageAction": "",
   "commitMessageTopic": "{{depName}}",
   "commitMessageExtra": "from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}",
-  "commitBody": "Change-type: {{#if isMajor}}major{{else}}{{#if isPatch}}patch{{else}}minor{{/if}}{{/if}}",
+  "commitBody": "Change-type: {{#if (or isPatch (containsString depType 'devDependencies'))}}patch{{else}}minor{{/if}}",
   "prConcurrentLimit": 1,
   "branchConcurrentLimit": 1,
   "ignorePaths": [
