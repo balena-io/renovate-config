@@ -1,5 +1,5 @@
 {
-  "extends": [
+  "globalExtends": [
     "config:base",
     ":preserveSemverRanges",
     "docker:enableMajor"
