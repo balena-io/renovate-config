@@ -1,9 +1,10 @@
 {
-  "globalExtends": [
+  "extends": [
     "config:base",
     ":preserveSemverRanges",
     "docker:enableMajor"
   ],
+  "printConfig": true,
   "prHourlyLimit": 0,
   "onboarding": false,
   "requireConfig": false,
