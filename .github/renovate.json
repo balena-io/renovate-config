@@ -20,10 +20,10 @@
     "renovate",
     "dependencies"
   ],
-  "commitMessagePrefix": "Update {{depName}} to {{{replace 'v' '' newVersion}}}",
+  "commitMessagePrefix": "Update",
   "commitMessageAction": "",
-  "commitMessageTopic": "Update {{depName}}",
-  "commitMessageExtra": "from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}",
+  "commitMessageTopic": "{{depName}} to {{{replace 'v' '' newVersion}}}",
+  "commitMessageExtra": "Update {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}",
   "commitBody": "Change-type: {{#if (or isPatch (containsString depType 'devDependencies'))}}patch{{else}}minor{{/if}}",
   "prConcurrentLimit": 1,
   "branchConcurrentLimit": 1,
