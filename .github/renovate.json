@@ -2,7 +2,8 @@
   "extends": [
     ":preserveSemverRanges",
     "config:base",
-    "docker:enableMajor"
+    "docker:enableMajor",
+    "github>balena-io/renovate-config//.github/renovate"
   ],
   "printConfig": true,
   "prHourlyLimit": 0,
