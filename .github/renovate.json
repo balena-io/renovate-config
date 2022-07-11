@@ -2,8 +2,7 @@
   "extends": [
     ":preserveSemverRanges",
     "config:base",
-    "docker:enableMajor",
-    "github>balena-io/renovate-config//.github/renovate"
+    "docker:enableMajor"
   ],
   "printConfig": true,
   "prHourlyLimit": 0,
@@ -13,9 +12,6 @@
   "git-submodules": {
     "enabled": true
   },
-  "automerge": false,
-  "automergeType": "pr-comment",
-  "automergeComment": "@balena-ci I self-certify!",
   "labels": [
     "renovate",
     "dependencies"
@@ -64,12 +60,21 @@
       "enabled": false
     },
     {
+      "automerge": true,
+      "automergeComment": "@balena-ci I self-certify!",
+      "automergeType": "pr-comment",
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
       "matchManagers": [
         "git-submodules"
       ],
-      "automerge": false,
+      "automerge": true,
+      "automergeComment": "@balena-ci I self-certify!",
       "automergeType": "pr-comment",
-      "automergeComment": "@balena-ci I self-certify!"
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["minor", "patch"]
     }
   ]
 }
