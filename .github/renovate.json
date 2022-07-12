@@ -35,34 +35,62 @@
     "**/Dockerfile.template"
   ],
   "repositories": [
-    "balena-io-modules/open-balena-base",
 
+    "balena-io-modules/open-balena-base",
+    "balena-io-modules/scrutinizer",
+
+
+    "balena-io-examples/balena-python-hello-world",
+
+
+    "balena-io/analytics-backend",
     "balena-io/autohat",
+    "balena-io/balena-admin",
     "balena-io/balena-alertmanager",
+    "balena-io/balena-api",
+    "balena-io/balena-builder",
     "balena-io/balena-cloud",
+    "balena-io/balena-delta",
+    "balena-io/balena-git",
+    "balena-io/balena-img",
     "balena-io/balena-mdns-publisher",
     "balena-io/balena-metrics-guard-base",
     "balena-io/balena-monitor",
+    "balena-io/balena-proxy",
     "balena-io/balena-sentry",
+    "balena-io/balena-sentry",
+    "balena-io/balena-ui",
     "balena-io/ca-private",
     "balena-io/cert-manager",
     "balena-io/e2e",
     "balena-io/open-balena-api",
     "balena-io/open-balena-db",
     "balena-io/open-balena-haproxy",
+    "balena-io/open-balena-registry-proxy",
     "balena-io/open-balena-registry",
     "balena-io/open-balena-s3",
     "balena-io/open-balena-vpn",
+    "balena-io/open-balena",
     "balena-io/renovate-config",
 
+
     "balena-os/cloud-config",
+    "balena-os/wifi-connect",
+
 
     "balenalabs/proxy-tunnel",
+
 
     "product-os/balena-cloudwatch-exporter",
     "product-os/balena-jenkins",
     "product-os/balena-redis-exporter",
-    "product-os/github-events-resource"
+    "product-os/balena-vault",
+    "product-os/github-events-resource",
+    "product-os/repo-config",
+    "product-os/resinci-deploy",
+    "product-os/versionbot",
+    "product-os/versionist"
+
   ],
   "packageRules": [
     {
