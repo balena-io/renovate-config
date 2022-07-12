@@ -47,11 +47,12 @@
     "balena-io/open-balena-haproxy",
     "balena-io/open-balena-registry",
     "balena-io/open-balena-s3",
+    "balena-io/open-balena-vpn",
     "balena-io/renovate-config",
     "balena-os/cloud-config",
-    "balena-io/open-balena-vpn",
     "balenalabs/proxy-tunnel",
-    "product-os/balena-jenkins"
+    "product-os/balena-jenkins",
+    "product-os/github-events-resource",
   ],
   "packageRules": [
     {
