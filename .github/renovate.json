@@ -51,8 +51,10 @@
     "balena-io/renovate-config",
     "balena-os/cloud-config",
     "balenalabs/proxy-tunnel",
+    "product-os/balena-cloudwatch-exporter",
     "product-os/balena-jenkins",
-    "product-os/github-events-resource",
+    "product-os/balena-redis-exporter",
+    "product-os/github-events-resource"
   ],
   "packageRules": [
     {
