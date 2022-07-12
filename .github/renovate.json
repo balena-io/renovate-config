@@ -33,10 +33,13 @@
     "**/Dockerfile.template"
   ],
   "repositories": [
+    "balena-io-modules/open-balena-base",
+
     "balena-io/autohat",
     "balena-io/balena-alertmanager",
     "balena-io/balena-cloud",
     "balena-io/balena-mdns-publisher",
+    "balena-io/balena-metrics-guard-base",
     "balena-io/balena-monitor",
     "balena-io/balena-sentry",
     "balena-io/ca-private",
@@ -49,8 +52,11 @@
     "balena-io/open-balena-s3",
     "balena-io/open-balena-vpn",
     "balena-io/renovate-config",
+
     "balena-os/cloud-config",
+
     "balenalabs/proxy-tunnel",
+
     "product-os/balena-cloudwatch-exporter",
     "product-os/balena-jenkins",
     "product-os/balena-redis-exporter",
