@@ -45,7 +45,6 @@
 
     "balena-io/analytics-backend",
     "balena-io/autohat",
-    "balena-io/balena-admin",
     "balena-io/balena-alertmanager",
     "balena-io/balena-api",
     "balena-io/balena-builder",
@@ -59,7 +58,6 @@
     "balena-io/balena-proxy",
     "balena-io/balena-sentry",
     "balena-io/balena-sentry",
-    "balena-io/balena-ui",
     "balena-io/ca-private",
     "balena-io/cert-manager",
     "balena-io/e2e",
