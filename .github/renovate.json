@@ -94,12 +94,6 @@
   ],
   "packageRules": [
     {
-      "matchPackageNames": [
-        "globby"
-      ],
-      "enabled": false
-    },
-    {
       "automerge": true,
       "matchUpdateTypes": [
         "minor",
