@@ -10,6 +10,7 @@
   "onboarding": false,
   "requireConfig": false,
   "cloneSubmodules": true,
+  "rebaseWhen": "behind-base-branch",
   "git-submodules": {
     "enabled": true
   },
@@ -89,6 +90,20 @@
     "product-os/versionbot",
     "product-os/versionist"
 
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": [
+        "(^|/)(?:docker-)?compose[^/]*\.ya?ml$",
+        "(^|/)Dockerfile$",
+        "(^|/)Dockerfile[^/]*$"
+      ],
+      "matchStrings": [
+        "image: (?<depName>.*[^\/])\/(?<currentValue>.*?)\\n",
+        "FROM (?<depName>.*[^\/])\/(?<currentValue>.*?)\\n"
+      ],
+      "datasourceTemplate": "docker"
+    }
   ],
   "packageRules": [
     {
