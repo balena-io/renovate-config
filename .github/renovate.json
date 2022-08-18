@@ -10,6 +10,7 @@
   "onboarding": false,
   "requireConfig": false,
   "cloneSubmodules": true,
+  "rebaseWhen": "behind-base-branch",
   "git-submodules": {
     "enabled": true
   },
@@ -21,8 +22,8 @@
   "automergeType": "pr-comment",
   "commitMessageExtra": "to {{{replace 'v' '' newVersion}}}",
   "commitBody": "Update {{depName}} to {{{replace 'v' '' newVersion}}}\n\nUpdate {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: {{#if (or isPatch (containsString depType 'devDependencies'))}}patch{{else}}minor{{/if}}",
-  "prConcurrentLimit": 1,
-  "branchConcurrentLimit": 1,
+  "prConcurrentLimit": 2,
+  "branchConcurrentLimit": 2,
   "ignorePaths": [
     "**/node_modules/**",
     "**/bower_components/**",
@@ -60,6 +61,7 @@
     "balena-io/balena-sentry",
     "balena-io/ca-private",
     "balena-io/cert-manager",
+    "balena-io/deploy-to-balena-action",
     "balena-io/e2e",
     "balena-io/open-balena-api",
     "balena-io/open-balena-db",
@@ -83,11 +85,11 @@
     "product-os/balena-jenkins",
     "product-os/balena-redis-exporter",
     "product-os/balena-vault",
+    "product-os/balena-versionist",
     "product-os/github-events-resource",
     "product-os/repo-config",
     "product-os/resinci-deploy",
-    "product-os/versionbot",
-    "product-os/versionist"
+    "product-os/versionbot"
 
   ],
   "packageRules": [
