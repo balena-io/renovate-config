@@ -116,6 +116,11 @@
         "patch",
         "digest"
       ]
+    },
+    {
+      "automerge": false,
+      "matchPackageNames": ["@balena/open-balena-api"],
+      "matchUpdateTypes": ["minor"]
     }
   ]
 }
