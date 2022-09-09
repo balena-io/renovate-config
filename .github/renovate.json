@@ -126,8 +126,7 @@
   "regexManagers": [
     {
       "fileMatch": [
-        "^Dockerfile$",
-        "(^|/)Dockerfile[^/]*$"
+        "(^|\\/)Dockerfile(\\.[:alnum:]+)?$"
       ],
       "matchStrings": [
         "ENV NODE_VERSION=(?<currentValue>.*?)\\n",
@@ -138,8 +137,7 @@
     },
     {
       "fileMatch": [
-        "^Dockerfile$",
-        "(^|/)Dockerfile[^/]*$"
+        "(^|\\/)Dockerfile(\\.[[:alnum:]]+)?$"
       ],
       "matchStrings": [
         "ENV NPM_VERSION=(?<currentValue>.*?)\\n",
@@ -150,12 +148,12 @@
     },
     {
       "fileMatch": [
-        "(^|/)(?:docker-)?compose[^/]*\\.ya?ml$",
-        "(^|/)Dockerfile[^/]*$"
+        "(^|\\/)(?:docker-)?compose[^/]*\\.ya?ml$",
+        "(^|\\/)Dockerfile(\\.[[:alnum:]]+)?$"
       ],
       "matchStrings": [
-        "image: (?<depName>.*[^\/])\/(?<currentValue>.*?)\\n",
-        "FROM (?<depName>.*[^\/])\/(?<currentValue>.*?)\\n"
+        "image: (?<depName>.*[^\\/])\\/(?<currentValue>.*?)\\n",
+        "FROM (?<depName>.*[^\\/])\\/(?<currentValue>.*?)\\n"
       ],
       "datasourceTemplate": "docker"
     }
