@@ -150,7 +150,7 @@
     },
     {
       "fileMatch": [
-        "(^|/)(?:docker-)?compose[^/]*\.ya?ml$",
+        "(^|/)(?:docker-)?compose[^/]*\\.ya?ml$",
         "(^|/)Dockerfile[^/]*$"
       ],
       "matchStrings": [
