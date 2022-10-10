@@ -1,0 +1,2897 @@
+- commits:
+    - subject: Switch from balenaCI to flowzone
+      hash: 6c8f47783b81dfc3970ffd9f6a3d2c30450572e7
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+  version: 0.88.1
+  title: ""
+  date: 2022-10-10T16:44:28.896Z
+- version: 0.88.0
+  date: 2022-10-10T13:11:29Z
+  commits:
+    - hash: b3013c65f11df1d8025bfcd5463042d7cdbab86d
+      author: Renovate Bot
+      footers:
+        change-type: minor
+      subject: Update renovatebot/github-action action to 32.229.0
+      body: |-
+        Update renovatebot/github-action to 32.229.0
+        Update renovatebot/github-action from 32.226.0 to 32.229.0
+- version: 0.87.0
+- date: 2022-10-09T19:40:43Z
+- commits:
+    - hash: a4bc84f3e2354aa65bed35592cf4f99f2512615e
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.226.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.226.0
+        Update renovatebot/github-action from 32.225.1 to 32.226.0
+- version: 0.86.0
+- date: 2022-10-08T09:45:24Z
+- commits:
+    - hash: bc1818166b3f577220810b4ecf9ef0f2fc7d19c4
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.225.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.225.1
+        Update renovatebot/github-action from 32.224.0 to 32.225.1
+- version: 0.85.0
+- date: 2022-10-08T01:58:20Z
+- commits:
+    - hash: 1998adbad76475b9fe901c223ac44d49aa97d6f6
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.224.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.224.0
+        Update renovatebot/github-action from 32.221.1 to 32.224.0
+- version: 0.84.1
+- date: 2022-10-07T03:54:00Z
+- commits:
+    - hash: d79b0a520ed6edda03d9f81d9502d4c6bb4265eb
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.221.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.221.1
+        Update renovatebot/github-action from 32.221.0 to 32.221.1
+- version: 0.84.0
+- date: 2022-10-06T22:01:52Z
+- commits:
+    - hash: 779f3e65c1288a5bdbaf7e963052592aa71e831f
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.221.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.221.0
+        Update renovatebot/github-action from 32.209.0 to 32.221.0
+- version: 0.83.0
+- date: 2022-09-30T11:26:07Z
+- commits:
+    - hash: b8859e40188176652b9c2ea7ca27ddb286171018
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.209.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.209.0
+        Update renovatebot/github-action from 32.208.3 to 32.209.0
+- version: 0.82.3
+- date: 2022-09-30T02:41:22Z
+- commits:
+    - hash: e54308c916e6b7e0c6b1228450beaf4372983775
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.208.3
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.208.3
+        Update renovatebot/github-action from 32.208.2 to 32.208.3
+- version: 0.82.2
+- date: 2022-09-28T20:41:57Z
+- commits:
+    - hash: f89b40284748f7f7ac1b03bbabfe14df8daff2fe
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.208.2
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.208.2
+        Update renovatebot/github-action from 32.208.1 to 32.208.2
+- version: 0.82.1
+- date: 2022-09-28T09:59:04Z
+- commits:
+    - hash: b6931ad63b735cfb67948a0cbc1544f85bbd7807
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.208.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.208.1
+        Update renovatebot/github-action from 32.208.0 to 32.208.1
+- version: 0.82.0
+- date: 2022-09-28T00:50:09Z
+- commits:
+    - hash: e2363f90a253a31c81bc50a1471c1313ef3ce4bf
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.208.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.208.0
+        Update renovatebot/github-action from 32.206.0 to 32.208.0
+- version: 0.81.0
+- date: 2022-09-27T16:11:09Z
+- commits:
+    - hash: c3574e59067371aceb376b66224ad8e54a6a5c1d
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.206.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.206.0
+        Update renovatebot/github-action from 32.204.5 to 32.206.0
+- version: 0.80.1
+- date: 2022-09-27T03:58:59Z
+- commits:
+    - hash: 04001b9ad6b0b8409b9a3d13ad0ee3282519ea89
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.204.5
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.204.5
+        Update renovatebot/github-action from 32.204.0 to 32.204.5
+- version: 0.80.0
+- date: 2022-09-26T06:21:08Z
+- commits:
+    - hash: d69087290d52a9977cdb895f38e2b919ad71d11d
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.204.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.204.0
+        Update renovatebot/github-action from 32.202.4 to 32.204.0
+- version: 0.79.3
+- date: 2022-09-24T23:56:09Z
+- commits:
+    - hash: e8bd99ee5beb43cd0d51b9cd6aab64da5d1f2f07
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.202.4
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.202.4
+        Update renovatebot/github-action from 32.202.3 to 32.202.4
+- version: 0.79.2
+- date: 2022-09-23T18:13:36Z
+- commits:
+    - hash: 8aa3a314e7cfa506a1802c5af446f92da4191eae
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.202.3
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.202.3
+        Update renovatebot/github-action from 32.202.1 to 32.202.3
+- version: 0.79.1
+- date: 2022-09-23T02:02:47Z
+- commits:
+    - hash: 6fc69bb4208d973f9e268a4fc42fc321004bfc77
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.202.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.202.1
+        Update renovatebot/github-action from 32.202.0 to 32.202.1
+- version: 0.79.0
+- date: 2022-09-22T15:56:07Z
+- commits:
+    - hash: 6f695e89ffd08442dc2fac6716b9354b891ef793
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.202.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.202.0
+        Update renovatebot/github-action from 32.201.2 to 32.202.0
+- version: 0.78.1
+- date: 2022-09-21T16:45:07Z
+- commits:
+    - hash: 4d60dfb0c28b61ee87966c266d730c09e4579c21
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.201.2
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.201.2
+        Update renovatebot/github-action from 32.201.1 to 32.201.2
+- version: 0.78.0
+- date: 2022-09-20T19:14:24Z
+- commits:
+    - hash: 247f8cde6a17736a9ea0ea5e948b810b361c7f01
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.201.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.201.1
+        Update renovatebot/github-action from 32.199.1 to 32.201.1
+- version: 0.77.0
+- date: 2022-09-19T21:26:15Z
+- commits:
+    - hash: 49426b6fa7cd5677f67d05289540f621fc97f45a
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.199.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.199.1
+        Update renovatebot/github-action from 32.198.1 to 32.199.1
+- version: 0.76.0
+- date: 2022-09-18T20:19:16Z
+- commits:
+    - hash: 43dcbeb113a36db52a5cfb4297d5da9028ce0022
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.198.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.198.1
+        Update renovatebot/github-action from 32.197.1 to 32.198.1
+- version: 0.75.1
+- date: 2022-09-18T02:57:50Z
+- commits:
+    - hash: 939ce9e2444f1e7591ffda31e19b57b708fc50f6
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.197.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.197.1
+        Update renovatebot/github-action from 32.197.0 to 32.197.1
+- version: 0.75.0
+- date: 2022-09-17T17:29:13Z
+- commits:
+    - hash: 12234cb38a168ab8dd83ea59aedaf1142a8a9cbe
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.197.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.197.0
+        Update renovatebot/github-action from 32.196.0 to 32.197.0
+- version: 0.74.0
+- date: 2022-09-16T18:17:58Z
+- commits:
+    - hash: 3331dbe7e5db02831206ac742744b51821ab1415
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.196.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.196.0
+        Update renovatebot/github-action from 32.195.5 to 32.196.0
+- version: 0.73.1
+- date: 2022-09-14T21:11:35Z
+- commits:
+    - hash: 1de2a62a1e6758082f02ec61f20b2bef3dfccd95
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.195.5
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.195.5
+        Update renovatebot/github-action from 32.195.3 to 32.195.5
+- version: 0.73.0
+- date: 2022-09-14T00:14:06Z
+- commits:
+    - hash: bec12d67a1696dd08ccb91761360e21fa1c3b44f
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.195.3
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.195.3
+        Update renovatebot/github-action from 32.195.1 to 32.195.3
+- commits:
+    - hash: 1dd9740e90ad86fa7d699e03042ca2194d0d9735
+- commits:
+    - author: Olamide Omolola
+- commits:
+    - footers:
+        signed-off-by: Olamide Omolola <omololaolamidex@gmail.com>
+- commits:
+    - subject: "Updated renovate config to update the following:"
+- commits:
+    - body: |-
+        NODE_VERSION and NPM_VERSION baked into Dockerfiles using ENVs or ARGs
+        Update balena blocks images
+        Change-type: patch
+- commits:
+    - hash: b00f45e15c327e4d44e093f8c48ac0945a6cecc7
+- commits:
+    - author: Omolola Olamide
+- commits:
+    - subject: Merge branch 'master' into olamiko/update
+- commits:
+    - ? body
+- commits:
+    - hash: 15d74031c0f03b8509c17208f8866435998ba78c
+- commits:
+    - author: Omolola Olamide
+- commits:
+    - footers:
+        co-authored-by: Kyle Harding <kyle@balena.io>
+- commits:
+    - subject: Update .github/renovate.json
+- commits:
+    - ? body
+- commits:
+    - hash: cb177bbce616b62437a2a54535a4c705903eae29
+- commits:
+    - author: Omolola Olamide
+- commits:
+    - subject: Merge branch 'master' into olamiko/update
+- commits:
+    - ? body
+- commits:
+    - hash: 4b4f38b2b22aca2115e977ca2364fb249b810f17
+- commits:
+    - author: Olamide Omolola
+- commits:
+    - footers:
+        signed-off-by: Olamide Omolola <omololaolamidex@gmail.com>
+- commits:
+    - subject: Updated Regex to match Dockerfile and docker-compose
+- commits:
+    - body: "Change-type: patch"
+- commits:
+    - hash: bbb39792c701b75aa52792084302aed4a55d8c7e
+- commits:
+    - author: Omolola Olamide
+- commits:
+    - subject: Merge branch 'master' into olamiko/update
+- commits:
+    - ? body
+- version: 0.72.4
+- date: 2022-09-12T04:02:23Z
+- commits:
+    - hash: a09b0c4edd607fa0efcc84037a86458d451332b7
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.194.5
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.194.5
+        Update renovatebot/github-action from 32.194.4 to 32.194.5
+- version: 0.72.3
+- date: 2022-09-10T17:23:26Z
+- commits:
+    - hash: 7765e96611cc59b66f942e2cb10627df77db2aaf
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.194.4
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.194.4
+        Update renovatebot/github-action from 32.194.3 to 32.194.4
+- version: 0.72.2
+- date: 2022-09-09T15:05:09Z
+- commits:
+    - hash: c0d513a0afe99a001897c958dbecb869bee4001a
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.194.3
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.194.3
+        Update renovatebot/github-action from 32.194.2 to 32.194.3
+- version: 0.72.1
+- date: 2022-09-08T23:11:29Z
+- commits:
+    - hash: f50c72ac65ce44b631883e4914c787aa7a0bcb50
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.194.2
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.194.2
+        Update renovatebot/github-action from 32.194.0 to 32.194.2
+- version: 0.72.0
+- date: 2022-09-08T01:54:52Z
+- commits:
+    - hash: c32cef9101f1cbb7081a722211ba04ffbdbce4d0
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.194.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.194.0
+        Update renovatebot/github-action from 32.192.3 to 32.194.0
+- version: 0.71.0
+- date: 2022-09-07T01:10:33Z
+- commits:
+    - hash: f1c70554cef1429ffdd767cd65c07baf11bb639f
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.192.3
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.192.3
+        Update renovatebot/github-action from 32.190.6 to 32.192.3
+- version: 0.70.4
+- date: 2022-09-06T07:01:10Z
+- commits:
+    - hash: f1e3caef707128d604e4a5b70f4758001ef78611
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.190.6
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.190.6
+        Update renovatebot/github-action from 32.190.4 to 32.190.6
+- version: 0.70.3
+- date: 2022-09-05T07:30:56Z
+- commits:
+    - hash: 0750bbcd2047aa73f9d27a40b160df2a818601c6
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.190.4
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.190.4
+        Update renovatebot/github-action from 32.190.3 to 32.190.4
+- version: 0.70.2
+- date: 2022-09-04T23:41:25Z
+- commits:
+    - hash: 0d216b4dcb7fa4a3df660b9d1dc5464eeae6a621
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.190.3
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.190.3
+        Update renovatebot/github-action from 32.190.2 to 32.190.3
+- version: 0.70.1
+- date: 2022-09-04T16:20:06Z
+- commits:
+    - hash: cc850f9567ce4f61232fb8c84256088b1b45fdef
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.190.2
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.190.2
+        Update renovatebot/github-action from 32.190.0 to 32.190.2
+- version: 0.70.0
+- date: 2022-09-03T19:41:28Z
+- commits:
+    - hash: 20422897576af280f12f1b5b9640b437e581af0e
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.190.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.190.0
+        Update renovatebot/github-action from 32.189.0 to 32.190.0
+- version: 0.69.0
+- date: 2022-09-03T00:00:48Z
+- commits:
+    - hash: 4ab6fbb1a299646b7a411fc0cff59ca54deab141
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.189.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.189.0
+        Update renovatebot/github-action from 32.187.1 to 32.189.0
+- version: 0.68.1
+- date: 2022-09-02T12:03:22Z
+- commits:
+    - hash: fedddb7c794a35b1c3a194545e3938a44441e1c8
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.187.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.187.1
+        Update renovatebot/github-action from 32.187.0 to 32.187.1
+- version: 0.68.0
+- date: 2022-09-01T22:18:48Z
+- commits:
+    - hash: 0351ebb8720fd66b542290e0630de711212bdeb5
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.187.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.187.0
+        Update renovatebot/github-action from 32.186.2 to 32.187.0
+- version: 0.67.1
+- date: 2022-09-01T15:54:50Z
+- commits:
+    - hash: f1af7cfceff4267263b6005692e0afa014abb39f
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.186.2
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.186.2
+        Update renovatebot/github-action from 32.186.1 to 32.186.2
+- version: 0.67.0
+- date: 2022-09-01T06:16:18Z
+- commits:
+    - hash: 324e8b36de4ca54deb88d2dd36859e6c7100a25c
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.186.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.186.1
+        Update renovatebot/github-action from 32.185.3 to 32.186.1
+- version: 0.66.1
+- date: 2022-08-31T16:40:20Z
+- commits:
+    - hash: 5f09fd2e6d0aa4a9c785cb0e09531bb2cfa745f3
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.185.3
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.185.3
+        Update renovatebot/github-action from 32.185.0 to 32.185.3
+- version: 0.66.0
+- date: 2022-08-30T22:22:16Z
+- commits:
+    - hash: de7fde710b07cf21c7b40ab8d8cada4582443103
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.185.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.185.0
+        Update renovatebot/github-action from 32.183.0 to 32.185.0
+- version: 0.65.0
+- date: 2022-08-30T07:19:15Z
+- commits:
+    - hash: 398ecaf4d05df11da6aa57fb8f1ca78901951b9b
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.183.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.183.0
+        Update renovatebot/github-action from 32.182.1 to 32.183.0
+- version: 0.64.0
+- date: 2022-08-29T18:22:37Z
+- commits:
+    - hash: d33fb40caf56589ca55274eb6c65361bcc2aa799
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.182.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.182.1
+        Update renovatebot/github-action from 32.181.0 to 32.182.1
+- version: 0.63.0
+- date: 2022-08-29T04:49:55Z
+- commits:
+    - hash: 81c210a032b0b8d7b370685ea7243f13e4bf8a33
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.181.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.181.0
+        Update renovatebot/github-action from 32.180.1 to 32.181.0
+- version: 0.62.1
+- date: 2022-08-28T19:20:14Z
+- commits:
+    - hash: 08d81b093a8ad8a2716164791768d390851f5cdc
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.180.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.180.1
+        Update renovatebot/github-action from 32.180.0 to 32.180.1
+- version: 0.62.0
+- date: 2022-08-28T10:55:41Z
+- commits:
+    - hash: 0fa65c40a7466fcc6275a03af2710c6ce611ef76
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.180.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.180.0
+        Update renovatebot/github-action from 32.179.1 to 32.180.0
+- version: 0.61.0
+- date: 2022-08-26T20:20:15Z
+- commits:
+    - hash: 448058d8480c7ecef31c803d5a36f71993f1a6bc
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.179.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.179.1
+        Update renovatebot/github-action from 32.177.1 to 32.179.1
+- version: 0.60.0
+- date: 2022-08-26T01:59:14Z
+- commits:
+    - hash: c0edfd3c978b156fc2b6e500b9756c404d6c2058
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.177.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.177.1
+        Update renovatebot/github-action from 32.174.2 to 32.177.1
+- version: 0.59.0
+- date: 2022-08-25T03:02:08Z
+- commits:
+    - hash: 4121cb6225c6cbbc7de545ac4b148e6602cc3637
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.174.2
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.174.2
+        Update renovatebot/github-action from 32.173.0 to 32.174.2
+- version: 0.58.1
+- date: 2022-08-24T12:13:30Z
+- commits:
+    - hash: 78a2631522fef0579862df95dcfedfa1bf94928b
+- commits:
+    - author: Thodoris Greasidis
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - footers:
+        see: https://jel.ly.fish/thread-3605662d-f0c4-4669-bd42-2187a9b919aa
+- commits:
+    - subject: Stop automerging minor bumps of @blalena/open-balena-api
+- commits:
+    - body: |-
+        This is in an effort to avoid merging a PR that
+        adds a new field for which we need to write a
+        migration in the balena-api.
+- version: 0.58.0
+- date: 2022-08-24T01:09:50Z
+- commits:
+    - hash: 6f55189ecd79c601dfd3eacd872d51adf28c7405
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.173.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.173.0
+        Update renovatebot/github-action from 32.172.1 to 32.173.0
+- version: 0.57.0
+- date: 2022-08-23T06:43:52Z
+- commits:
+    - hash: 2065b9b1f6622bd45f909c1283c4a919655d008d
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.172.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.172.1
+        Update renovatebot/github-action from 32.171.0 to 32.172.1
+- version: 0.56.0
+- date: 2022-08-22T17:20:49Z
+- commits:
+    - hash: aa6bf9a1dc44ccabb9d323ee7326ffc8c01057fc
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.171.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.171.0
+        Update renovatebot/github-action from 32.169.1 to 32.171.0
+- version: 0.55.1
+- date: 2022-08-21T16:06:18Z
+- commits:
+    - hash: f129442f071fd557c88497e66fd7f11ff59d01b7
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.169.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.169.1
+        Update renovatebot/github-action from 32.169.0 to 32.169.1
+- version: 0.55.0
+- date: 2022-08-21T11:49:35Z
+- commits:
+    - hash: 9ad687b9387ffadc130d77f7352046d0a509e105
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.169.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.169.0
+        Update renovatebot/github-action from 32.168.0 to 32.169.0
+- version: 0.54.0
+- date: 2022-08-20T12:43:34Z
+- commits:
+    - hash: dcc9568e2a43de28d92233d9e6ed66c860f610a5
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.168.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.168.0
+        Update renovatebot/github-action from 32.167.0 to 32.168.0
+- version: 0.53.0
+- date: 2022-08-20T04:51:35Z
+- commits:
+    - hash: 7929d0e767765a5bf09d0c4276b241dccbc49071
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.167.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.167.0
+        Update renovatebot/github-action from 32.166.0 to 32.167.0
+- version: 0.52.0
+- date: 2022-08-19T20:53:21Z
+- commits:
+    - hash: c366ec651ffa2b9c8371c4e6e5b9d1a295633e18
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.166.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.166.0
+        Update renovatebot/github-action from 32.165.3 to 32.166.0
+- version: 0.51.1
+- date: 2022-08-19T15:22:30Z
+- commits:
+    - hash: 6f90e468e2de55206bd28b195130e88c201b1702
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.165.3
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.165.3
+        Update renovatebot/github-action from 32.165.1 to 32.165.3
+- version: 0.51.0
+- date: 2022-08-19T00:44:50Z
+- commits:
+    - hash: cbfe412e75811526bed9cce713af724e28e2a0af
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.165.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.165.1
+        Update renovatebot/github-action from 32.164.0 to 32.165.1
+- version: 0.50.1
+- date: 2022-08-18T19:55:35Z
+- commits:
+    - hash: 416650b19e17f690cb92cc9ae9c31747cbea8a21
+- commits:
+    - author: ab77
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Add repositories
+- commits:
+    - body: |-
+        * automatically rebase when behind
+        * raise concurrency
+- version: 0.50.0
+- date: 2022-08-18T16:26:38Z
+- commits:
+    - hash: 65f3eb0ef709ccc1a7b5b565d9d70ac3ee2b2812
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.164.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.164.0
+        Update renovatebot/github-action from 32.163.0 to 32.164.0
+- version: 0.49.0
+- date: 2022-08-18T04:32:45Z
+- commits:
+    - hash: 59cdf05660807e3596c75a8d34ae5b9bee8db8ea
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.163.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.163.0
+        Update renovatebot/github-action from 32.161.2 to 32.163.0
+- version: 0.48.1
+- date: 2022-08-17T14:42:31Z
+- commits:
+    - hash: 62ff4a785bc739e70981f701451841d021bcb451
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.161.2
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.161.2
+        Update renovatebot/github-action from 32.161.0 to 32.161.2
+- version: 0.48.0
+- date: 2022-08-17T00:08:44Z
+- commits:
+    - hash: 76ea9d5a988ab73f190d41a2af240c8ff6e4292e
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.161.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.161.0
+        Update renovatebot/github-action from 32.160.2 to 32.161.0
+- version: 0.47.0
+- date: 2022-08-16T18:13:44Z
+- commits:
+    - hash: f29829e2cf5f88faaa14a84eb1d8a6bb7e65a129
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.160.2
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.160.2
+        Update renovatebot/github-action from 32.159.5 to 32.160.2
+- version: 0.46.2
+- date: 2022-08-15T20:22:36Z
+- commits:
+    - hash: 500576188859f9ed37535a2eb7bd5647a9e2051e
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.159.5
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.159.5
+        Update renovatebot/github-action from 32.159.1 to 32.159.5
+- version: 0.46.1
+- date: 2022-08-14T23:22:09Z
+- commits:
+    - hash: f7813358d31686915f88fd0515c91aea737f541e
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.159.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.159.1
+        Update renovatebot/github-action from 32.159.0 to 32.159.1
+- version: 0.46.0
+- date: 2022-08-13T06:06:00Z
+- commits:
+    - hash: 12902e9b6e146f35a1f7425d4a58e2d8408f5da6
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.159.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.159.0
+        Update renovatebot/github-action from 32.156.1 to 32.159.0
+- version: 0.45.1
+- date: 2022-08-12T12:41:16Z
+- commits:
+    - hash: 295e9e8119bc9db9a3f454c5edb052251cf54eb6
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.156.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.156.1
+        Update renovatebot/github-action from 32.156.0 to 32.156.1
+- version: 0.45.0
+- date: 2022-08-12T03:38:19Z
+- commits:
+    - hash: 7395526d00de4cbf8459ad4427c9a39e5cc72e1e
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.156.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.156.0
+        Update renovatebot/github-action from 32.154.9 to 32.156.0
+- version: 0.44.2
+- date: 2022-08-11T14:31:14Z
+- commits:
+    - hash: 37f5dcec753856cc4926eea226b7d896eca1befb
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.154.9
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.154.9
+        Update renovatebot/github-action from 32.154.7 to 32.154.9
+- version: 0.44.1
+- date: 2022-08-10T21:54:30Z
+- commits:
+    - hash: a87a3e38124e6c905acb71615faaa7ebc09d4a2d
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.154.7
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.154.7
+        Update renovatebot/github-action from 32.154.2 to 32.154.7
+- version: 0.44.0
+- date: 2022-08-10T16:41:08Z
+- commits:
+    - hash: e1f34b185bb22a516796fd7652ebec3200a9c277
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.154.2
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.154.2
+        Update renovatebot/github-action from 32.153.4 to 32.154.2
+- version: 0.43.1
+- date: 2022-08-10T03:12:36Z
+- commits:
+    - hash: 61ffb6cfb983077c26d728cf90a816bde2ab848e
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.153.4
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.153.4
+        Update renovatebot/github-action from 32.153.0 to 32.153.4
+- version: 0.43.0
+- date: 2022-08-09T15:43:18Z
+- commits:
+    - hash: 01006aa0bdeeb2caa812430fa7d738f03182ded1
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.153.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.153.0
+        Update renovatebot/github-action from 32.152.0 to 32.153.0
+- version: 0.42.0
+- date: 2022-08-08T18:45:28Z
+- commits:
+    - hash: d8c6e07f92f5642b434eeeefdbff51d9f7eee1dd
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.152.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.152.0
+        Update renovatebot/github-action from 32.151.2 to 32.152.0
+- version: 0.41.0
+- date: 2022-08-07T16:39:43Z
+- commits:
+    - hash: 9ed690d28b5f9f5de4a1109351df66ea9300ba88
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.151.2
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.151.2
+        Update renovatebot/github-action from 32.150.4 to 32.151.2
+- version: 0.40.2
+- date: 2022-08-06T19:05:03Z
+- commits:
+    - hash: b84ecd4c475a13a0ff60f9b5599586102476221b
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.150.4
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.150.4
+        Update renovatebot/github-action from 32.150.2 to 32.150.4
+- version: 0.40.1
+- date: 2022-08-06T14:51:32Z
+- commits:
+    - hash: 6ede1be126697b5e0cd43a070266db38a50c963f
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.150.2
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.150.2
+        Update renovatebot/github-action from 32.150.0 to 32.150.2
+- version: 0.40.0
+- date: 2022-08-05T21:45:15Z
+- commits:
+    - hash: d9a7f55c64620f78f278967d2bd37a36a0f70ce6
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.150.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.150.0
+        Update renovatebot/github-action from 32.145.0 to 32.150.0
+- version: 0.39.0
+- date: 2022-08-05T00:46:30Z
+- commits:
+    - hash: 715fb67e74df379376bd183d046de858e09ba4c2
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.145.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.145.0
+        Update renovatebot/github-action from 32.143.1 to 32.145.0
+- version: 0.38.0
+- date: 2022-08-03T19:05:16Z
+- commits:
+    - hash: 64fbc956863d08e16d87d8accf2858db1b5d16f4
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.143.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.143.1
+        Update renovatebot/github-action from 32.141.0 to 32.143.1
+- version: 0.37.0
+- date: 2022-08-02T20:19:42Z
+- commits:
+    - hash: 114a03f567231eec2511200a3a72eaa412ffcbc6
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.141.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.141.0
+        Update renovatebot/github-action from 32.137.0 to 32.141.0
+- version: 0.36.0
+- date: 2022-08-02T03:56:51Z
+- commits:
+    - hash: 573ea2c3ae2b1eec95ceca71561ab3d494413c5b
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.137.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.137.0
+        Update renovatebot/github-action from 32.135.1 to 32.137.0
+- version: 0.35.1
+- date: 2022-07-30T20:05:39Z
+- commits:
+    - hash: 730be7c30159d57709e0142fe06443a01a4493f9
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.135.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.135.1
+        Update renovatebot/github-action from 32.135.0 to 32.135.1
+- version: 0.35.0
+- date: 2022-07-30T14:01:47Z
+- commits:
+    - hash: 36ee638472a6fa7494959dd4939aeb1dbf9d7622
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.135.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.135.0
+        Update renovatebot/github-action from 32.134.0 to 32.135.0
+- version: 0.34.0
+- date: 2022-07-29T20:22:17Z
+- commits:
+    - hash: 5c85493012fe9d6d39d6ffe21776395ec5356f69
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.134.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.134.0
+        Update renovatebot/github-action from 32.133.1 to 32.134.0
+- version: 0.33.1
+- date: 2022-07-29T15:44:44Z
+- commits:
+    - hash: 07ad6c47a7e850170bdc5e5e74d217e9c373c82d
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.133.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.133.1
+        Update renovatebot/github-action from 32.133.0 to 32.133.1
+- version: 0.33.0
+- date: 2022-07-28T21:53:36Z
+- commits:
+    - hash: e0be100b9e410f1c33e165189cf1c388dad89950
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.133.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.133.0
+        Update renovatebot/github-action from 32.131.3 to 32.133.0
+- version: 0.32.2
+- date: 2022-07-28T13:07:50Z
+- commits:
+    - hash: ffecd8044e61acf9121551a287f452b38708aef8
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.131.3
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.131.3
+        Update renovatebot/github-action from 32.131.1 to 32.131.3
+- version: 0.32.1
+- date: 2022-07-26T21:52:51Z
+- commits:
+    - hash: 70449d652cf36ae83638bdf2cd5513785314798e
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.131.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.131.1
+        Update renovatebot/github-action from 32.131.0 to 32.131.1
+- version: 0.32.0
+- date: 2022-07-26T17:16:56Z
+- commits:
+    - hash: c6e801abc066ee0c557cb844c4f9e2607f5d25b7
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.131.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.131.0
+        Update renovatebot/github-action from 32.130.0 to 32.131.0
+- version: 0.31.0
+- date: 2022-07-26T13:40:48Z
+- commits:
+    - hash: 4959c364066461657017dfb7db049b3199d19ae3
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.130.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.130.0
+        Update renovatebot/github-action from 32.127.4 to 32.130.0
+- version: 0.30.2
+- date: 2022-07-26T01:13:51Z
+- commits:
+    - hash: af8f49c321a590694911f28c607a40da02f6a001
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.127.4
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.127.4
+        Update renovatebot/github-action from 32.127.2 to 32.127.4
+- version: 0.30.1
+- date: 2022-07-25T18:39:43Z
+- commits:
+    - hash: 98b3f0cb4ed938b42928780984fe06104b20ec2a
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.127.2
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.127.2
+        Update renovatebot/github-action from 32.127.0 to 32.127.2
+- version: 0.30.0
+- date: 2022-07-24T22:53:29Z
+- commits:
+    - hash: 6d2104e79c2a6312a4f26a6d0aa1bca15c27a556
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.127.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.127.0
+        Update renovatebot/github-action from 32.126.2 to 32.127.0
+- version: 0.29.1
+- date: 2022-07-24T18:02:59Z
+- commits:
+    - hash: 4ca35165494f4bc63604f16d012c4bd5e4c37b5e
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.126.2
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.126.2
+        Update renovatebot/github-action from 32.126.1 to 32.126.2
+- version: 0.29.0
+- date: 2022-07-24T13:53:37Z
+- commits:
+    - hash: 37baeca1eb064504140346160ad92e32fa23d4ea
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.126.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.126.1
+        Update renovatebot/github-action from 32.125.0 to 32.126.1
+- version: 0.28.0
+- date: 2022-07-23T00:46:48Z
+- commits:
+    - hash: ed6ea6661430b6c9dcb7aa9bd295da9247ac3031
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.125.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.125.0
+        Update renovatebot/github-action from 32.122.5 to 32.125.0
+- version: 0.27.2
+- date: 2022-07-22T14:21:34Z
+- commits:
+    - hash: f2e405eaa73f31c2cb4401b137b5443e3e680f62
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.122.5
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.122.5
+        Update renovatebot/github-action from 32.122.2 to 32.122.5
+- version: 0.27.1
+- date: 2022-07-22T03:59:16Z
+- commits:
+    - hash: 5f88d6002dfc3928a471b0741de64cb258edce10
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.122.2
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.122.2
+        Update renovatebot/github-action from 32.122.1 to 32.122.2
+- version: 0.27.0
+- date: 2022-07-21T21:26:17Z
+- commits:
+    - hash: 1d57ef135745c1658382a400dced4cd532f647c8
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.122.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.122.1
+        Update renovatebot/github-action from 32.120.0 to 32.122.1
+- version: 0.26.0
+- date: 2022-07-20T12:46:42Z
+- commits:
+    - hash: 77e2971a38250639607d76f5eb3246329d4b4762
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.120.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.120.0
+        Update renovatebot/github-action from 32.119.2 to 32.120.0
+- version: 0.25.4
+- date: 2022-07-19T17:52:28Z
+- commits:
+    - hash: 035727247f3e4173884b22521b7a97c2829d3e1a
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.119.2
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.119.2
+        Update renovatebot/github-action from 32.119.1 to 32.119.2
+- version: 0.25.3
+- date: 2022-07-19T04:36:10Z
+- commits:
+    - hash: bcb32bf9ac4e7d6b67cb65d2a8b7b7929443564e
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.119.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.119.1
+        Update renovatebot/github-action from 32.119.0 to 32.119.1
+- version: 0.25.2
+- date: 2022-07-18T23:57:44Z
+- commits:
+    - hash: ec07d8ad2bcc14192adabed20ce3ae7010d47c54
+- commits:
+    - author: Thodoris Greasidis
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Stop renovating the UI & admin panel until we get more tests in place
+- commits:
+    - ? body
+- commits:
+    - hash: 2d37adb4b2f6e6632f8e02f39f7b2e52d846eb3e
+- commits:
+    - author: Anton Belodedenko
+- commits:
+    - subject: Merge branch 'master' into remove-balena-ui
+- commits:
+    - ? body
+- commits:
+    - hash: fba5f258716ee321ddbe5e0a47cc61ebb3a80f00
+- commits:
+    - author: Anton Belodedenko
+- commits:
+    - subject: Merge branch 'master' into remove-balena-ui
+- commits:
+    - ? body
+- version: 0.25.1
+- date: 2022-07-18T22:02:16Z
+- commits:
+    - hash: 67778f1ed46b25978c0bfb8ab5c5cadf7777c34d
+- commits:
+    - author: ab77
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Drop superfluous package exclude
+- commits:
+    - ? body
+- commits:
+    - hash: ad740bbf08582987221bafa4d67f074c2cefdc3c
+- commits:
+    - author: Anton Belodedenko
+- commits:
+    - subject: Merge branch 'master' into ab77/operational
+- commits:
+    - ? body
+- version: 0.25.0
+- date: 2022-07-18T18:40:20Z
+- commits:
+    - hash: f881f79069b399b3140067392897a6c601f30ef6
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.119.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.119.0
+        Update renovatebot/github-action from 32.118.0 to 32.119.0
+- version: 0.24.1
+- date: 2022-07-18T16:28:42Z
+- commits:
+    - hash: cf2d0790ec95f14c6161514e273342d0e9471477
+- commits:
+    - author: ab77
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Additional repositories
+- commits:
+    - ? body
+- commits:
+    - hash: 253ad589a7c19237328ce44de4d61a61c98c2198
+- commits:
+    - author: Anton Belodedenko
+- commits:
+    - subject: Merge branch 'master' into ab77/operational
+- commits:
+    - ? body
+- version: 0.24.0
+- date: 2022-07-17T10:44:09Z
+- commits:
+    - hash: 5cb3b0cd27188167c82165474e9319d53bebf013
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.118.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.118.0
+        Update renovatebot/github-action from 32.117.3 to 32.118.0
+- version: 0.23.2
+- date: 2022-07-17T01:44:26Z
+- commits:
+    - hash: b2bcc8eb8c643df0f931b042796ea86fe429a126
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.117.3
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.117.3
+        Update renovatebot/github-action from 32.117.2 to 32.117.3
+- version: 0.23.1
+- date: 2022-07-16T17:58:24Z
+- commits:
+    - hash: 1880cdfadfef50b74619ffe247062023a753f85b
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.117.2
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.117.2
+        Update renovatebot/github-action from 32.117.1 to 32.117.2
+- version: 0.23.0
+- date: 2022-07-16T01:43:22Z
+- commits:
+    - hash: e915ceb8f372910b3142a6e3b0cd611265d42c31
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.117.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.117.1
+        Update renovatebot/github-action from 32.115.0 to 32.117.1
+- version: 0.22.0
+- date: 2022-07-15T00:36:39Z
+- commits:
+    - hash: 1b9b54a2e7f02f51c40b3962c9243175f2ae233d
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.115.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.115.0
+        Update renovatebot/github-action from 32.112.0 to 32.115.0
+- version: 0.21.0
+- date: 2022-07-14T02:46:15Z
+- commits:
+    - hash: 7f9d857541a1c98436e26c9fd3d01a414ac8749b
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.112.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.112.0
+        Update renovatebot/github-action from 32.111.2 to 32.112.0
+- version: 0.20.2
+- date: 2022-07-13T13:11:32Z
+- commits:
+    - hash: e58a095146941e96e56d0df45b576882f875307d
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.111.2
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.111.2
+        Update renovatebot/github-action from 32.111.1 to 32.111.2
+- version: 0.20.1
+- date: 2022-07-12T23:18:28Z
+- commits:
+    - hash: ad08b025bf90d6f6613d9d0234c1bf6546a3c172
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.111.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.111.1
+        Update renovatebot/github-action from 32.111.0 to 32.111.1
+- commits:
+    - hash: 2d19f208f1cca718c41c75561ceb4851224fe49a
+- commits:
+    - author: ab77
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Correct auto-merge config
+- commits:
+    - ? body
+- version: 0.20.0
+- date: 2022-07-12T19:40:08Z
+- commits:
+    - hash: 63c431f100d67f89e157ea00c5a12dec7745df37
+- commits:
+    - author: ab77
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Add respositories
+- commits:
+    - body: |-
+        + "balena-io-modules/open-balena-base"
+        + "balena-io/balena-metrics-guard-base"
+- commits:
+    - hash: 2c70fbacb019056662bee7503bb76956d94eb501
+- commits:
+    - author: Anton Belodedenko
+- commits:
+    - subject: Merge branch 'master' into ab77/operational
+- commits:
+    - ? body
+- commits:
+    - hash: e724c34bc4caed0fbb00bd8fc0c3d0f483b46395
+- commits:
+    - author: Anton Belodedenko
+- commits:
+    - subject: Merge branch 'master' into ab77/operational
+- commits:
+    - ? body
+- commits:
+    - hash: 06038ac0b6d2ff266f07293117ed9059d85d6a91
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.111.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.111.0
+        Update renovatebot/github-action from 32.109.0 to 32.111.0
+- version: 0.19.4
+- date: 2022-07-12T16:26:45Z
+- commits:
+    - hash: fda11de319411cfc4a4230160fb37ae8810ec8af
+- commits:
+    - author: ab77
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Add repositories
+- commits:
+    - body: |-
+        * https://github.com/product-os/balena-redis-exporter
+        * https://github.com/product-os/balena-cloudwatch-exporter
+- version: 0.19.3
+- date: 2022-07-12T00:28:35Z
+- commits:
+    - hash: facad285dcf376859386a609d531efdf6d098094
+- commits:
+    - author: ab77
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Add github-events repository
+- commits:
+    - ? body
+- commits:
+    - hash: 9dd95e659f9edf62b953b83ead9596f341a717c9
+- commits:
+    - author: Anton Belodedenko
+- commits:
+    - subject: Merge branch 'master' into ab77/operational
+- commits:
+    - ? body
+- version: 0.19.2
+- date: 2022-07-11T22:24:25Z
+- commits:
+    - hash: f59a1e92d50d3c55b5862a7e05187e8002a20f27
+- commits:
+    - author: ab77
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Revert extends change
+- commits:
+    - ? body
+- version: 0.19.1
+- date: 2022-07-11T15:46:24Z
+- commits:
+    - hash: 97095f406c92100f002658bddc2ee673db3115a3
+- commits:
+    - author: ab77
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Automerge minor and patch
+- commits:
+    - ? body
+- version: 0.19.0
+- date: 2022-07-10T20:29:37Z
+- commits:
+    - hash: db212225a1beec8ce9b5520d5dce4a84e24741fe
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.109.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.109.0
+        Update renovatebot/github-action from 32.108.0 to 32.109.0
+- version: 0.18.0
+- date: 2022-07-09T13:19:01Z
+- commits:
+    - hash: dafd17146f73eba0704b45195f83ddd0a8e270a2
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.108.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.108.0
+        Update renovatebot/github-action from 32.107.2 to 32.108.0
+- version: 0.17.2
+- date: 2022-07-08T22:14:17Z
+- commits:
+    - hash: d2bc4d9fb6a75a6fc265cf884bc045d4da1c0be1
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.107.2
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.107.2
+        Update renovatebot/github-action from 32.107.1 to 32.107.2
+- version: 0.17.1
+- date: 2022-07-08T01:49:25Z
+- commits:
+    - hash: 70dcc6d5c9b828eadfcc7c819942ea4b16a42400
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.107.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.107.1
+        Update renovatebot/github-action from 32.107.0 to 32.107.1
+- version: 0.17.0
+- date: 2022-07-07T23:06:45Z
+- commits:
+    - hash: 375db4e24a10e8bc201e784a45fb604f6df0f3c8
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.107.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.107.0
+        Update renovatebot/github-action from 32.106.0 to 32.107.0
+- version: 0.16.0
+- date: 2022-07-07T15:18:34Z
+- commits:
+    - hash: 73582ce909efa61701b1d9a3f111295a3eaeca35
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.106.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.106.0
+        Update renovatebot/github-action from 32.105.4 to 32.106.0
+- version: 0.15.3
+- date: 2022-07-07T04:05:34Z
+- commits:
+    - hash: 42ecf8817c768c19e35fa6dd122e709dc924339e
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.105.4
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.105.4
+        Update renovatebot/github-action from 32.105.2 to 32.105.4
+- version: 0.15.2
+- date: 2022-07-06T17:50:45Z
+- commits:
+    - hash: 3eb43742d7c257e8941d688491d9d0ab929e507b
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.105.2
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.105.2
+        Update renovatebot/github-action from 32.105.1 to 32.105.2
+- version: 0.15.1
+- date: 2022-07-06T02:45:12Z
+- commits:
+    - hash: 9576528cc33721929e2ac2ca10f861b6469c9bfc
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.105.1
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.105.1
+        Update renovatebot/github-action from 32.105.0 to 32.105.1
+- version: 0.15.0
+- date: 2022-07-04T04:43:50Z
+- commits:
+    - hash: 9b38e751bc129f72470260509053d0e3ba429fb6
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.105.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.105.0
+        Update renovatebot/github-action from 32.103.3 to 32.105.0
+- version: 0.14.2
+- date: 2022-07-03T14:13:18Z
+- commits:
+    - hash: b98520862affb9a240671e8f247de489026a6e66
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.103.3
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.103.3
+        Update renovatebot/github-action from 32.103.2 to 32.103.3
+- version: 0.14.1
+- date: 2022-07-03T04:51:31Z
+- commits:
+    - hash: 1cf5289d7fdb1dbfeb9a316fe0b9dfe9185c6963
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.103.2
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.103.2
+        Update renovatebot/github-action from 32.103.0 to 32.103.2
+- version: 0.14.0
+- date: 2022-07-02T15:56:52Z
+- commits:
+    - hash: 892c6137fe78bdeffb1ea3e27154ebb0d77042b5
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.103.0
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.103.0
+        Update renovatebot/github-action from 32.102.2 to 32.103.0
+- version: 0.13.0
+- date: 2022-07-01T22:13:41Z
+- commits:
+    - hash: dc7569a794a6f34787ebf90fb3b2c56298bab9e4
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action to 32.102.2
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.102.2
+        Update renovatebot/github-action from 32.100.4 to 32.102.2
+- version: 0.12.5
+- date: 2022-07-01T08:13:22Z
+- commits:
+    - hash: a93a6daaf49f8d2248272c749cf367b2a105fb7c
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action to 32.100.4
+- commits:
+    - body: |-
+        Update renovatebot/github-action to 32.100.4
+        Update renovatebot/github-action from 32.100.3 to 32.100.4
+- version: 0.12.4
+- date: 2022-06-30T21:43:03Z
+- commits:
+    - hash: 364239ec172c063b5cdac1b46ae3b743131f620b
+- commits:
+    - author: ab77
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Correct commit message
+- commits:
+    - ? body
+- version: 0.12.3
+- date: 2022-06-30T19:51:40Z
+- commits:
+    - hash: e4634c23112cc2bfa901fb91797e922a6aecedb4
+- commits:
+    - author: ab77
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Correct commit message body
+- commits:
+    - ? body
+- commits:
+    - hash: dea4a3d35306e03334c949e59dc632d965b646ae
+- commits:
+    - author: ab77
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Respect change logs
+- commits:
+    - ? body
+- commits:
+    - hash: 4daffa0a359e8c8eae3089263cce3814f6ad3144
+- commits:
+    - author: Anton Belodedenko
+- commits:
+    - subject: Merge branch 'master' into ab77/operational
+- commits:
+    - ? body
+- version: 0.12.2
+- date: 2022-06-30T15:49:21Z
+- commits:
+    - hash: aec838a4819891f66e25e30dc96dc4fd7c4d8c4a
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action from 32.100.1 to 32.100.3
+- commits:
+    - ? body
+- version: 0.12.1
+- date: 2022-06-30T05:31:57Z
+- commits:
+    - hash: 652dbd326ef1f29b45775c9a8544c46731017c6f
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action from 32.100.0 to 32.100.1
+- commits:
+    - ? body
+- version: 0.12.0
+- date: 2022-06-30T00:27:32Z
+- commits:
+    - hash: 003bd9ef5f6972a9908cc610b059cab05513f195
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action from 32.99.9 to 32.100.0
+- commits:
+    - ? body
+- version: 0.11.9
+- date: 2022-06-28T22:57:01Z
+- commits:
+    - hash: 3952b4fa60fd9696acaaada20f70849027d18964
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action from 32.99.8 to 32.99.9
+- commits:
+    - ? body
+- version: 0.11.8
+- date: 2022-06-28T21:27:33Z
+- commits:
+    - hash: b63cd9a3940f53099e44727cf0510488cc77ca46
+- commits:
+    - author: ab77
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Custom ignorePaths + defaults
+- commits:
+    - ? body
+- commits:
+    - hash: 5f82b9080fdbd46c8fc1183840d4a12d5cf1e467
+- commits:
+    - author: Anton Belodedenko
+- commits:
+    - subject: Merge branch 'master' into ab77/operational
+- commits:
+    - ? body
+- commits:
+    - hash: 1786f4db2b21fe38855ab0ee0783c59afb5e7c1f
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action from 32.99.7 to 32.99.8
+- commits:
+    - ? body
+- version: 0.11.7
+- date: 2022-06-28T20:44:52Z
+- commits:
+    - hash: 0876774ba54e843871d3a3832d9259eed7247eee
+- commits:
+    - author: ab77
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Recursively apply config?
+- commits:
+    - ? body
+- version: 0.11.6
+- date: 2022-06-28T14:39:49Z
+- commits:
+    - hash: 932f6faeadef82ca8eb8542d22ee1bf548cbedbc
+- commits:
+    - author: ab77
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Print resolved config
+- commits:
+    - ? body
+- version: 0.11.5
+- date: 2022-06-28T12:13:18Z
+- commits:
+    - hash: 503b10acf3884151373899b4f12f191fb518a062
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action from 32.99.6 to 32.99.7
+- commits:
+    - ? body
+- version: 0.11.4
+- date: 2022-06-28T03:32:37Z
+- commits:
+    - hash: befafba99f50e8661b29e21f54d1d8bb4677c731
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: "Update: update renovatebot/github-action action from 32.99.5 to 32.99.6"
+- commits:
+    - ? body
+- version: 0.11.3
+- date: 2022-06-27T22:40:36Z
+- commits:
+    - hash: d16cf35b92d3c699ed8d5d811620a16ee0ad0398
+- commits:
+    - author: ab77
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Preserve global extends
+- commits:
+    - body: "* ignorePaths"
+- commits:
+    - hash: 3f604d029bd7807040862401bdabddfd1b3381e4
+- commits:
+    - author: ab77
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Change to use glob expression
+- commits:
+    - ? body
+- version: 0.11.2
+- date: 2022-06-26T15:29:16Z
+- commits:
+    - hash: 1a168012beb089d40889d94af3ed2d3462ac2443
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action from 32.99.2 to 32.99.5
+- commits:
+    - ? body
+- version: 0.11.1
+- date: 2022-06-26T06:30:45Z
+- commits:
+    - hash: 429389b76dd65851cbe0071d18e3592168f31b31
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action from 32.99.1 to 32.99.2
+- commits:
+    - ? body
+- version: 0.11.0
+- date: 2022-06-25T22:29:14Z
+- commits:
+    - hash: 10d0130e6ba3a8799410288e95d01840caeb82aa
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action from 32.97.0 to 32.99.1
+- commits:
+    - ? body
+- version: 0.10.0
+- date: 2022-06-24T18:48:21Z
+- commits:
+    - hash: 2f5db0a5647950841c4556f102bb4e8df97713de
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action from 32.96.0 to 32.97.0
+- commits:
+    - ? body
+- version: 0.9.0
+- date: 2022-06-24T11:40:18Z
+- commits:
+    - hash: 12b22170519194d5f4774d61db0bebb8b5cf5a98
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action from 32.94.0 to 32.96.0
+- commits:
+    - ? body
+- version: 0.8.0
+- date: 2022-06-23T04:22:19Z
+- commits:
+    - hash: 0e4eee49145a74734ca92663c718ba339ee40cb9
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action from 32.92.1 to 32.94.0
+- commits:
+    - ? body
+- version: 0.7.1
+- date: 2022-06-22T11:58:46Z
+- commits:
+    - hash: f0de97239ea3023c313b7c57f516f2e25a269497
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action from 32.92.0 to 32.92.1
+- commits:
+    - ? body
+- version: 0.7.0
+- date: 2022-06-21T18:49:47Z
+- commits:
+    - hash: cd28b6fda752446f0e81e00fc893c0000c6b19e6
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action from 32.91.1 to 32.92.0
+- commits:
+    - ? body
+- version: 0.6.0
+- date: 2022-06-20T21:59:36Z
+- commits:
+    - hash: 74756631c157fe3ecdcbb2cb417faa6b8e497c86
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action from 32.90.0 to 32.91.1
+- commits:
+    - ? body
+- version: 0.5.1
+- date: 2022-06-20T14:58:40Z
+- commits:
+    - hash: e4086821938fadaeabf569fa24680c75ec17139e
+- commits:
+    - author: Thodoris Greasidis
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - footers:
+        signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+- commits:
+    - subject: Avoid major bumps and make all devDependency updates patches
+- commits:
+    - ? body
+- version: 0.5.0
+- date: 2022-06-19T03:31:40Z
+- commits:
+    - hash: f092a4081c17cc5452138642f446404a3ac7f685
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action from 32.89.1 to 32.90.0
+- commits:
+    - ? body
+- version: 0.4.1
+- date: 2022-06-17T17:33:07Z
+- commits:
+    - hash: 2909cb7c34614ba8b9308b0842ad531976cf47c3
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action from 32.89.0 to 32.89.1
+- commits:
+    - ? body
+- version: 0.4.0
+- date: 2022-06-16T20:23:51Z
+- commits:
+    - hash: 535b2cede9ef25d1bf6ffcceff1e8b025a5474b5
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action from 32.88.0 to 32.89.0
+- commits:
+    - ? body
+- commits:
+    - hash: 3ac4a604f8e30bfd618df0e74a18e9227b7f9f72
+- commits:
+    - author: Thodoris Greasidis
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Add preserveSemverRanges to avoid pinning devDependencies
+- commits:
+    - ? body
+- version: 0.3.1
+- date: 2022-06-16T18:52:22Z
+- commits:
+    - hash: 6aa3b5960d5e84f53763d9f6a7aa4fa2b5eff475
+- commits:
+    - author: Thodoris Greasidis
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Remove 'v' prefixes from versions so that VB's nested changelogs work
+- commits:
+    - ? body
+- version: 0.3.0
+- date: 2022-06-16T00:26:19Z
+- commits:
+    - hash: f00f9b2350cafd73fa3dff2d0fe67aa173e51264
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action from v32.87.0 to v32.88.0
+- commits:
+    - ? body
+- version: 0.2.0
+- date: 2022-06-15T04:53:38Z
+- commits:
+    - hash: c39327e639a9c099f20acdcabb39e0ad56917218
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action from v32.86.0 to v32.87.0
+- commits:
+    - ? body
+- version: 0.1.0
+- date: 2022-06-14T22:15:09Z
+- commits:
+    - hash: c0cff32f1bc647bfb0297aeb75bc0666c7f7942c
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: minor
+- commits:
+    - subject: Update renovatebot/github-action action from v32.85.0 to v32.86.0
+- commits:
+    - ? body
+- commits:
+    - hash: 684ac7aba65165fa2a261e4463f0ff4c0caa189b
+- commits:
+    - author: Anton Belodedenko
+- commits:
+    - subject: Merge branch 'master' into renovate/renovatebot-github-action-32.x
+- commits:
+    - ? body
+- commits:
+    - hash: 4814c225c50a9992f4172e91bbb1f459f129b00c
+- commits:
+    - author: ab77
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Fix commit message
+- commits:
+    - ? body
+- commits:
+    - hash: 44a9cd1d0769ebd256afb99d35c32a496475ebc8
+- commits:
+    - author: ab77
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Change-type based on update type
+- commits:
+    - body: |-
+        * set concurrent PRs
+        * prepare for automerge
+- version: 0.0.13
+- date: 2022-06-14T05:51:38Z
+- commits:
+    - hash: 4679400c3ca12f02a9adab0d296ac6e31233c66f
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action from v32.83.3 to v32.85.0
+- commits:
+    - ? body
+- version: 0.0.12
+- date: 2022-06-13T17:24:04Z
+- commits:
+    - hash: bfaa2cb42c8ec76b50f8f1c5af4d97b3777b7432
+- commits:
+    - author: ab77
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Additional repositories
+- commits:
+    - body: "* auto-merge configuration"
+- version: 0.0.11
+- date: 2022-06-13T15:32:30Z
+- commits:
+    - hash: bc13b8e7151e405d352400075576ec3a0d73c93b
+- commits:
+    - author: ab77
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Removate balena-io components
+- commits:
+    - ? body
+- version: 0.0.10
+- date: 2022-06-13T14:45:04Z
+- commits:
+    - hash: 6b49d2213358fd978cd82157af6610f818bce5c3
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action from v32.83.2 to v32.83.3
+- commits:
+    - ? body
+- version: 0.0.9
+- date: 2022-06-12T00:55:37Z
+- commits:
+    - hash: 8d4e03329f9c50bddb01d3567ac0a2aa23f74fb3
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action from v32.83.1 to v32.83.2
+- commits:
+    - ? body
+- version: 0.0.8
+- date: 2022-06-11T17:53:09Z
+- commits:
+    - hash: 5dbdfeb79fbb9682853aa56cd9eb1ac7a8b65105
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action from v32.83.0 to v32.83.1
+- commits:
+    - ? body
+- version: 0.0.7
+- date: 2022-06-11T12:30:02Z
+- commits:
+    - hash: 7b84909fb44f0792b0b7aa0946eb9cf225de6f57
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action from v32.82.2 to v32.83.0
+- commits:
+    - ? body
+- version: 0.0.6
+- date: 2022-06-10T20:27:33Z
+- commits:
+    - hash: d3ea08d3875585f2cb31483470823153842e0e76
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action from v32.82.0 to v32.82.2
+- commits:
+    - ? body
+- version: 0.0.5
+- date: 2022-06-10T14:27:15Z
+- commits:
+    - hash: e817322aa97b3472f1b135edf4c3bc5dade06a88
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action from v32.80.1 to v32.82.0
+- commits:
+    - ? body
+- version: 0.0.4
+- date: 2022-06-10T04:02:16Z
+- commits:
+    - hash: 03c24824237a2782a25ff2cc29a74f7f436bdd88
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action from v32.78.1 to v32.80.1
+- commits:
+    - ? body
+- version: 0.0.3
+- date: 2022-06-09T23:54:01Z
+- commits:
+    - hash: 8d2913abf5476b5b2340712e2ff7870554bf5068
+- commits:
+    - author: Renovate Bot
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Update renovatebot/github-action action from v32.73.0 to v32.78.1
+- commits:
+    - ? body
+- version: 0.0.2
+- date: 2022-06-09T23:39:13Z
+- commits:
+    - hash: 9deb64db5b69b359637cd433394f00d4fd6a1648
+- commits:
+    - author: ab77
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - subject: Initial Renovate config and workflow
+- commits:
+    - ? body
