@@ -1,4 +1,20 @@
 - commits:
+    - subject: Replace repo.yml as VB throws up without it
+      hash: 7a2ace6ca39df09961edae6e236fdd161e7637c1
+      body: >
+        * we should change VB's assumption about missing repo.yml == Node
+        project
+          which I don't believe is a safe assumption to make (e.g. this repo doesn't
+          have package.json and doesn't need it)
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: ab77
+      nested: []
+  version: 0.88.2
+  title: ""
+  date: 2022-10-11T18:05:33.538Z
+- commits:
     - subject: Switch from balenaCI to flowzone
       hash: 6c8f47783b81dfc3970ffd9f6a3d2c30450572e7
       body: ""
