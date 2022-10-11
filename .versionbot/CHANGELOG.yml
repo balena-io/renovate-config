@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update renovatebot/github-action action to 32.232.0
+      hash: a16041532d489609f9fc11485fdb597a615cc7cf
+      body: |
+        Update renovatebot/github-action to 32.232.0
+
+        Update renovatebot/github-action from 32.229.0 to 32.232.0
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Renovate Bot
+      nested: []
+  version: 0.89.0
+  title: ""
+  date: 2022-10-11T18:55:59.516Z
+- commits:
     - subject: Replace repo.yml as VB throws up without it
       hash: 7a2ace6ca39df09961edae6e236fdd161e7637c1
       body: >
