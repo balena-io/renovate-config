@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update renovatebot/github-action action to 32.236.1
+      hash: 2d3e7ad8e2d7a43eddb2c630d021326f84bdfc3e
+      body: |
+        Update renovatebot/github-action to 32.236.1
+
+        Update renovatebot/github-action from 32.236.0 to 32.236.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 0.91.1
+  title: ""
+  date: 2022-10-13T01:22:19.079Z
+- commits:
     - subject: Update renovatebot/github-action action to 32.236.0
       hash: 64ea0db63169d6991d51b971e468a795451f8927
       body: |
