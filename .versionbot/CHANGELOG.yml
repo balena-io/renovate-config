@@ -1,4 +1,16 @@
 - commits:
+    - subject: Additional repositories
+      hash: 33094bbe7555ead79211dbec6bebd1c7a43dacc8
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: ab77
+      nested: []
+  version: 0.94.6
+  title: ""
+  date: 2022-10-25T20:30:28.319Z
+- commits:
     - subject: Update renovatebot/github-action action to 32.241.11
       hash: 1d3e7771b5051166677235c94e8ef43b2b455675
       body: |
