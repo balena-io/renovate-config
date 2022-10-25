@@ -37,8 +37,14 @@
   ],
   "repositories": [
 
+    "balena-io-hardware/etcherpro-fleet",
+
+
+    "balena-io-modules/etcher-sdk",
+    "balena-io-modules/node-beaglebone-usbboot",
     "balena-io-modules/open-balena-base",
     "balena-io-modules/scrutinizer",
+    "balena-io-modules/winusb-driver-generator",
 
 
     "balena-io-examples/balena-python-hello-world",
@@ -72,6 +78,7 @@
     "balena-io/open-balena-vpn",
     "balena-io/open-balena",
     "balena-io/renovate-config",
+    "balena-io/versionist",
 
 
     "balena-os/cloud-config",
