@@ -40,6 +40,7 @@
     "balena-io-hardware/etcherpro-fleet",
 
 
+    "balena-io-modules/drivelist",
     "balena-io-modules/etcher-sdk",
     "balena-io-modules/node-beaglebone-usbboot",
     "balena-io-modules/open-balena-base",
