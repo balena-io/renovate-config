@@ -46,6 +46,7 @@
     "balena-io-modules/open-balena-base",
     "balena-io-modules/scrutinizer",
     "balena-io-modules/winusb-driver-generator",
+    "balena-io-modules/mocha-pod",
 
 
     "balena-io-examples/balena-python-hello-world",
