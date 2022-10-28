@@ -1,4 +1,16 @@
 - commits:
+    - subject: Add mocha-pod to renovate.json
+      hash: b130258de3d93da6cd1d5d51ee90703cb6893045
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Felipe Lalanne
+      nested: []
+  version: 0.95.2
+  title: ""
+  date: 2022-10-28T14:11:43.500Z
+- commits:
     - subject: Add balena-io-modules/drivelist
       hash: 2d8a7ad78298e92f59d8bf33ff07e1fb81b4c5df
       body: ""
