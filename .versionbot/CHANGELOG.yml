@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update renovatebot/github-action action to 34.10.0
+      hash: 4e93a1b203be7f470ecebe980e229bbe48343d3c
+      body: |
+        Update renovatebot/github-action to 34.10.0
+
+        Update renovatebot/github-action from 33.2.4 to 34.10.0
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Renovate Bot
+      nested: []
+  version: 0.96.0
+  title: ""
+  date: 2022-10-31T23:32:13.991Z
+- commits:
     - subject: Add mocha-pod to renovate.json
       hash: b130258de3d93da6cd1d5d51ee90703cb6893045
       body: ""
