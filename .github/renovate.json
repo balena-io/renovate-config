@@ -71,6 +71,7 @@
     "balena-io/cert-manager",
     "balena-io/deploy-to-balena-action",
     "balena-io/e2e",
+    "balena-io/etcher",
     "balena-io/open-balena-api",
     "balena-io/open-balena-db",
     "balena-io/open-balena-haproxy",
