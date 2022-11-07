@@ -1,4 +1,16 @@
 - commits:
+    - subject: Add Etcher
+      hash: 8d30cecd8e2a260c6b019240dcaeaed9a8a64342
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: ab77
+      nested: []
+  version: 0.102.1
+  title: ""
+  date: 2022-11-07T16:51:29.350Z
+- commits:
     - subject: Update renovatebot/github-action action to 34.20.0
       hash: 8ea302d3f93a415415496467686041e215e91918
       body: |
