@@ -1,4 +1,17 @@
 - commits:
+    - subject: Don't renovate Etcher
+      hash: 69b512e4ef4588afed948560ca3f87ea38a0444f
+      body: |
+        * also remove soon to be archived repositories
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: ab77
+      nested: []
+  version: 0.102.3
+  title: ""
+  date: 2022-11-08T23:46:49.948Z
+- commits:
     - subject: Update renovatebot/github-action action to 34.20.4
       hash: 36a49e8c6abd53064782f323170b13e74242a430
       body: |
