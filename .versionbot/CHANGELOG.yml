@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update renovatebot/github-action action to 34.20.4
+      hash: 36a49e8c6abd53064782f323170b13e74242a430
+      body: |
+        Update renovatebot/github-action to 34.20.4
+
+        Update renovatebot/github-action from 34.20.0 to 34.20.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 0.102.2
+  title: ""
+  date: 2022-11-08T13:59:28.279Z
+- commits:
     - subject: Add Etcher
       hash: 8d30cecd8e2a260c6b019240dcaeaed9a8a64342
       body: ""
