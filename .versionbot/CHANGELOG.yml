@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add more balena-io-modules repos
+      hash: 71be182a08f77a4f12aae33d303b44a7472989ac
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Josh Bowling <josh@monarci.com>
+        signed-off-by: Josh Bowling <josh@monarci.com>
+      author: Josh Bowling
+      nested: []
+  version: 0.108.4
+  title: ""
+  date: 2022-11-17T16:18:26.850Z
+- commits:
     - subject: Update renovatebot/github-action action to 34.26.4
       hash: 5d6731cdd1eb45c93d360f17f6c469d8384514b8
       body: |
