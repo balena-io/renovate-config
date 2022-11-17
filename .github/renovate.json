@@ -40,10 +40,14 @@
     "balena-io-hardware/etcherpro-fleet",
 
 
+    "balena-io-modules/abstract-sql-compiler",
+    "balena-io-modules/abstract-sql-to-typescript",
     "balena-io-modules/drivelist",
     "balena-io-modules/etcher-sdk",
+    "balena-io-modules/lf-to-abstract-sql",
     "balena-io-modules/node-beaglebone-usbboot",
     "balena-io-modules/open-balena-base",
+    "balena-io-modules/sbvr-types",
     "balena-io-modules/scrutinizer",
     "balena-io-modules/winusb-driver-generator",
     "balena-io-modules/mocha-pod",
