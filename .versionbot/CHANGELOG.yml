@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add pinejs and related modules to renovate control
+      hash: ce5f6126c3a8c858e5d759154a2802577cd34835
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: fisehara <harald@balena.io>
+        signed-off-by: fisehara <harald@balena.io>
+      author: fisehara
+      nested: []
+  version: 0.114.1
+  title: ""
+  date: 2022-11-24T16:15:28.158Z
+- commits:
     - subject: Update renovatebot/github-action action to 34.32.0
       hash: 4525c7b562ede99810f25e63e90f1d99bf36b577
       body: |
