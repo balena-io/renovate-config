@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update renovatebot/github-action action to 34.34.0
+      hash: 557438b947603c4b6227e7b868d17b5cc5eaafc3
+      body: |
+        Update renovatebot/github-action to 34.34.0
+
+        Update renovatebot/github-action from 34.32.0 to 34.34.0
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Renovate Bot
+      nested: []
+  version: 0.115.0
+  title: ""
+  date: 2022-11-25T02:28:15.318Z
+- commits:
     - subject: Add pinejs and related modules to renovate control
       hash: ce5f6126c3a8c858e5d759154a2802577cd34835
       body: ""
