@@ -1,4 +1,14 @@
 - commits:
+    - subject: "patch: Remove balena-io-hardware repo"
+      hash: fb45c2fa3dbd7533ce2eef1944fd09f4b9b7822a
+      body: Moved to balena-io-hardware/meta-renovateConfig-sw instead.
+      footer: {}
+      author: Heath Raftery
+      nested: []
+  version: 0.118.1
+  title: ""
+  date: 2022-11-29T20:25:23.584Z
+- commits:
     - subject: Update renovatebot/github-action action to 34.40.0
       hash: eee84a2c08e909934f3fcc35e37d967ff941a002
       body: |
