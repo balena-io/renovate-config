@@ -37,9 +37,6 @@
   ],
   "repositories": [
 
-    "balena-io-hardware/etcherpro-fleet",
-
-
     "balena-io-modules/abstract-sql-compiler",
     "balena-io-modules/abstract-sql-to-typescript",
     "balena-io-modules/odata-to-abstract-sql",
