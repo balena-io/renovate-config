@@ -37,7 +37,7 @@
   ],
   "repositories": [
 
-    "balena-io-hardware/etcherpro-fleet",
+    "balena-io-hardware/etcherPro-fleet-sw",
 
 
     "balena-io-modules/abstract-sql-compiler",
