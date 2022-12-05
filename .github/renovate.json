@@ -47,7 +47,6 @@
     "balena-io-modules/open-balena-base",
     "balena-io-modules/sbvr-types",
     "balena-io-modules/sbvr-parser",
-    "balena-io-modules/scrutinizer",
     "balena-io-modules/winusb-driver-generator",
     "balena-io-modules/mocha-pod",
 
@@ -73,7 +72,7 @@
     "balena-io/cert-manager",
     "balena-io/deploy-to-balena-action",
     "balena-io/e2e",
-    "balena-io/pinejs",
+    "balena-io/etcher",
     "balena-io/open-balena-api",
     "balena-io/open-balena-db",
     "balena-io/open-balena-haproxy",
@@ -82,6 +81,7 @@
     "balena-io/open-balena-s3",
     "balena-io/open-balena-vpn",
     "balena-io/open-balena",
+    "balena-io/pinejs",
     "balena-io/renovate-config",
     "balena-io/versionist",
 
