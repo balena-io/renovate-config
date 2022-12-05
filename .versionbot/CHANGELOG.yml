@@ -1,4 +1,16 @@
 - commits:
+    - subject: (re)enable Etcher
+      hash: 94c290675d6c5d7d90ebaf1ffbfcc997ef88ccf4
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: ab77
+      nested: []
+  version: 0.118.2
+  title: ""
+  date: 2022-12-05T20:39:44.492Z
+- commits:
     - subject: "patch: Remove balena-io-hardware repo"
       hash: fb45c2fa3dbd7533ce2eef1944fd09f4b9b7822a
       body: Moved to balena-io-hardware/meta-renovateConfig-sw instead.
