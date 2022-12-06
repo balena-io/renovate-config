@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update credentials
+      hash: 158bb4e7158f87e4bcd31b024959c09cd0e7e14a
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: ab77
+      nested: []
+  version: 0.118.3
+  title: ""
+  date: 2022-12-06T23:31:41.003Z
+- commits:
     - subject: (re)enable Etcher
       hash: 94c290675d6c5d7d90ebaf1ffbfcc997ef88ccf4
       body: ""
