@@ -1,4 +1,16 @@
 - commits:
+    - subject: Add support for prometheus/grafana in dockerfiles
+      hash: 65cb5d3fb2fa27e9e5fc3e82bd081f58fddec774
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+      nested: []
+  version: 0.123.3
+  title: ""
+  date: 2022-12-12T15:46:38.732Z
+- commits:
     - subject: "chore(deps): update renovatebot/github-action action to 34.54.2"
       hash: 8103a7ac5e67158c871002960c274874cfc6a183
       body: |
