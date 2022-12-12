@@ -138,22 +138,24 @@
         "(^|\\/)Dockerfile(\\.[:alnum:]+)?$"
       ],
       "matchStrings": [
-        "ENV PROMETHEUS_VERSION[= ](?<currentValue>.*?)\\n",
-        "ARG PROMETHEUS_VERSION[= ](?<currentValue>.*?)\\n"
+        "ENV PROMETHEUS_VERSION[= ]v?(?<currentValue>.*?)\\n",
+        "ARG PROMETHEUS_VERSION[= ]v?(?<currentValue>.*?)\\n"
       ],
       "depNameTemplate": "prometheus/prometheus",
-      "datasourceTemplate": "github-releases"
+      "datasourceTemplate": "github-releases",
+      "extractVersion": "^v(?<version>.*)$"
     },
     {
       "fileMatch": [
         "(^|\\/)Dockerfile(\\.[:alnum:]+)?$"
       ],
       "matchStrings": [
-        "ENV GRAFANA_VERSION[= ](?<currentValue>.*?)\\n",
-        "ARG GRAFANA_VERSION[= ](?<currentValue>.*?)\\n"
+        "ENV GRAFANA_VERSION[= ]v?(?<currentValue>.*?)\\n",
+        "ARG GRAFANA_VERSION[= ]v?(?<currentValue>.*?)\\n"
       ],
       "depNameTemplate": "grafana/grafana",
-      "datasourceTemplate": "github-releases"
+      "datasourceTemplate": "github-releases",
+      "extractVersion": "^v(?<version>.*)$"
     },
     {
       "fileMatch": [
