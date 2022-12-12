@@ -1,4 +1,17 @@
 - commits:
+    - subject: Avoid adding a v prefix for grafana/prometheus versions
+      hash: 3c638b1625f4c7ed0f8435a43561970712058f89
+      body: |
+        If there is already a v prefix then it is left intact
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+      nested: []
+  version: 0.124.1
+  title: ""
+  date: 2022-12-12T19:28:19.730Z
+- commits:
     - subject: "chore(deps): update renovatebot/github-action action to 34.55.0"
       hash: eb4ef49cc2dd60bb50791c01aeb4f2488e316647
       body: |
