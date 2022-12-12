@@ -138,8 +138,30 @@
         "(^|\\/)Dockerfile(\\.[:alnum:]+)?$"
       ],
       "matchStrings": [
-        "ENV NODE_VERSION=(?<currentValue>.*?)\\n",
-        "ARG NODE_VERSION=(?<currentValue>.*?)\\n"
+        "ENV PROMETHEUS_VERSION[= ](?<currentValue>.*?)\\n",
+        "ARG PROMETHEUS_VERSION[= ](?<currentValue>.*?)\\n"
+      ],
+      "depNameTemplate": "prometheus/prometheus",
+      "datasourceTemplate": "github-releases"
+    },
+    {
+      "fileMatch": [
+        "(^|\\/)Dockerfile(\\.[:alnum:]+)?$"
+      ],
+      "matchStrings": [
+        "ENV GRAFANA_VERSION[= ](?<currentValue>.*?)\\n",
+        "ARG GRAFANA_VERSION[= ](?<currentValue>.*?)\\n"
+      ],
+      "depNameTemplate": "grafana/grafana",
+      "datasourceTemplate": "github-releases"
+    },
+    {
+      "fileMatch": [
+        "(^|\\/)Dockerfile(\\.[:alnum:]+)?$"
+      ],
+      "matchStrings": [
+        "ENV NODE_VERSION[= ](?<currentValue>.*?)\\n",
+        "ARG NODE_VERSION[= ](?<currentValue>.*?)\\n"
       ],
       "depNameTemplate": "node",
       "datasourceTemplate": "node"
@@ -149,8 +171,8 @@
         "(^|\\/)Dockerfile(\\.[[:alnum:]]+)?$"
       ],
       "matchStrings": [
-        "ENV NPM_VERSION=(?<currentValue>.*?)\\n",
-        "ARG NPM_VERSION=(?<currentValue>.*?)\\n"
+        "ENV NPM_VERSION[= ](?<currentValue>.*?)\\n",
+        "ARG NPM_VERSION[= ](?<currentValue>.*?)\\n"
       ],
       "depNameTemplate": "npm",
       "datasourceTemplate": "npm"
