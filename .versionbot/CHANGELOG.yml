@@ -1,4 +1,16 @@
 - commits:
+    - subject: Fix extractVersion, add tests
+      hash: 829773dfd1ca567a038728eeb2d94d30b5020828
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Josh Bowling
+      nested: []
+  version: 0.124.2
+  title: ""
+  date: 2022-12-13T02:37:27.813Z
+- commits:
     - subject: Avoid adding a v prefix for grafana/prometheus versions
       hash: 3c638b1625f4c7ed0f8435a43561970712058f89
       body: |
