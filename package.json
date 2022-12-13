@@ -1,0 +1,18 @@
+{
+  "name": "@balena/balena-io-renovate-config",
+  "version": "0.124.1",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/balena-io/renovate-config.git"
+  },
+  "description": "Shared renovate configuration and GitHub Action",
+  "scripts": {
+    "test": "renovate-config-validator ./.github/renovate.json"
+  },
+  "author": "Balena.io. <hello@balena.io>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "renovate": "^34.55.0"
+  }
+}

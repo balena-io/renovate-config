@@ -143,7 +143,7 @@
       ],
       "depNameTemplate": "prometheus/prometheus",
       "datasourceTemplate": "github-releases",
-      "extractVersion": "^v(?<version>.*)$"
+      "extractVersionTemplate": "^v(?<version>.*)$"
     },
     {
       "fileMatch": [
@@ -155,7 +155,7 @@
       ],
       "depNameTemplate": "grafana/grafana",
       "datasourceTemplate": "github-releases",
-      "extractVersion": "^v(?<version>.*)$"
+      "extractVersionTemplate": "^v(?<version>.*)$"
     },
     {
       "fileMatch": [
