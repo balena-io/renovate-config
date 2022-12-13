@@ -1,4 +1,16 @@
 - commits:
+    - subject: "chore(config): migrate config .github/renovate.json"
+      hash: 764f113ba9e5f1f0f89f215084546aeedbfadd4f
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 0.124.3
+  title: ""
+  date: 2022-12-13T11:19:41.978Z
+- commits:
     - subject: Fix extractVersion, add tests
       hash: 829773dfd1ca567a038728eeb2d94d30b5020828
       body: ""
