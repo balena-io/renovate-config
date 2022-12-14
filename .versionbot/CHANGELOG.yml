@@ -1,4 +1,17 @@
 - commits:
+    - subject: Remove product-os repos
+      hash: 08253c69f3207bc39695d573ce230adefc71e474
+      body: |
+        These repos are managed by product-os/renovate-config
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Josh Bowling
+      nested: []
+  version: 0.124.4
+  title: ""
+  date: 2022-12-14T00:32:38.347Z
+- commits:
     - subject: "chore(config): migrate config .github/renovate.json"
       hash: 764f113ba9e5f1f0f89f215084546aeedbfadd4f
       body: ""
