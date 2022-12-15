@@ -1,4 +1,19 @@
 - commits:
+    - subject: "chore(deps): update renovatebot/github-action action to 34.57.0"
+      hash: d17c3026f60c0933cc83bd5bac9cae08366898a6
+      body: |
+        Update renovatebot/github-action to 34.57.0
+
+        Update renovatebot/github-action from 34.56.3 to 34.57.0
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Renovate Bot
+      nested: []
+  version: 0.126.0
+  title: ""
+  date: 2022-12-15T21:59:15.098Z
+- commits:
     - subject: Add leviathan repositories
       hash: e28820134a8390824ac305c2b4fc5715a12e0ec1
       body: ""
