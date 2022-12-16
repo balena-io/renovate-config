@@ -1,4 +1,19 @@
 - commits:
+    - subject: Revert "Add leviathan repositories"
+      hash: 92da5000ad65c8fe5ae25f6206621ec90814dda6
+      body: |
+        This reverts commit e28820134a8390824ac305c2b4fc5715a12e0ec1.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.127.2
+  title: ""
+  date: 2022-12-16T14:39:29.957Z
+- commits:
     - subject: "chore(deps): update renovatebot/github-action action to 34.58.1"
       hash: 02413316e10a3e732acf451c3e548d6724bc8abd
       body: |
