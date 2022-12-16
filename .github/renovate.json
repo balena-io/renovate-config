@@ -88,8 +88,7 @@
 
     "balena-os/cloud-config",
     "balena-os/wifi-connect",
-    "balena-os/leviathan",
-    "balena-os/leviathan-worker",
+
 
     "balenalabs/proxy-tunnel"
   ],
