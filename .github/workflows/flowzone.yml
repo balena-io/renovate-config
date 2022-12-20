@@ -15,3 +15,4 @@ jobs:
     with:
       repo_config: true
       repo_description: "Shared renovate configuration and GitHub Action"
+      required_approving_review_count: 0
