@@ -1,4 +1,14 @@
 - commits:
+    - subject: "patch: removed etcher"
+      hash: b571c74f2c2ebe571fb2a91c76c4e4e625f3d0fd
+      body: ""
+      footer: {}
+      author: mcraa
+      nested: []
+  version: 0.134.1
+  title: ""
+  date: 2022-12-20T20:22:28.974Z
+- commits:
     - subject: "chore(deps): update renovatebot/github-action action to 34.66.1"
       hash: 49f149b28c639bbd1b381023d978323c1738a0e0
       body: |
