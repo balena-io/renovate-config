@@ -1,4 +1,19 @@
 - commits:
+    - subject: "chore(deps): update renovatebot/github-action action to 34.65.1"
+      hash: 8ac0da7ae50afb54400acebc0f9d7153664e7049
+      body: |
+        Update renovatebot/github-action to 34.65.1
+
+        Update renovatebot/github-action from 34.63.2 to 34.65.1
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Renovate Bot
+      nested: []
+  version: 0.133.0
+  title: ""
+  date: 2022-12-20T18:43:08.497Z
+- commits:
     - subject: Use secret instead of env var
       hash: 914efc6c161c303b8dd1699705fb56fbee020fbe
       body: ""
