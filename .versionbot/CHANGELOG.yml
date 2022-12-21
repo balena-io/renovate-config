@@ -1,4 +1,19 @@
 - commits:
+    - subject: "chore(deps): update renovatebot/github-action action to 34.70.0"
+      hash: 3a6cb5243d645ffd17a0a44b2b309dfd5e02f5c0
+      body: |
+        Update renovatebot/github-action to 34.70.0
+
+        Update renovatebot/github-action from 34.66.1 to 34.70.0
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Renovate Bot
+      nested: []
+  version: 0.135.0
+  title: ""
+  date: 2022-12-21T22:43:54.328Z
+- commits:
     - subject: "patch: removed etcher"
       hash: b571c74f2c2ebe571fb2a91c76c4e4e625f3d0fd
       body: ""
