@@ -1,4 +1,19 @@
 - commits:
+    - subject: "chore(deps): update renovatebot/github-action action to 34.74.2"
+      hash: 92cc17e60a3b2ca0dc4802aeefe3250cf6885bc3
+      body: |
+        Update renovatebot/github-action to 34.74.2
+
+        Update renovatebot/github-action from 34.70.0 to 34.74.2
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Renovate Bot
+      nested: []
+  version: 0.136.0
+  title: ""
+  date: 2022-12-28T17:06:03.231Z
+- commits:
     - subject: Add balena-io-modules/balena-env-parsing
       hash: a0be3685ed26f5e9b6a81067bd4308fb194c04c0
       body: ""
