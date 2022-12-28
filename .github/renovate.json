@@ -46,6 +46,7 @@
     "balena-io-modules/lf-to-abstract-sql",
     "balena-io-modules/mocha-pod",
     "balena-io-modules/node-beaglebone-usbboot",
+    "balena-io-modules/node-ext2fs",
     "balena-io-modules/odata-to-abstract-sql",
     "balena-io-modules/open-balena-base",
     "balena-io-modules/sbvr-parser",
