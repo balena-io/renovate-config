@@ -1,4 +1,16 @@
 - commits:
+    - subject: Revert previous and whitelist commands
+      hash: 30f03649a9a36e628c8d713e2c1636dff7faf1e5
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: ab77
+      nested: []
+  version: 0.136.3
+  title: ""
+  date: 2022-12-29T01:44:23.843Z
+- commits:
     - subject: Enable pre-commit
       hash: d023ce10f7de01106babc612e04b111545d17c9a
       body: ""
