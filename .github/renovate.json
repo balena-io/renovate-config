@@ -1,5 +1,6 @@
 {
   "extends": [
+    ":enablePreCommit",
     ":preserveSemverRanges",
     "config:base",
     "docker:enableMajor",
@@ -18,6 +19,7 @@
     "renovate",
     "dependencies"
   ],
+  "platformAutomerge": true,
   "automergeComment": "@balena-ci I self-certify!",
   "automergeType": "pr-comment",
   "commitMessageExtra": "to {{{replace 'v' '' newVersion}}}",
