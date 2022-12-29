@@ -1,4 +1,16 @@
 - commits:
+    - subject: Enable pre-commit
+      hash: d023ce10f7de01106babc612e04b111545d17c9a
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: ab77
+      nested: []
+  version: 0.136.2
+  title: ""
+  date: 2022-12-29T00:40:08.787Z
+- commits:
     - subject: Add node-ext2fs
       hash: 9c4cde892d1c2bbaf44e8df99e7a804eb517a788
       body: ""
