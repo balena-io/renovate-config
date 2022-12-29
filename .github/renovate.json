@@ -5,10 +5,6 @@
     "docker:enableMajor",
     "github>balena-io/renovate-config//.github/renovate"
   ],
-  "allowedPostUpgradeCommands": [
-    "npm ci",
-    "npm run build"
-  ],
   "printConfig": true,
   "prHourlyLimit": 0,
   "onboarding": false,
