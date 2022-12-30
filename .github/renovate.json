@@ -89,6 +89,7 @@
     "balena-io/versionist",
 
 
+    "balena-os/balena-sign",
     "balena-os/cloud-config",
     "balena-os/wifi-connect",
 
