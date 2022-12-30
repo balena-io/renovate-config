@@ -1,4 +1,19 @@
 - commits:
+    - subject: "chore(deps): update renovatebot/github-action action to 34.76.0"
+      hash: c28d91f6314b7a56e6016031adcf43b1ccd6aa57
+      body: |
+        Update renovatebot/github-action to 34.76.0
+
+        Update renovatebot/github-action from 34.74.2 to 34.76.0
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Renovate Bot
+      nested: []
+  version: 0.137.0
+  title: ""
+  date: 2022-12-30T16:35:37.308Z
+- commits:
     - subject: Revert previous
       hash: 849a86331dd611675a734462cf509c6a72ea6079
       body: ""
