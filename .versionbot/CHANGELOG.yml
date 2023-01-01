@@ -1,4 +1,19 @@
 - commits:
+    - subject: "chore(deps): update renovatebot/github-action action to 34.77.0"
+      hash: 193c484ff447e5dd82d8e67416d81cf210b27c80
+      body: |
+        Update renovatebot/github-action to 34.77.0
+
+        Update renovatebot/github-action from 34.76.1 to 34.77.0
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Renovate Bot
+      nested: []
+  version: 0.138.0
+  title: ""
+  date: 2023-01-01T00:08:46.461Z
+- commits:
     - subject: "chore(deps): update renovatebot/github-action action to 34.76.1"
       hash: b0a3782dcffe42547050c7a6777d38841522ba31
       body: |
