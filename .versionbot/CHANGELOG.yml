@@ -1,4 +1,17 @@
 - commits:
+    - subject: Disable platformAutomerge
+      hash: 496c592a36d0d965e56c74aaae02ded41ff453f1
+      body: |
+        Test setting this unblocks `pr-comment`.
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 0.145.2
+  title: ""
+  date: 2023-01-16T20:16:20.747Z
+- commits:
     - subject: Enable automerge for digests
       hash: e95f9c25d0e6e108e860eefb928a6feecb77d573
       body: ""
