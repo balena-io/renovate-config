@@ -1,4 +1,16 @@
 - commits:
+    - subject: Enable automerge for digests
+      hash: e95f9c25d0e6e108e860eefb928a6feecb77d573
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 0.145.1
+  title: ""
+  date: 2023-01-16T18:27:13.725Z
+- commits:
     - subject: "chore(deps): update renovatebot/github-action action to 34.102.8"
       hash: 822f92964db13340e36247d0670a664f920b5d08
       body: |
