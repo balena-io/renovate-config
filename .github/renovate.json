@@ -18,7 +18,7 @@
     "renovate",
     "dependencies"
   ],
-  "platformAutomerge": true,
+  "platformAutomerge": false,
   "automergeComment": "@balena-ci I self-certify!",
   "automergeType": "pr-comment",
   "commitMessageExtra": "to {{{replace 'v' '' newVersion}}}",
