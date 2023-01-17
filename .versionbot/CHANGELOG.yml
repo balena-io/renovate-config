@@ -1,4 +1,18 @@
 - commits:
+    - subject: Enable automerge+policy-bot
+      hash: 8af06b0c551ec6267003abdbea72b0327eae5cb6
+      body: >
+        Simplifies renovate config in tandem with
+        https://github.com/product-os/policies/pull/13
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Anton Belodedenko
+      nested: []
+  version: 0.146.0
+  title: ""
+  date: 2023-01-17T16:13:22.345Z
+- commits:
     - subject: Disable platformAutomerge
       hash: 496c592a36d0d965e56c74aaae02ded41ff453f1
       body: |
