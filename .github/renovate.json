@@ -18,7 +18,6 @@
     "renovate",
     "dependencies"
   ],
-  "platformAutomerge": true,
   "commitMessageExtra": "to {{{replace 'v' '' newVersion}}}",
   "commitBody": "Update {{depName}} to {{{replace 'v' '' newVersion}}}\n\nUpdate {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: {{#if (or isPatch (containsString depType 'devDependencies'))}}patch{{else}}minor{{/if}}",
   "prConcurrentLimit": 2,
@@ -97,6 +96,7 @@
   "packageRules": [
     {
       "automerge": true,
+      "platformAutomerge": true,
       "matchUpdateTypes": [
         "minor",
         "patch",
@@ -107,13 +107,15 @@
       "matchDepTypes": [
         "devDependencies"
       ],
-      "automerge": true
+      "automerge": true,
+      "platformAutomerge": true
     },
     {
       "matchManagers": [
         "git-submodules"
       ],
       "automerge": true,
+      "platformAutomerge": true,
       "matchUpdateTypes": [
         "minor",
         "patch",
