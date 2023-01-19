@@ -1,4 +1,16 @@
 - commits:
+    - subject: Additional PR labels
+      hash: 97ce8d216afb388ce94bb2a0acd0ce18feac34a0
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 0.148.4
+  title: ""
+  date: 2023-01-19T19:17:57.391Z
+- commits:
     - subject: Don't auto-merge unless specified
       hash: a25376ae3611f977d4b579e9e8c6d39ff46390e9
       body: ""
