@@ -1,4 +1,19 @@
 - commits:
+    - subject: "chore(deps): update renovatebot/github-action action to 34.106.0"
+      hash: 3385cced89ab965528e00962c2afbc602cb949c3
+      body: |
+        Update renovatebot/github-action to 34.106.0
+
+        Update renovatebot/github-action from 34.105.6 to 34.106.0
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Renovate Bot
+      nested: []
+  version: 0.149.0
+  title: ""
+  date: 2023-01-20T03:35:17.627Z
+- commits:
     - subject: Additional PR labels
       hash: 97ce8d216afb388ce94bb2a0acd0ce18feac34a0
       body: ""
