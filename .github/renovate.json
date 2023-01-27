@@ -39,6 +39,7 @@
 
     "balena-io-modules/abstract-sql-compiler",
     "balena-io-modules/abstract-sql-to-typescript",
+    "balena-io-modules/balena-deploy-request",
     "balena-io-modules/balena-env-parsing",
     "balena-io-modules/balena-image-fs",
     "balena-io-modules/drivelist",
