@@ -1,4 +1,16 @@
 - commits:
+    - subject: "Add: balena-io-modules/balena-deploy-request"
+      hash: 5328752b1815ee79980f4429bf7748c6f2732cab
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 0.151.1
+  title: ""
+  date: 2023-01-27T00:36:15.371Z
+- commits:
     - subject: "chore(deps): update renovatebot/github-action action to 34.109.1"
       hash: 56441711c5132c228107185ed8012146a0a3898a
       body: |
