@@ -109,7 +109,7 @@
       "matchDepTypes": [
         "devDependencies"
       ],
-      "automerge": true,
+      "automerge": true
     },
     {
       "matchManagers": [
