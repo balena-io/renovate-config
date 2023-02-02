@@ -1,4 +1,16 @@
 - commits:
+    - subject: Disable platformAutomerge
+      hash: 97794e9bde74c1ed139dd5e026817bb66ff0e90c
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 0.151.2
+  title: ""
+  date: 2023-02-02T19:59:26.981Z
+- commits:
     - subject: "Add: balena-io-modules/balena-deploy-request"
       hash: 5328752b1815ee79980f4429bf7748c6f2732cab
       body: ""
