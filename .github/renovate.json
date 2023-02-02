@@ -99,7 +99,6 @@
   "packageRules": [
     {
       "automerge": true,
-      "platformAutomerge": true,
       "matchUpdateTypes": [
         "minor",
         "patch",
@@ -111,14 +110,12 @@
         "devDependencies"
       ],
       "automerge": true,
-      "platformAutomerge": true
     },
     {
       "matchManagers": [
         "git-submodules"
       ],
       "automerge": true,
-      "platformAutomerge": true,
       "matchUpdateTypes": [
         "minor",
         "patch",
