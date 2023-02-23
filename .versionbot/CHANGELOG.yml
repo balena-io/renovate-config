@@ -1,4 +1,19 @@
 - commits:
+    - subject: "chore(deps): update renovatebot/github-action action to 34.152.2"
+      hash: 7f3b822c6545779994c66a695db92bf87a200db9
+      body: |
+        Update renovatebot/github-action to 34.152.2
+
+        Update renovatebot/github-action from 34.152.0 to 34.152.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 0.167.2
+  title: ""
+  date: 2023-02-23T20:41:32.544Z
+- commits:
     - subject: "Try automergeType: pr-comment to delay"
       hash: 170d50bfc3416153e414d399cb3fc54db82d3655
       body: ""
