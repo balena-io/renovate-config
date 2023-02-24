@@ -1,4 +1,16 @@
 - commits:
+    - subject: One PR in-flight at a time
+      hash: b5d546333e904114c05d0ea029f13182bf6a04ff
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 0.167.4
+  title: ""
+  date: 2023-02-24T01:08:50.372Z
+- commits:
     - subject: Add regexManagers
       hash: f3fd8a44ab02a3c607428a9761d26970b5f5d90a
       body: |
