@@ -1,4 +1,19 @@
 - commits:
+    - subject: "chore(deps): update renovatebot/github-action action to 34.152.5"
+      hash: ec0c3e3fd82e3a3b1fa3a921e22a1c635389e4e6
+      body: |
+        Update renovatebot/github-action to 34.152.5
+
+        Update renovatebot/github-action from 34.152.3 to 34.152.5
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 0.167.7
+  title: ""
+  date: 2023-02-27T16:33:16.989Z
+- commits:
     - subject: Revert  automergeType
       hash: 67416ae8a0a107980e3b990b5a2a501c3ba4b4c3
       body: ""
