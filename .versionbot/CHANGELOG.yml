@@ -1,4 +1,16 @@
 - commits:
+    - subject: Revert  automergeType
+      hash: 67416ae8a0a107980e3b990b5a2a501c3ba4b4c3
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 0.167.6
+  title: ""
+  date: 2023-02-27T16:11:06.567Z
+- commits:
     - subject: "chore(deps): update renovatebot/github-action action to 34.152.3"
       hash: f5f77ba749e9c4dd31cf87c17183a92d93648943
       body: |
