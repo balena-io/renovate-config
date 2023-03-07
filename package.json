@@ -1,6 +1,6 @@
 {
   "name": "@balena/balena-io-renovate-config",
-  "version": "0.170.1",
+  "version": "0.171.0",
   "private": true,
   "repository": {
     "type": "git",
@@ -16,6 +16,6 @@
     "renovate": "^34.55.0"
   },
   "versionist": {
-    "publishedAt": "2023-03-07T16:17:07.688Z"
+    "publishedAt": "2023-03-07T17:16:55.838Z"
   }
 }
