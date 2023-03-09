@@ -1,42 +1,15 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     ":preserveSemverRanges",
     "config:base",
     "docker:enableMajor",
+    "helpers:pinGitHubActionDigests",
     "github>balena-io/renovate-config//.github/renovate"
   ],
-  "printConfig": true,
-  "prHourlyLimit": 0,
   "onboarding": false,
   "requireConfig": "optional",
-  "cloneSubmodules": true,
-  "rebaseWhen": "behind-base-branch",
-  "git-submodules": {
-    "enabled": true
-  },
-  "labels": [
-    "renovate",
-    "dependencies",
-    "{{updateType}}",
-    "{{#if (and (containsString updateType 'patch') (containsString prettyNewMajor 'v0'))}}major{{else}}{{depType}}{{/if}}"
-  ],
-  "commitMessageExtra": "to {{{replace 'v' '' newVersion}}}",
-  "commitBody": "Update {{depName}} to {{{replace 'v' '' newVersion}}}\n\nUpdate {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: {{#if (or isPatch (containsString depType 'devDependencies'))}}patch{{else}}minor{{/if}}",
-  "prConcurrentLimit": 1,
-  "branchConcurrentLimit": 1,
-  "ignorePaths": [
-    "**/node_modules/**",
-    "**/bower_components/**",
-    "**/vendor/**",
-    "**/examples/**",
-    "**/__tests__/**",
-    "**/test/**",
-    "**/tests/suites/**",
-    "**/__fixtures__/**",
-    "**/Dockerfile.template"
-  ],
   "repositories": [
-
     "balena-io-modules/abstract-sql-compiler",
     "balena-io-modules/abstract-sql-to-typescript",
     "balena-io-modules/balena-deploy-request",
@@ -99,78 +72,89 @@
 
     "balenalabs/proxy-tunnel"
   ],
+  "printConfig": true,
+  "prHourlyLimit": 0,
+  "cloneSubmodules": true,
+  "rebaseWhen": "behind-base-branch",
+  "git-submodules": {
+    "enabled": true
+  },
+  "labels": ["renovate", "dependencies", "{{depType}}", "{{updateType}}"],
+  "prConcurrentLimit": 1,
+  "branchConcurrentLimit": 1,
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**",
+    "**/examples/**",
+    "**/__tests__/**",
+    "**/test/**",
+    "**/tests/suites/**",
+    "**/__fixtures__/**",
+    "**/Dockerfile.template"
+  ],
   "packageRules": [
     {
-      "automerge": true,
-      "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "digest"
-      ]
-    },
-    {
-      "matchDepTypes": [
-        "devDependencies"
-      ],
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "commitBody": "Update {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: {{updateType}}",
+      "labels": ["renovate", "dependencies", "{{depType}}", "{{updateType}}"],
       "automerge": true
     },
     {
-      "matchManagers": [
-        "git-submodules"
-      ],
-      "automerge": true,
-      "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "digest"
-      ]
+      "matchUpdateTypes": ["major"],
+      "automerge": false
+    },
+    {
+      "matchUpdateTypes": ["minor"],
+      "matchCurrentVersion": "<1.0.0",
+      "commitBody": "Update {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: major",
+      "labels": ["renovate", "dependencies", "{{depType}}", "major"],
+      "automerge": false
+    },
+    {
+      "matchUpdateTypes": ["patch"],
+      "matchCurrentVersion": "<1.0.0",
+      "commitBody": "Update {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: minor",
+      "labels": ["renovate", "dependencies", "{{depType}}", "minor"]
+    },
+    {
+      "matchUpdateTypes": ["digest"],
+      "commitBody": "Update {{depName}}\n\nChange-type: patch",
+      "automerge": true
+    },
+    {
+      "matchUpdateTypes": ["pin", "pinDigest"],
+      "commitBody": "Pin {{depName}}\n\nChange-type: patch",
+      "automerge": true
+    },
+    {
+      "matchPackagePatterns": [".*product-os/self-hosted-runners$"],
+      "matchDatasources": ["docker"],
+      "versioning": "regex:^((?<compatibility>.*)-)?v?(?<major>\\d+)(\\.(?<minor>\\d+))?(\\.(?<patch>\\d+))?$"
     },
     {
       "automerge": false,
-      "matchPackageNames": [
-        "@balena/open-balena-api"
-      ],
-      "matchUpdateTypes": [
-        "minor"
-      ]
-    },
-    {
-      "matchPackagePatterns": [
-        ".*product-os\/self-hosted-runners$"
-      ],
-      "matchDatasources": [
-        "docker"
-      ],
-      "versioning": "regex:^((?<prefix>.*)-)?v?(?<major>\\d+)(\\.(?<minor>\\d+))?(\\.(?<patch>\\d+))?(-(?<compatibility>.*))?$"
+      "matchPackageNames": ["@balena/open-balena-api"],
+      "matchUpdateTypes": ["minor"]
     }
   ],
   "regexManagers": [
     {
-      "fileMatch": [
-        "(^|\\/).*\\.tf$"
-      ],
-      "matchStrings": [
-        "gh_runner_image_tag[= ]\"(?<currentValue>.*?)\"\\n"
-      ],
+      "fileMatch": ["(^|\\/).*\\.tf$"],
+      "matchStrings": ["gh_runner_image_tag[= ]\"(?<currentValue>.*?)\"\\n"],
       "depNameTemplate": "product-os/self-hosted-runners",
       "datasourceTemplate": "github-tags",
       "extractVersionTemplate": "^v(?<version>.*)$"
     },
     {
-      "fileMatch": [
-        "(^|\\/).*\\.tf$"
-      ],
-      "matchStrings": [
-        "balena_engine_version[= ]\"v?(?<currentValue>.*?)\"\\n"
-      ],
+      "fileMatch": ["(^|\\/).*\\.tf$"],
+      "matchStrings": ["balena_engine_version[= ]\"v?(?<currentValue>.*?)\"\\n"],
       "depNameTemplate": "balena-os/balena-engine",
       "datasourceTemplate": "github-releases",
       "extractVersionTemplate": "^v(?<version>.*)$"
     },
     {
-      "fileMatch": [
-        "(^|\\/)Dockerfile(\\.[:alnum:]+)?$"
-      ],
+      "fileMatch": ["(^|\\/)Dockerfile(\\.[:alnum:]+)?$"],
       "matchStrings": [
         "ENV PROMETHEUS_VERSION[= ]v?(?<currentValue>.*?)\\n",
         "ARG PROMETHEUS_VERSION[= ]v?(?<currentValue>.*?)\\n"
@@ -180,9 +164,7 @@
       "extractVersionTemplate": "^v(?<version>.*)$"
     },
     {
-      "fileMatch": [
-        "(^|\\/)Dockerfile(\\.[:alnum:]+)?$"
-      ],
+      "fileMatch": ["(^|\\/)Dockerfile(\\.[:alnum:]+)?$"],
       "matchStrings": [
         "ENV GRAFANA_VERSION[= ]v?(?<currentValue>.*?)\\n",
         "ARG GRAFANA_VERSION[= ]v?(?<currentValue>.*?)\\n"
@@ -192,9 +174,7 @@
       "extractVersionTemplate": "^v(?<version>.*)$"
     },
     {
-      "fileMatch": [
-        "(^|\\/)Dockerfile(\\.[:alnum:]+)?$"
-      ],
+      "fileMatch": ["(^|\\/)Dockerfile(\\.[:alnum:]+)?$"],
       "matchStrings": [
         "ENV NODE_VERSION[= ](?<currentValue>.*?)\\n",
         "ARG NODE_VERSION[= ](?<currentValue>.*?)\\n"
@@ -203,9 +183,7 @@
       "datasourceTemplate": "node"
     },
     {
-      "fileMatch": [
-        "(^|\\/)Dockerfile(\\.[[:alnum:]]+)?$"
-      ],
+      "fileMatch": ["(^|\\/)Dockerfile(\\.[[:alnum:]]+)?$"],
       "matchStrings": [
         "ENV NPM_VERSION[= ](?<currentValue>.*?)\\n",
         "ARG NPM_VERSION[= ](?<currentValue>.*?)\\n"
@@ -218,9 +196,7 @@
         "(^|\\/)(?:docker-)?compose[^/]*\\.ya?ml$",
         "(^|\\/)Dockerfile(\\.[[:alnum:]]+)?$"
       ],
-      "matchStrings": [
-        "(FROM|image:)\\s*(?<depName>.*)(\\/|:)(?<currentValue>.*)\\n"
-      ],
+      "matchStrings": ["(FROM|image:)\\s*(?<depName>.*)(\\/|:)(?<currentValue>.*)\\n"],
       "datasourceTemplate": "docker"
     }
   ]
