@@ -4,7 +4,6 @@
     ":preserveSemverRanges",
     "config:base",
     "docker:enableMajor",
-    "helpers:pinGitHubActionDigests",
     "github>balena-io/renovate-config//.github/renovate"
   ],
   "onboarding": false,
