@@ -1,4 +1,19 @@
 - commits:
+    - subject: "chore(deps): update dependency renovate to 35.0.0"
+      hash: 49e8c81affe6e73de326bbe76d8090c476125fe3
+      body: |
+        Update renovate to 35.0.0
+
+        Update renovate from 34.160.0 to 35.0.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 0.172.2
+  title: ""
+  date: 2023-03-20T15:43:08.948Z
+- commits:
     - subject: "chore(deps): update renovatebot/github-action action to 34.159.2"
       hash: 403c8dc1748c0b78b1400d6a3db112e8826d877f
       body: |
