@@ -1,4 +1,16 @@
 - commits:
+    - subject: Refactor and update custom versioning
+      hash: de0d2423a9d7be311a6e1582524862b6950e5485
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 0.173.1
+  title: ""
+  date: 2023-03-20T18:26:49.358Z
+- commits:
     - subject: "chore(deps): update renovatebot/github-action action to 36.0.1"
       hash: 942e6e99b9f4ba8e99845eb06f43b178c66a76ba
       body: |
