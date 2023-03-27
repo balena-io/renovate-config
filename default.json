@@ -80,17 +80,6 @@
   "labels": ["renovate", "dependencies", "{{depType}}", "{{updateType}}"],
   "prConcurrentLimit": 1,
   "branchConcurrentLimit": 1,
-  "ignorePaths": [
-    "**/node_modules/**",
-    "**/bower_components/**",
-    "**/vendor/**",
-    "**/examples/**",
-    "**/__tests__/**",
-    "**/test/**",
-    "**/tests/suites/**",
-    "**/__fixtures__/**",
-    "**/Dockerfile.template"
-  ],
   "packageRules": [
     {
       "matchUpdateTypes": ["major", "minor", "patch"],
