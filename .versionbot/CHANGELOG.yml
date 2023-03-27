@@ -1,4 +1,16 @@
 - commits:
+    - subject: ignorePaths getting ignored
+      hash: 11c642e752d1502e03db43974b4e41898f923b85
+      body: |
+        * move default config
+      footer:
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 0.173.3
+  title: ""
+  date: 2023-03-27T20:35:21.096Z
+- commits:
     - subject: "chore(deps): update renovatebot/github-action action to v36.0.2"
       hash: 727c35f7fd61bbb39d76f5542dffb992404eeac1
       body: |
