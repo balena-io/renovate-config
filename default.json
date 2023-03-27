@@ -8,6 +8,9 @@
   "onboarding": false,
   "requireConfig": "optional",
   "repositories": [
+    "balena-io-library/base-images",
+
+
     "balena-io-modules/abstract-sql-compiler",
     "balena-io-modules/abstract-sql-to-typescript",
     "balena-io-modules/balena-deploy-request",
