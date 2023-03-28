@@ -1,4 +1,15 @@
 - commits:
+    - subject: renovate balena-io/analytics-pipeline
+      hash: d7b59259597f6252454b6d3ea21204f9f402d01a
+      body: ""
+      footer:
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 0.173.4
+  title: ""
+  date: 2023-03-28T23:08:48.631Z
+- commits:
     - subject: ignorePaths getting ignored
       hash: 11c642e752d1502e03db43974b4e41898f923b85
       body: |
