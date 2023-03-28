@@ -45,6 +45,7 @@
     "balena-io/balena-sentry",
     "balena-io/ca-private",
     "balena-io/cert-manager",
+    "balena-io/analytics-pipeline",
     "balena-io/deploy-to-balena-action",
     "balena-io/e2e",
     "balena-io/environment-production",
