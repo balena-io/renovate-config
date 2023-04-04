@@ -1,4 +1,15 @@
 - commits:
+    - subject: renovate balena-io-library/base-images
+      hash: a40986b1e8b879a45589b71f266f24521a4470f9
+      body: ""
+      footer:
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 0.173.5
+  title: ""
+  date: 2023-04-04T15:04:38.587Z
+- commits:
     - subject: renovate balena-io/analytics-pipeline
       hash: d7b59259597f6252454b6d3ea21204f9f402d01a
       body: ""
