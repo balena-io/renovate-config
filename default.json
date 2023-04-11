@@ -33,6 +33,7 @@
 
 
     "balena-io/analytics-backend",
+    "balena-io/arm-builder-kernels",
     "balena-io/autohat",
     "balena-io/balena-alertmanager",
     "balena-io/balena-api",
@@ -130,6 +131,13 @@
     }
   ],
   "regexManagers": [
+    {
+      "fileMatch": ["(^|\\/).*\\.tf$"],
+      "matchStrings": ["arm_builder_kernels_version[= ]\"v?(?<currentValue>.*?)\"\\n"],
+      "depNameTemplate": "balena-io/arm-builder-kernels",
+      "datasourceTemplate": "github-releases",
+      "extractVersionTemplate": "^v(?<version>.*)$"
+    },
     {
       "fileMatch": ["(^|\\/).*\\.tf$"],
       "matchStrings": ["gh_runner_image_tag[= ]\"(?<currentValue>.*?)\"\\n"],
