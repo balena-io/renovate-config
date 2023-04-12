@@ -1,4 +1,15 @@
 - commits:
+    - subject: renovate arm builder kernels
+      hash: 7e0375c661b89f9f3fa8f78ba336127bb4bb5bc1
+      body: ""
+      footer:
+        change-type: patch
+      author: ab77
+      nested: []
+  version: 0.173.6
+  title: ""
+  date: 2023-04-12T01:47:55.449Z
+- commits:
     - subject: renovate balena-io-library/base-images
       hash: a40986b1e8b879a45589b71f266f24521a4470f9
       body: ""
