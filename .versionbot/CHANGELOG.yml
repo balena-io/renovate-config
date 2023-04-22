@@ -1,4 +1,17 @@
 - commits:
+    - subject: "chore(deps): update renovatebot/github-action action to v36.0.3"
+      hash: d21a783cb76a2d517e920b77f4856b68d3a00664
+      body: |
+        Update renovatebot/github-action from 36.0.2 to 36.0.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 0.173.7
+  title: ""
+  date: 2023-04-22T05:29:56.676Z
+- commits:
     - subject: renovate arm builder kernels
       hash: 7e0375c661b89f9f3fa8f78ba336127bb4bb5bc1
       body: ""
