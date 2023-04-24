@@ -64,6 +64,7 @@
     "balena-io/open-balena",
     "balena-io/pinejs",
     "balena-io/remote-builders",
+    "balena-io/remote-workers",
     "balena-io/renovate-config",
     "balena-io/versionist",
 
