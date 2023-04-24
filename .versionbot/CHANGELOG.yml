@@ -1,4 +1,14 @@
 - commits:
+    - subject: "patch: Add balena-io/remote-workers"
+      hash: 4c8a2ae056a49684e589591898235d999fe7543f
+      body: ""
+      footer: {}
+      author: Kyle Harding
+      nested: []
+  version: 0.173.8
+  title: ""
+  date: 2023-04-24T16:28:55.684Z
+- commits:
     - subject: "chore(deps): update renovatebot/github-action action to v36.0.3"
       hash: d21a783cb76a2d517e920b77f4856b68d3a00664
       body: |
@@ -2692,7 +2702,8 @@
     - subject: Replace repo.yml as VB throws up without it
       hash: 7a2ace6ca39df09961edae6e236fdd161e7637c1
       body: >
-        * we should change VB's assumption about missing repo.yml == Node project
+        * we should change VB's assumption about missing repo.yml == Node
+        project
           which I don't believe is a safe assumption to make (e.g. this repo doesn't
           have package.json and doesn't need it)
       footer:
