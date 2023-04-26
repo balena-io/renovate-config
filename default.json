@@ -121,11 +121,6 @@
       "automerge": true
     },
     {
-      "matchPackagePatterns": [".*product-os/self-hosted-runners$"],
-      "matchDatasources": ["docker"],
-      "versioning": "regex:^((?<compatibility>.*)-)?v?(?<major>\\d+)(\\.(?<minor>\\d+))?(\\.(?<patch>\\d+))?$"
-    },
-    {
       "automerge": false,
       "matchPackageNames": ["@balena/open-balena-api"],
       "matchUpdateTypes": ["minor"]
