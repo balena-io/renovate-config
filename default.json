@@ -74,7 +74,11 @@
     "balena-os/wifi-connect",
 
 
-    "balenalabs/proxy-tunnel"
+    "balenalabs/proxy-tunnel",
+    
+    
+    "balenaltd/admins",
+    "balenaltd/handbook"
   ],
   "printConfig": true,
   "prHourlyLimit": 0,
