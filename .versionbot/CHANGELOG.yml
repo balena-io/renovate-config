@@ -1,4 +1,23 @@
 - commits:
+    - subject: Disable automerge for all update types
+      hash: fa4c57f04872d36096bfd25b47bef69e556c71a9
+      body: |
+        We now use policy-bot and labels to determine if a PR can
+        be merged, and auto-merge is enabled automatically by Flowzone.
+
+        Having an external service with Administrator access perform merging
+        can result in PRs merging without all required checks.
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.174.0
+  title: ""
+  date: 2023-04-27T15:44:03.163Z
+- commits:
     - subject: "patch: Pin GHA digests"
       hash: c18d29560aac3937adce09d62ec857c81967ec62
       body: ""
