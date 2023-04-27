@@ -1,4 +1,14 @@
 - commits:
+    - subject: "patch: Pin GHA digests"
+      hash: c18d29560aac3937adce09d62ec857c81967ec62
+      body: ""
+      footer: {}
+      author: Kyle Harding
+      nested: []
+  version: 0.173.12
+  title: ""
+  date: 2023-04-27T14:57:15.237Z
+- commits:
     - subject: Set node engine to the required v18
       hash: 2797eda30218499ff0de6a3ae7c4fb363de0bd7e
       body: ""
