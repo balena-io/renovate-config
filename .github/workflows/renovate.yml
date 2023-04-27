@@ -14,14 +14,14 @@ jobs:
   renovate:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab # v3
 
       - name: Enable dry-run
         run: echo "RENOVATE_DRY_RUN=full" >> $GITHUB_ENV
         if: github.event_name == 'pull_request'
 
       # https://github.com/renovatebot
-      - uses: renovatebot/github-action@v36.0.3
+      - uses: renovatebot/github-action@81cd2edbb5fd1dc42115b0d1c8854d5a6b74d835 # v36.0.3
         with:
           # https://docs.renovatebot.com/configuration-options
           configurationFile: default.json
