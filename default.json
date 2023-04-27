@@ -3,13 +3,13 @@
   "extends": [
     ":preserveSemverRanges",
     "config:base",
-    "docker:enableMajor"
+    "docker:enableMajor",
+    "helpers:pinGitHubActionDigests"
   ],
   "onboarding": false,
   "requireConfig": "optional",
   "repositories": [
     "balena-io-library/base-images",
-
 
     "balena-io-modules/abstract-sql-compiler",
     "balena-io-modules/abstract-sql-to-typescript",
@@ -28,9 +28,7 @@
     "balena-io-modules/sbvr-types",
     "balena-io-modules/winusb-driver-generator",
 
-
     "balena-io-examples/balena-python-hello-world",
-
 
     "balena-io/analytics-backend",
     "balena-io/arm-builder-kernels",
@@ -68,15 +66,12 @@
     "balena-io/renovate-config",
     "balena-io/versionist",
 
-
     "balena-os/balena-sign",
     "balena-os/cloud-config",
     "balena-os/wifi-connect",
 
-
     "balenalabs/proxy-tunnel",
-    
-    
+
     "balenaltd/admins",
     "balenaltd/handbook"
   ],
@@ -133,7 +128,9 @@
   "regexManagers": [
     {
       "fileMatch": ["(^|\\/).*\\.tf$"],
-      "matchStrings": ["arm_builder_kernels_version[= ]\"v?(?<currentValue>.*?)\"\\n"],
+      "matchStrings": [
+        "arm_builder_kernels_version[= ]\"v?(?<currentValue>.*?)\"\\n"
+      ],
       "depNameTemplate": "balena-io/arm-builder-kernels",
       "datasourceTemplate": "github-releases",
       "extractVersionTemplate": "^v(?<version>.*)$"
@@ -147,7 +144,9 @@
     },
     {
       "fileMatch": ["(^|\\/).*\\.tf$"],
-      "matchStrings": ["balena_engine_version[= ]\"v?(?<currentValue>.*?)\"\\n"],
+      "matchStrings": [
+        "balena_engine_version[= ]\"v?(?<currentValue>.*?)\"\\n"
+      ],
       "depNameTemplate": "balena-os/balena-engine",
       "datasourceTemplate": "github-releases",
       "extractVersionTemplate": "^v(?<version>.*)$"
@@ -195,7 +194,9 @@
         "(^|\\/)(?:docker-)?compose[^/]*\\.ya?ml$",
         "(^|\\/)Dockerfile(\\.[[:alnum:]]+)?$"
       ],
-      "matchStrings": ["(FROM|image:)\\s*(?<depName>.*)(\\/|:)(?<currentValue>.*)\\n"],
+      "matchStrings": [
+        "(FROM|image:)\\s*(?<depName>.*)(\\/|:)(?<currentValue>.*)\\n"
+      ],
       "datasourceTemplate": "docker"
     }
   ]
