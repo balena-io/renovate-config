@@ -83,8 +83,19 @@
     "enabled": true
   },
   "labels": ["renovate", "dependencies", "{{depType}}", "{{updateType}}"],
-  "prConcurrentLimit": 1,
-  "branchConcurrentLimit": 1,
+  "prConcurrentLimit": 2,
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**",
+    "**/examples/**",
+    "**/__tests__/**",
+    "**/test/**",
+    "**/tests/**",
+    "**/__fixtures__/**",
+    "**/docker-compose.test.yml",
+    "**/docker-compose.test.yaml"
+  ],
   "automerge": false,
   "packageRules": [
     {
