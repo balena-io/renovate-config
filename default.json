@@ -105,9 +105,6 @@
       "labels": ["renovate", "dependencies", "{{depType}}", "{{updateType}}"]
     },
     {
-      "matchUpdateTypes": ["major"]
-    },
-    {
       "matchUpdateTypes": ["minor"],
       "matchCurrentVersion": "<1.0.0",
       "commitBody": "Update {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: major",
@@ -118,6 +115,11 @@
       "matchCurrentVersion": "<1.0.0",
       "commitBody": "Update {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: minor",
       "labels": ["renovate", "dependencies", "{{depType}}", "minor"]
+    },
+    {
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "matchDepTypes": ["devDependencies"],
+      "commitBody": "Update {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: patch"
     },
     {
       "matchUpdateTypes": ["digest"],
