@@ -1,4 +1,29 @@
 - commits:
+    - subject: Increase concurrent PR limit from 1 to 2
+      hash: ce2bb2e8cb59df87a2e2dadc318b86b70ee3020d
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+    - subject: Add docker-compose.test.yml to default ignore paths
+      hash: be7c1f9bded9c48fd9d6687dda4f190c47953552
+      body: |
+        These can still be overridden at the repo level.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.174.2
+  title: ""
+  date: 2023-05-01T16:52:13.280Z
+- commits:
     - subject: "chore(deps): pin dependencies"
       hash: 7350ad03bb99f586a94a3284f03a53120aafdb0f
       body: |
