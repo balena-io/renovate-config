@@ -10,6 +10,7 @@
   "requireConfig": "optional",
   "repositories": [
     "balena-io-library/base-images",
+    "balena-io-library/official-images",
 
     "balena-io-modules/abstract-sql-compiler",
     "balena-io-modules/abstract-sql-to-typescript",
