@@ -1,4 +1,15 @@
 - commits:
+    - subject: renamed repositories
+      hash: a198008d9315ee069b909061bfe58f89f37c9bc2
+      body: ""
+      footer:
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 0.174.6
+  title: ""
+  date: 2023-05-02T23:12:21.727Z
+- commits:
     - subject: "Downgrade devDependencies to change-type: patch"
       hash: 82ad077c47e56e393f457a933c349de17672dc55
       body: |
