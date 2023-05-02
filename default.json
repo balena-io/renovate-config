@@ -64,6 +64,7 @@
     "balena-io/remote-builders",
     "balena-io/remote-workers",
     "balena-io/renovate-config",
+    "balena-io/sshproxy",
 
     "balena-os/balena-sign",
     "balena-os/cloud-config",
