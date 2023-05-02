@@ -1,4 +1,20 @@
 - commits:
+    - subject: "Downgrade devDependencies to change-type: patch"
+      hash: 82ad077c47e56e393f457a933c349de17672dc55
+      body: |
+        Keep the existing update type label so for major
+        devDependencies we do not auto-approve via policy-bot.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.174.5
+  title: ""
+  date: 2023-05-02T20:47:06.005Z
+- commits:
     - subject: "patch: Add balena-io-library/official-images"
       hash: 2d1daac0aa0f9ea47d9f5642febd797f3cbed1ce
       body: ""
