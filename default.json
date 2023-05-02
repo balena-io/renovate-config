@@ -42,7 +42,6 @@
     "balena-io/balena-git",
     "balena-io/balena-img",
     "balena-io/balena-mdns-publisher",
-    "balena-io/balena-metrics-guard-base",
     "balena-io/balena-monitor",
     "balena-io/balena-proxy",
     "balena-io/balena-sentry",
@@ -65,13 +64,12 @@
     "balena-io/remote-builders",
     "balena-io/remote-workers",
     "balena-io/renovate-config",
-    "balena-io/versionist",
 
     "balena-os/balena-sign",
     "balena-os/cloud-config",
     "balena-os/wifi-connect",
 
-    "balenalabs/proxy-tunnel",
+    "balena-labs-projects/proxy-tunnel",
 
     "balenaltd/admins",
     "balenaltd/handbook"
