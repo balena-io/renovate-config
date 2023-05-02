@@ -1,4 +1,17 @@
 - commits:
+    - subject: "chore(deps): update renovatebot/github-action action to v36.0.4"
+      hash: 3f0245b4008a4dc9982ba41355ce5c4b2bcedb85
+      body: |
+        Update renovatebot/github-action from 36.0.3 to 36.0.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 0.174.3
+  title: ""
+  date: 2023-05-02T11:42:21.242Z
+- commits:
     - subject: Increase concurrent PR limit from 1 to 2
       hash: ce2bb2e8cb59df87a2e2dadc318b86b70ee3020d
       body: ""
