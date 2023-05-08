@@ -1,4 +1,15 @@
 - commits:
+    - subject: update sshproxy, node and process exporters
+      hash: e01f71bc2431df9ad89cf70bb0665f115cc8866e
+      body: ""
+      footer:
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 0.175.3
+  title: ""
+  date: 2023-05-08T23:44:48.382Z
+- commits:
     - subject: renovate balena-io/sshproxy
       hash: c071c82e0e7627514cedf6698938af5507b62953
       body: ""
