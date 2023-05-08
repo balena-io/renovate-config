@@ -1,4 +1,15 @@
 - commits:
+    - subject: renovate balena-io/sshproxy
+      hash: c071c82e0e7627514cedf6698938af5507b62953
+      body: ""
+      footer:
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 0.175.2
+  title: ""
+  date: 2023-05-08T21:44:06.825Z
+- commits:
     - subject: "chore(deps): update renovatebot/github-action action to v36.1.1"
       hash: 5449477a77edfcbbaea5f1a5176c2b2026c5109d
       body: |
