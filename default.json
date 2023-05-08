@@ -172,6 +172,26 @@
     {
       "fileMatch": ["(^|\\/)Dockerfile(\\.[:alnum:]+)?$"],
       "matchStrings": [
+        "ENV PROCESS_EXPORTER_TAG[= ]v?(?<currentValue>.*?)\\n",
+        "ARG PROCESS_EXPORTER_TAG[= ]v?(?<currentValue>.*?)\\n"
+      ],
+      "depNameTemplate": "ncabatoff/process-exporter",
+      "datasourceTemplate": "github-releases",
+      "extractVersionTemplate": "^v(?<version>.*)$"
+    },
+    {
+      "fileMatch": ["(^|\\/)Dockerfile(\\.[:alnum:]+)?$"],
+      "matchStrings": [
+        "ENV SSHPROXY_TAG[= ]v?(?<currentValue>.*?)\\n",
+        "ARG SSHPROXY_TAG[= ]v?(?<currentValue>.*?)\\n"
+      ],
+      "depNameTemplate": "balena-io/sshproxy",
+      "datasourceTemplate": "github-releases",
+      "extractVersionTemplate": "^v(?<version>.*)$"
+    },
+    {
+      "fileMatch": ["(^|\\/)Dockerfile(\\.[:alnum:]+)?$"],
+      "matchStrings": [
         "ENV GRAFANA_VERSION[= ]v?(?<currentValue>.*?)\\n",
         "ARG GRAFANA_VERSION[= ]v?(?<currentValue>.*?)\\n"
       ],
