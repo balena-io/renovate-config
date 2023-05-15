@@ -1,4 +1,17 @@
 - commits:
+    - subject: "chore(deps): update renovatebot/github-action action to v37"
+      hash: 229be13d0294da26ae28e861624884b9b8bad7c5
+      body: |
+        Update renovatebot/github-action from 36.1.1 to 37.0.0
+      footer:
+        Change-type: major
+        change-type: major
+      author: Renovate Bot
+      nested: []
+  version: 1.0.0
+  title: ""
+  date: 2023-05-15T18:36:32.146Z
+- commits:
     - subject: update sshproxy, node and process exporters
       hash: e01f71bc2431df9ad89cf70bb0665f115cc8866e
       body: ""
