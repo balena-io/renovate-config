@@ -1,4 +1,18 @@
 - commits:
+    - subject: Remove docker-compose test files from ignore paths
+      hash: 7eeddf9d96c5e2dca083a84aa8551e5912e426c4
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 1.0.1
+  title: ""
+  date: 2023-05-17T14:55:15.876Z
+- commits:
     - subject: "chore(deps): update renovatebot/github-action action to v37"
       hash: 229be13d0294da26ae28e861624884b9b8bad7c5
       body: |
