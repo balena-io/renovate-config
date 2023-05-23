@@ -1,4 +1,18 @@
 - commits:
+    - subject: Remove stale version file
+      hash: ffb1262486ea257515c1f4e6f6e585692afb714d
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 1.0.2
+  title: ""
+  date: 2023-05-23T20:00:11.246Z
+- commits:
     - subject: Remove docker-compose test files from ignore paths
       hash: 7eeddf9d96c5e2dca083a84aa8551e5912e426c4
       body: ""
