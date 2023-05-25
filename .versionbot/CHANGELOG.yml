@@ -1,4 +1,17 @@
 - commits:
+    - subject: "chore(deps): update renovatebot/github-action action to v37.1.0"
+      hash: e475ef7f005d47c8f096ed257e1dca698599a7f6
+      body: |
+        Update renovatebot/github-action from 37.0.0 to 37.1.0
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Renovate Bot
+      nested: []
+  version: 1.1.0
+  title: ""
+  date: 2023-05-25T08:56:37.703Z
+- commits:
     - subject: Remove stale version file
       hash: ffb1262486ea257515c1f4e6f6e585692afb714d
       body: ""
