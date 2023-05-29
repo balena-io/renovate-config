@@ -6,31 +6,15 @@
     "docker:enableMajor",
     "helpers:pinGitHubActionDigests"
   ],
+  "username": "balena-renovate[bot]",
+  "gitAuthor": "Self-hosted Renovate Bot <133977723+balena-renovate[bot]@users.noreply.github.com>",
+  "gitIgnoredAuthors": [
+    "34882892+balena-ci@users.noreply.github.com",
+    "renovate@whitesourcesoftware.com"
+  ],
   "onboarding": false,
   "requireConfig": "optional",
   "repositories": [
-    "balena-io-library/base-images",
-    "balena-io-library/official-images",
-
-    "balena-io-modules/abstract-sql-compiler",
-    "balena-io-modules/abstract-sql-to-typescript",
-    "balena-io-modules/balena-deploy-request",
-    "balena-io-modules/balena-env-parsing",
-    "balena-io-modules/balena-image-fs",
-    "balena-io-modules/drivelist",
-    "balena-io-modules/etcher-sdk",
-    "balena-io-modules/lf-to-abstract-sql",
-    "balena-io-modules/mocha-pod",
-    "balena-io-modules/node-beaglebone-usbboot",
-    "balena-io-modules/node-ext2fs",
-    "balena-io-modules/odata-to-abstract-sql",
-    "balena-io-modules/open-balena-base",
-    "balena-io-modules/sbvr-parser",
-    "balena-io-modules/sbvr-types",
-    "balena-io-modules/winusb-driver-generator",
-
-    "balena-io-examples/balena-python-hello-world",
-
     "balena-io/analytics-backend",
     "balena-io/arm-builder-kernels",
     "balena-io/autohat",
@@ -65,16 +49,7 @@
     "balena-io/remote-builders",
     "balena-io/remote-workers",
     "balena-io/renovate-config",
-    "balena-io/sshproxy",
-
-    "balena-os/balena-sign",
-    "balena-os/cloud-config",
-    "balena-os/wifi-connect",
-
-    "balena-labs-projects/proxy-tunnel",
-
-    "balenaltd/admins",
-    "balenaltd/handbook"
+    "balena-io/sshproxy"
   ],
   "printConfig": true,
   "prHourlyLimit": 0,
