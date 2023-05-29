@@ -1,4 +1,15 @@
 - commits:
+    - subject: renovate balena-blog
+      hash: 97637883bfe597b6cf8e389977ca339b9b635194
+      body: ""
+      footer:
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 2.1.1
+  title: ""
+  date: 2023-05-29T18:49:49.864Z
+- commits:
     - subject: "chore(deps): update renovatebot/github-action action to v38.1.0"
       hash: d7a0f44b297c3dd7d1b79b838aa2762264886638
       body: |
