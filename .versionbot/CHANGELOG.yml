@@ -1,4 +1,27 @@
 - commits:
+    - subject: Authenticate with installation app token
+      hash: 85a96639c1bdd8df346ee20e1dfd815302cb64ef
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+    - subject: Remove repositories outside balena-io org
+      hash: 8ff29060fb17764d2d906c2e15a1a560704e2c56
+      body: >
+        These repositories are now managed in the respective <org>/.github repos.
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Kyle Harding
+      nested: []
+  version: 2.1.2
+  title: ""
+  date: 2023-05-29T20:41:07.517Z
+- commits:
     - subject: renovate balena-blog
       hash: 97637883bfe597b6cf8e389977ca339b9b635194
       body: ""
