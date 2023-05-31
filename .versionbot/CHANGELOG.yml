@@ -1,4 +1,19 @@
 - commits:
+    - subject: Demote update type for changes to docker-compose.test.yml
+      hash: a0e12881fe88a5afd53c761c5dea4b1dbcfdf1c1
+      body: |
+        We don't want major or minor version bumps for test files.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.1.3
+  title: ""
+  date: 2023-05-31T17:50:02.721Z
+- commits:
     - subject: Authenticate with installation app token
       hash: 85a96639c1bdd8df346ee20e1dfd815302cb64ef
       body: ""
