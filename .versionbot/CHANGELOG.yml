@@ -1,4 +1,17 @@
 - commits:
+    - subject: "chore(deps): update renovatebot/github-action action to v38.1.1"
+      hash: b54559bce5f8d524b3a8d708fb6b32ab747d7359
+      body: |
+        Update renovatebot/github-action from 38.1.0 to 38.1.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.1.4
+  title: ""
+  date: 2023-06-04T05:23:05.248Z
+- commits:
     - subject: Demote update type for changes to docker-compose.test.yml
       hash: a0e12881fe88a5afd53c761c5dea4b1dbcfdf1c1
       body: |
