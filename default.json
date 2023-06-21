@@ -63,6 +63,11 @@
   "automerge": false,
   "packageRules": [
     {
+      "matchDatasources": ["docker"],
+      "matchPackagePatterns": ["^balena/open-balena-base$"],
+      "versioning": "regex:^((?<compatibility>.*)-)?v?(?<major>\\d+)(\\.(?<minor>\\d+))?(\\.(?<patch>\\d+))?$"
+    },
+    {
       "matchUpdateTypes": ["major", "minor", "patch"],
       "commitBody": "Update {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: {{updateType}}",
       "labels": ["renovate", "dependencies", "{{depType}}", "{{updateType}}"]
