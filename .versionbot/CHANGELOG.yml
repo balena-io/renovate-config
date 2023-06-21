@@ -1,4 +1,31 @@
 - commits:
+    - subject: Add compatibility versioning regex for open-balena-base
+      hash: b34180fbe3cf238ec935c7adc67da7753cad150c
+      body: |
+        obb follows a compatibility-semver syntax instead of the expected
+        semver-compatibility syntax used by renovate
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+    - subject: Remove regex previously used by remote-builders project
+      hash: 55604a1f1930cae6046b72b2bc82fbd77367f65b
+      body: |
+        This project has been archived.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.1.11
+  title: ""
+  date: 2023-06-21T16:07:55.104Z
+- commits:
     - subject: "chore(deps): update renovatebot/github-action action to v38.1.7"
       hash: d033894e4ddace5299ddfaf4a2154509a21b3e06
       body: |
