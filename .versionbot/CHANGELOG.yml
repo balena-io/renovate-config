@@ -1,4 +1,17 @@
 - commits:
+    - subject: "chore(deps): update renovatebot/github-action action to v38.1.8"
+      hash: 1d91dd7e92c2832b44d95f5dd678bfd4e348afb3
+      body: |
+        Update renovatebot/github-action from 38.1.7 to 38.1.8
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.1.13
+  title: ""
+  date: 2023-06-24T23:25:51.754Z
+- commits:
     - subject: Enforce strict semver for open-balena-base images
       hash: 9dfed7cf56275e90d5b1b6a8aa43b65ce1b02a4c
       body: ""
