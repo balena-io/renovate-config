@@ -1,4 +1,15 @@
 - commits:
+    - subject: group ssh2 module and types
+      hash: a1cd220ae9d8b69405536bf4e6ac44605546cb6a
+      body: ""
+      footer:
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 2.1.15
+  title: ""
+  date: 2023-07-05T17:40:14.633Z
+- commits:
     - subject: "chore(deps): update renovatebot/github-action action to v38.1.9"
       hash: 0bda5c3488c3e4ffd824b0fc3f0fe94efec3d573
       body: |
