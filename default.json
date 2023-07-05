@@ -105,6 +105,11 @@
     {
       "matchPackageNames": ["@balena/open-balena-api"],
       "matchUpdateTypes": ["minor"]
+    },
+    {
+      "groupName": "ssh2: @types grouping with sibling package(s)",
+      "matchPackagePatterns": ["^(@types\/)?ssh2$"],
+      "separateMajorMinor": false
     }
   ],
   "regexManagers": [
