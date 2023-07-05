@@ -1,4 +1,17 @@
 - commits:
+    - subject: "chore(deps): update dependency renovate to v36"
+      hash: eff7831760b00d7770899bb346b0a1877268e64a
+      body: |
+        Update renovate from 35.159.5 to 36.0.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.1.16
+  title: ""
+  date: 2023-07-05T18:45:49.500Z
+- commits:
     - subject: group ssh2 module and types
       hash: a1cd220ae9d8b69405536bf4e6ac44605546cb6a
       body: ""
