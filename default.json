@@ -102,9 +102,16 @@
       "commitBody": "Update {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: patch"
     },
     {
-      "groupName": "ssh2: @types grouping with sibling package(s)",
-      "matchPackagePatterns": ["^(@types/)?ssh2$"],
-      "separateMajorMinor": false
+      "groupName": "{{{replace '^@types/' '' depName}}} with types",
+      "matchPackagePrefixes": ["@types/"],
+      "matchDepTypes": ["dependencies", "devDependencies"],
+      "matchDatasources": ["npm"]
+    },
+    {
+      "groupName": "{{depName}} with types",
+      "excludePackagePrefixes": ["@types/"],
+      "matchDepTypes": ["dependencies", "devDependencies"],
+      "matchDatasources": ["npm"]
     },
     {
       "matchUpdateTypes": ["minor", "patch"],
