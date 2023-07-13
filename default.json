@@ -59,6 +59,7 @@
     "enabled": true
   },
   "labels": ["renovate", "dependencies", "{{depType}}", "{{updateType}}"],
+  "commitBody": "Change-type: patch",
   "prConcurrentLimit": 2,
   "automerge": false,
   "packageRules": [
@@ -69,42 +70,22 @@
     },
     {
       "matchUpdateTypes": ["major", "minor", "patch"],
-      "commitBody": "Update {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: {{updateType}}",
-      "labels": ["renovate", "dependencies", "{{depType}}", "{{updateType}}"]
+      "labels": ["renovate", "dependencies", "{{depType}}", "{{updateType}}"],
+      "commitBody": "Update {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: patch"
     },
     {
       "matchUpdateTypes": ["minor"],
       "matchCurrentVersion": "<1.0.0",
-      "commitBody": "Update {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: major",
       "labels": ["renovate", "dependencies", "{{depType}}", "major"]
     },
     {
       "matchUpdateTypes": ["patch"],
       "matchCurrentVersion": "<1.0.0",
-      "commitBody": "Update {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: minor",
       "labels": ["renovate", "dependencies", "{{depType}}", "minor"]
-    },
-    {
-      "matchUpdateTypes": ["major", "minor", "patch"],
-      "matchDepTypes": ["devDependencies"],
-      "commitBody": "Update {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: patch"
-    },
-    {
-      "matchUpdateTypes": ["major", "minor", "patch"],
-      "matchPaths": ["**/docker-compose.test.yml"],
-      "commitBody": "Update {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: patch"
     },
     {
       "matchUpdateTypes": ["digest"],
       "commitBody": "Update {{depName}}\n\nChange-type: patch"
-    },
-    {
-      "matchUpdateTypes": ["pin", "pinDigest"],
-      "commitBody": "Pin {{depName}}\n\nChange-type: patch"
-    },
-    {
-      "matchPackageNames": ["@balena/open-balena-api"],
-      "matchUpdateTypes": ["minor"]
     },
     {
       "groupName": "ssh2: @types grouping with sibling package(s)",
