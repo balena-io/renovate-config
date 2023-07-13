@@ -1,4 +1,18 @@
 - commits:
+    - subject: Use no-review label to conditionally approve via policy-bot
+      hash: 894f55a48ef1606f633c31d4e4dd593fbecf9867
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.2.1
+  title: ""
+  date: 2023-07-13T15:20:35.828Z
+- commits:
     - subject: "Always use 'Change-type: patch' in commit body"
       hash: df52a4e370fd505763a50d4159b8f5b66863e187
       body: |
