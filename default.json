@@ -58,8 +58,8 @@
   "git-submodules": {
     "enabled": true
   },
-  "labels": ["renovate", "dependencies", "{{depType}}", "{{updateType}}"],
-  "commitBody": "Change-type: patch",
+  "labels": ["renovate", "{{depType}}", "{{updateType}}"],
+  "commitBody": "Update {{depName}}\n\nChange-type: patch",
   "prConcurrentLimit": 2,
   "automerge": false,
   "packageRules": [
@@ -70,26 +70,25 @@
     },
     {
       "matchUpdateTypes": ["major", "minor", "patch"],
-      "labels": ["renovate", "dependencies", "{{depType}}", "{{updateType}}"],
       "commitBody": "Update {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: patch"
     },
     {
-      "matchUpdateTypes": ["minor"],
-      "matchCurrentVersion": "<1.0.0",
-      "labels": ["renovate", "dependencies", "{{depType}}", "major"]
+      "matchCurrentVersion": ">= 1.0.0",
+      "matchUpdateTypes": ["minor", "patch"],
+      "labels": ["renovate", "{{depType}}", "{{updateType}}", "no-review"]
     },
     {
+      "matchCurrentVersion": "< 1.0.0",
       "matchUpdateTypes": ["patch"],
-      "matchCurrentVersion": "<1.0.0",
-      "labels": ["renovate", "dependencies", "{{depType}}", "minor"]
+      "labels": ["renovate", "{{depType}}", "{{updateType}}", "no-review"]
     },
     {
-      "matchUpdateTypes": ["digest"],
-      "commitBody": "Update {{depName}}\n\nChange-type: patch"
+      "matchUpdateTypes": ["digest", "pin", "pinDigest"],
+      "labels": ["renovate", "{{depType}}", "{{updateType}}", "no-review"]
     },
     {
       "groupName": "ssh2: @types grouping with sibling package(s)",
-      "matchPackagePatterns": ["^(@types\/)?ssh2$"],
+      "matchPackagePatterns": ["^(@types/)?ssh2$"],
       "separateMajorMinor": false
     }
   ],
