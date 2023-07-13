@@ -1,4 +1,19 @@
 - commits:
+    - subject: "Always use 'Change-type: patch' in commit body"
+      hash: df52a4e370fd505763a50d4159b8f5b66863e187
+      body: |
+        Update conditions to continue to support embedded changelogs.
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.2.0
+  title: ""
+  date: 2023-07-13T14:34:12.385Z
+- commits:
     - subject: "chore(deps): update renovatebot/github-action action to v38.1.13"
       hash: 8433fba607ceeb91fdbcf0666ee01429909f68bf
       body: |
