@@ -4,7 +4,10 @@
     ":preserveSemverRanges",
     "config:base",
     "docker:enableMajor",
-    "helpers:pinGitHubActionDigests"
+    "helpers:pinGitHubActionDigests",
+    "regexManagers:dockerfileVersions",
+    "regexManagers:githubActionsVersions",
+    "regexManagers:tfvarsVersions"
   ],
   "username": "balena-renovate[bot]",
   "gitAuthor": "Self-hosted Renovate Bot <133977723+balena-renovate[bot]@users.noreply.github.com>",
