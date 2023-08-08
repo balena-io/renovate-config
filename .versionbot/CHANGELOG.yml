@@ -1,4 +1,27 @@
 - commits:
+    - subject: Add some convenience regexmanager presets
+      hash: 6ca74caf980ec07ee1959ba155a44a84f88a37f3
+      body: |
+        See https://docs.renovatebot.com/presets-regexManagers/
+
+        Using these regex managers, we can bump ENV and ARG in Dockerfiles
+        and GitHub Actions and Terraform with annotations.
+
+        e.g.
+
+        \# renovate: datasource=github-releases depName=werf/kubedog
+        ARG KUBEDOG_VERSION=v0.5.1
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.3.0
+  title: ""
+  date: 2023-08-08T18:54:22.630Z
+- commits:
     - subject: "chore(deps): update renovatebot/github-action action to v39"
       hash: cd2e11af43e5d19aec80deed61b9ddb8eb37c569
       body: |
