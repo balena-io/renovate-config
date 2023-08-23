@@ -1,4 +1,19 @@
 - commits:
+    - subject: Wait until npm packages are 3 days old
+      hash: 58af83a5c000441202367be0b347ead2cc5ca058
+      body: |
+        https://docs.renovatebot.com/presets-npm/#npmunpublishsafe
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.4.1
+  title: ""
+  date: 2023-08-23T17:45:19.094Z
+- commits:
     - subject: Use renovate automerge instead of custom labels
       hash: 789a331403004be4629ae961bdff1ee12e351407
       body: |
