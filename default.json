@@ -7,7 +7,11 @@
     "helpers:pinGitHubActionDigests",
     "regexManagers:dockerfileVersions",
     "regexManagers:githubActionsVersions",
-    "regexManagers:tfvarsVersions"
+    "regexManagers:tfvarsVersions",
+    ":automergeStableNonMajor",
+    ":automergePatch",
+    ":automergeDigest",
+    ":automergeTypes"
   ],
   "username": "balena-renovate[bot]",
   "gitAuthor": "Self-hosted Renovate Bot <133977723+balena-renovate[bot]@users.noreply.github.com>",
@@ -66,6 +70,9 @@
   "commitBody": "Update {{depName}}\n\nChange-type: patch",
   "prConcurrentLimit": 2,
   "automerge": false,
+  "pinDigest": {
+    "automerge": true
+  },
   "packageRules": [
     {
       "matchDatasources": ["docker"],
@@ -75,20 +82,6 @@
     {
       "matchUpdateTypes": ["major", "minor", "patch"],
       "commitBody": "Update {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: patch"
-    },
-    {
-      "matchCurrentVersion": ">= 1.0.0",
-      "matchUpdateTypes": ["minor", "patch"],
-      "labels": ["renovate", "{{depType}}", "{{updateType}}", "no-review"]
-    },
-    {
-      "matchCurrentVersion": "< 1.0.0",
-      "matchUpdateTypes": ["patch"],
-      "labels": ["renovate", "{{depType}}", "{{updateType}}", "no-review"]
-    },
-    {
-      "matchUpdateTypes": ["digest", "pin", "pinDigest"],
-      "labels": ["renovate", "{{depType}}", "{{updateType}}", "no-review"]
     },
     {
       "groupName": "ssh2: @types grouping with sibling package(s)",
