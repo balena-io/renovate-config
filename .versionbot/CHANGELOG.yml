@@ -1,4 +1,19 @@
 - commits:
+    - subject: Remove custom dockerfileVersions regex
+      hash: 3c3160fbf9de5e7348fbe11ef9c26bf1d17e73ce
+      body: |
+        Instead use the preset regexManagers:dockerfileVersions
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.4.2
+  title: ""
+  date: 2023-08-23T20:20:38.553Z
+- commits:
     - subject: Wait until npm packages are 3 days old
       hash: 58af83a5c000441202367be0b347ead2cc5ca058
       body: |
