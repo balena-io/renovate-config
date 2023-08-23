@@ -11,7 +11,8 @@
     ":automergeStableNonMajor",
     ":automergePatch",
     ":automergeDigest",
-    ":automergeTypes"
+    ":automergeTypes",
+    "npm:unpublishSafe"
   ],
   "username": "balena-renovate[bot]",
   "gitAuthor": "Self-hosted Renovate Bot <133977723+balena-renovate[bot]@users.noreply.github.com>",
