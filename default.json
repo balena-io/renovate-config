@@ -81,7 +81,7 @@
       "versioning": "regex:^((?<compatibility>.*)-)?v(?<major>\\d+)(\\.(?<minor>\\d+))(\\.(?<patch>\\d+))$"
     },
     {
-      "matchUpdateTypes": ["major", "minor", "patch"],
+      "matchUpdateTypes": ["major", "minor", "patch", "digest"],
       "commitBody": "Update {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: patch"
     },
     {
