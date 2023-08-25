@@ -1,4 +1,25 @@
 - commits:
+    - subject: Automerge stable minor for versions without range support
+      hash: 7205b3455e17f321ab38066898cae1113a8edf30
+      body: |
+        In addition to the :automergeStableNonMajor preset, we want to
+        automerge stable minor releases even when the versioning scheme
+        does not support ranges in the format >= 1.0.0.
+
+        Specifically, the regex versioning used for open-balena-base
+        does not support version ranges, so instead we need to evaluate
+        as a string.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.4.5
+  title: ""
+  date: 2023-08-25T16:16:58.467Z
+- commits:
     - subject: Set the commitBody in the digest package rules
       hash: 8f1b4e28287a2fca2283d0452accc9ea5da1dfc0
       body: |
