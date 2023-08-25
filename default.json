@@ -93,6 +93,11 @@
       "groupName": "ssh2: @types grouping with sibling package(s)",
       "matchPackagePatterns": ["^(@types/)?ssh2$"],
       "separateMajorMinor": false
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchCurrentVersion": "!/^v?0/",
+      "automerge": true
     }
   ]
 }
