@@ -72,6 +72,11 @@
   "prConcurrentLimit": 2,
   "automerge": false,
   "pinDigest": {
+    "commitBody": "Update {{depName}}\n\nChange-type: patch",
+    "automerge": true
+  },
+  "digest": {
+    "commitBody": "Update {{depName}}\n\nChange-type: patch",
     "automerge": true
   },
   "packageRules": [
