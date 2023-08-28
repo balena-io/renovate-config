@@ -1,4 +1,18 @@
 - commits:
+    - subject: Remove dynamic labels as they are not updated once the PR is open
+      hash: 27ee99872667d8d380d28475ca8b8be3efa38fe0
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.4.6
+  title: ""
+  date: 2023-08-28T16:53:20.220Z
+- commits:
     - subject: Automerge stable minor for versions without range support
       hash: 7205b3455e17f321ab38066898cae1113a8edf30
       body: |
