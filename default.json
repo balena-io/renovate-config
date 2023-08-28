@@ -67,7 +67,7 @@
   "git-submodules": {
     "enabled": true
   },
-  "labels": ["renovate", "{{depType}}", "{{updateType}}"],
+  "labels": ["renovate"],
   "commitBody": "Update {{depName}}\n\nChange-type: patch",
   "prConcurrentLimit": 2,
   "automerge": false,
