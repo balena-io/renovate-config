@@ -1,4 +1,17 @@
 - commits:
+    - subject: "chore(deps): update renovatebot/github-action action to v39.0.3"
+      hash: 5410740b39ca62cd3eb8c78c3295cf14679ebf80
+      body: |
+        Update renovatebot/github-action from 39.0.1 to 39.0.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.4.7
+  title: ""
+  date: 2023-08-28T21:40:24.543Z
+- commits:
     - subject: Remove dynamic labels as they are not updated once the PR is open
       hash: 27ee99872667d8d380d28475ca8b8be3efa38fe0
       body: ""
