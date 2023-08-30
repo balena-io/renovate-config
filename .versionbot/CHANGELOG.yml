@@ -1,4 +1,18 @@
 - commits:
+    - subject: Set the automerge strategy to merge-commit
+      hash: 27d485b65e611eb11f36c982bcfd59c034368f80
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.4.8
+  title: ""
+  date: 2023-08-30T17:23:21.008Z
+- commits:
     - subject: "chore(deps): update renovatebot/github-action action to v39.0.3"
       hash: 5410740b39ca62cd3eb8c78c3295cf14679ebf80
       body: |
