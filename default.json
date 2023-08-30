@@ -71,6 +71,7 @@
   "commitBody": "Update {{depName}}\n\nChange-type: patch",
   "prConcurrentLimit": 2,
   "automerge": false,
+  "automergeStrategy": "merge-commit",
   "pinDigest": {
     "commitBody": "Update {{depName}}\n\nChange-type: patch",
     "automerge": true
