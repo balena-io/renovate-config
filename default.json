@@ -100,5 +100,6 @@
       "matchCurrentVersion": "!/^v?0/",
       "automerge": true
     }
-  ]
+  ],
+  "baseBranches": ["kyle/renovate-annotations"]
 }
