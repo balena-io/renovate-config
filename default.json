@@ -69,7 +69,7 @@
   },
   "labels": ["renovate"],
   "commitBody": "Update {{depName}}\n\nChange-type: patch",
-  "prConcurrentLimit": 2,
+  "prConcurrentLimit": 3,
   "automerge": false,
   "automergeStrategy": "merge-commit",
   "pinDigest": {
