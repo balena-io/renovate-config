@@ -1,4 +1,17 @@
 - commits:
+    - subject: "chore(deps): update actions/checkout action to v4"
+      hash: 32efb5f805f596a2703fb72d26014627ef492f37
+      body: |
+        Update actions/checkout from 3 to 4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.4.11
+  title: ""
+  date: 2023-09-07T15:40:16.547Z
+- commits:
     - subject: Increase concurrent PR limit from 2 to 3
       hash: 6f6c6893644cb5e012ff12bdafc793a316b42b5d
       body: |
