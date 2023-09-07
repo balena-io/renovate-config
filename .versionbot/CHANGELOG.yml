@@ -1,4 +1,18 @@
 - commits:
+    - subject: Increase concurrent PR limit from 2 to 3
+      hash: 6f6c6893644cb5e012ff12bdafc793a316b42b5d
+      body: |
+        This will slightly reduce the number of PRs being rate-limited
+        without any notification beyond the dependency dashboard.
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Kyle Harding
+      nested: []
+  version: 2.4.10
+  title: ""
+  date: 2023-09-07T13:23:10.009Z
+- commits:
     - subject: "chore(deps): update renovatebot/github-action action to v39.0.5"
       hash: 31624c7d50a367380f532ccfd3e94e0da51e31fb
       body: |
