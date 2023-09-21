@@ -1,4 +1,16 @@
 - commits:
+    - subject: Disable semantic commit message prefixes
+      hash: 9444bdd130ac4a71328848b2262b59a7fce0b73a
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Kyle Harding
+      nested: []
+  version: 2.4.12
+  title: ""
+  date: 2023-09-21T16:37:07.373Z
+- commits:
     - subject: "chore(deps): update actions/checkout action to v4"
       hash: 32efb5f805f596a2703fb72d26014627ef492f37
       body: |
