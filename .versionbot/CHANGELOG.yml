@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency renovate to v37
+      hash: d7f44fc93287b8af1b2f2cf93975a66ab0e3b649
+      body: |
+        Update renovate from 36.109.4 to 37.0.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.4.13
+  title: ""
+  date: 2023-10-09T16:47:18.652Z
+- commits:
     - subject: Disable semantic commit message prefixes
       hash: 9444bdd130ac4a71328848b2262b59a7fce0b73a
       body: ""
