@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update actions/checkout digest to b4ffde6
+      hash: d092a834ab23cd5f4a9eeb1be5e80776511d6f01
+      body: |
+        Update actions/checkout
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.4.15
+  title: ""
+  date: 2023-10-18T14:29:03.424Z
+- commits:
     - subject: Pin renovate image version to 37.27.0
       hash: 2a95ec61d5673db4dda3257e288701e425316812
       body: ""
