@@ -1,4 +1,16 @@
 - commits:
+    - subject: Pin renovate image version to 37.27.0
+      hash: 2a95ec61d5673db4dda3257e288701e425316812
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Kyle Harding
+      nested: []
+  version: 2.4.14
+  title: ""
+  date: 2023-10-18T13:21:19.273Z
+- commits:
     - subject: Update dependency renovate to v37
       hash: d7f44fc93287b8af1b2f2cf93975a66ab0e3b649
       body: |
