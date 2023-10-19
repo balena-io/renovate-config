@@ -1,4 +1,18 @@
 - commits:
+    - subject: Enable lock file maintenance
+      hash: 2df01013faf05778fa18a24c9385a6a7f91bae44
+      body: ""
+      footer:
+        See: https://docs.renovatebot.com/configuration-options/#lockfilemaintenance
+        see: https://docs.renovatebot.com/configuration-options/#lockfilemaintenance
+        Change-type: patch
+        change-type: patch
+      author: Kyle Harding
+      nested: []
+  version: 2.4.17
+  title: ""
+  date: 2023-10-19T15:50:32.079Z
+- commits:
     - subject: Update renovatebot/github-action action to v39.1.0
       hash: 265eed2639ca4bb294b96d8bd63549d5c0534211
       body: |
