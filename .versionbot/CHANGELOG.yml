@@ -1,4 +1,15 @@
 - commits:
+    - subject: renovate balena-io/logs-to-vector
+      hash: 88f820d02798e5bec33c81710c0cd2a9cbff27f6
+      body: ""
+      footer:
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 2.4.18
+  title: ""
+  date: 2023-10-24T22:13:39.862Z
+- commits:
     - subject: Enable lock file maintenance
       hash: 2df01013faf05778fa18a24c9385a6a7f91bae44
       body: ""
