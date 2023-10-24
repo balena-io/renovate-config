@@ -47,6 +47,7 @@
     "balena-io/e2e",
     "balena-io/environment-production",
     "balena-io/environment-staging",
+    "balena-io/logs-to-vector",
     "balena-io/open-balena-api",
     "balena-io/open-balena-db",
     "balena-io/open-balena-haproxy",
