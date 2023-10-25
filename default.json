@@ -103,5 +103,6 @@
       "matchCurrentVersion": "!/^v?0/",
       "automerge": true
     }
-  ]
+  ],
+  "baseBranches": ["test/renovate"]
 }
