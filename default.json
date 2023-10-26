@@ -82,7 +82,11 @@
     "commitBody": "Update {{depName}}\n\nChange-type: patch",
     "automerge": true
   },
-  "lockFileMaintenance": { "enabled": true },
+  "lockFileMaintenance": {
+    "commitBody": "Update {{depName}}\n\nChange-type: patch",
+    "enabled": true,
+    "automerge": true
+  },
   "packageRules": [
     {
       "matchDatasources": ["docker"],
