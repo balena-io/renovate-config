@@ -1,4 +1,16 @@
 - commits:
+    - subject: Enable automerge of lock file maintenance PRs
+      hash: 1d6322902af1cabd3af178ff5087e59416698f24
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Kyle Harding
+      nested: []
+  version: 2.4.19
+  title: ""
+  date: 2023-10-26T18:24:33.354Z
+- commits:
     - subject: renovate balena-io/logs-to-vector
       hash: 88f820d02798e5bec33c81710c0cd2a9cbff27f6
       body: ""
