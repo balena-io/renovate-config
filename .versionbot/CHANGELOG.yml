@@ -1,4 +1,15 @@
 - commits:
+    - subject: allow allowPostUpgradeCommand(s)
+      hash: fd8d1a343144c5a2ff5ac0a750a50b99e0ab8ff7
+      body: ""
+      footer:
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 2.4.22
+  title: ""
+  date: 2023-11-20T19:34:18.775Z
+- commits:
     - subject: Update renovatebot/github-action action to v39.1.2
       hash: 0ae1001fd139859034f53f8cc6432e3590a2d312
       body: |
