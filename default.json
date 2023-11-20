@@ -22,6 +22,8 @@
     "renovate@whitesourcesoftware.com"
   ],
   "onboarding": false,
+  "allowPostUpgradeCommandTemplating": true,
+  "allowedPostUpgradeCommands": ["^npm"],
   "requireConfig": "optional",
   "repositories": [
     "balena-io/analytics-backend",
