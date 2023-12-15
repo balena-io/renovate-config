@@ -1,4 +1,15 @@
 - commits:
+    - subject: add missing repos
+      hash: 6047ae741ab47b0323572d3518350244eea26363
+      body: ""
+      footer:
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 2.4.36
+  title: ""
+  date: 2023-12-15T02:38:06.513Z
+- commits:
     - subject: Update renovate Docker tag to v37.91.4
       hash: d05cffa22b1be2cb4c30231b5ebf0d65e54b3ebb
       body: |
