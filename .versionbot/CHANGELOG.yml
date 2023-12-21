@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v37.91.5
+      hash: f91f38271c4e6cd925c9f23e90425918d8398c34
+      body: |
+        Update renovate from 37.91.4 to 37.91.5
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.4.38
+  title: ""
+  date: 2023-12-21T17:25:01.887Z
+- commits:
     - subject: Remove repo config from flowzone.yml
       hash: 3ec7abddaa7659e778e255a040dbb2151db3cf1a
       body: |
