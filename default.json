@@ -43,6 +43,7 @@
     "balena-io/balena-monitor",
     "balena-io/balena-proxy",
     "balena-io/balena-sentry",
+    "balena-io/balena-ui",
     "balena-io/ca-private",
     "balena-io/cert-manager",
     "balena-io/analytics-pipeline",
