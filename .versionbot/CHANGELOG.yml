@@ -1,4 +1,15 @@
 - commits:
+    - subject: we really need to renovate balena-ui..
+      hash: e1effa1eee8d35deca2dbfca476c98864a37ea8c
+      body: ""
+      footer:
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 2.4.39
+  title: ""
+  date: 2023-12-26T00:11:31.796Z
+- commits:
     - subject: Update renovate Docker tag to v37.91.5
       hash: f91f38271c4e6cd925c9f23e90425918d8398c34
       body: |
