@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v37.109.0
+      hash: 3ab4316b8f7f048e4dfbb2da052492495ede6375
+      body: |
+        Update renovate from 37.91.5 to 37.109.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.4.40
+  title: ""
+  date: 2023-12-28T20:07:16.999Z
+- commits:
     - subject: we really need to renovate balena-ui..
       hash: e1effa1eee8d35deca2dbfca476c98864a37ea8c
       body: ""
