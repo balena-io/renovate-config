@@ -1,4 +1,16 @@
 - commits:
+    - subject: Disable automerge of major npm types
+      hash: 657735d6bb69031c759e0b828bf8906028a4876a
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Kyle Harding
+      nested: []
+  version: 2.4.47
+  title: ""
+  date: 2024-01-02T21:20:37.265Z
+- commits:
     - subject: Group npm dependencies with their associated types
       hash: 45d68cc05f18d70d014fd10afca28c276feafee1
       body: ""
