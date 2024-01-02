@@ -1,4 +1,18 @@
 - commits:
+    - subject: Group npm dependencies with their associated types
+      hash: 45d68cc05f18d70d014fd10afca28c276feafee1
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.4.46
+  title: ""
+  date: 2024-01-02T17:58:55.001Z
+- commits:
     - subject: Update renovate Docker tag to v37.116.0
       hash: ae4166eacb827a18734e0ecfc7a06840dc2df1df
       body: |
