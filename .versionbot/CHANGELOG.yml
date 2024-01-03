@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v37.117.0
+      hash: 77bda069da2e42038423ed82ad846909a8b188ed
+      body: |
+        Update renovate from 37.116.0 to 37.117.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.4.48
+  title: ""
+  date: 2024-01-03T01:30:57.321Z
+- commits:
     - subject: Disable automerge of major npm types
       hash: 657735d6bb69031c759e0b828bf8906028a4876a
       body: ""
