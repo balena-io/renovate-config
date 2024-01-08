@@ -101,13 +101,13 @@
       "commitBody": "Update {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: patch"
     },
     {
-      "groupName": "{{{replace '^@types/' '' depName}}} with types",
+      "groupName": "{{{replace '^@types/' '' depName}}}",
       "matchPackagePrefixes": ["@types/"],
       "matchDepTypes": ["dependencies", "devDependencies"],
       "matchDatasources": ["npm"]
     },
     {
-      "groupName": "{{depName}} with types",
+      "groupName": "{{depName}}",
       "excludePackagePrefixes": ["@types/"],
       "matchDepTypes": ["dependencies", "devDependencies"],
       "matchDatasources": ["npm"]
