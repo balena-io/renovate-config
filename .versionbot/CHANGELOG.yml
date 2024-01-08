@@ -1,4 +1,21 @@
 - commits:
+    - subject: Add changelog-entry to the commit footer for the balena-ui repo
+      hash: 86b411e0fc45fbf19b574d085bb0acac178fa073
+      body: |
+        Also exclude the from/to versions in the commit body which effectively
+        disables nested changelogs. Nested changelogs would include versions
+        so disabling it is desirable for the balena-ui repo.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.4.62
+  title: ""
+  date: 2024-01-08T16:37:08.144Z
+- commits:
     - subject: Update renovate Docker tag to v37.126.4
       hash: 285a207c3def7ed509413d1c90834b8fc028da12
       body: |
