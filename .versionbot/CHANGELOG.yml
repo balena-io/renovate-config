@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v37.127.0
+      hash: c6d0b84403b412049737a6b56714508033a3ec1c
+      body: |
+        Update renovate from 37.126.4 to 37.127.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.5.1
+  title: ""
+  date: 2024-01-08T18:16:20.615Z
+- commits:
     - subject: Remove "with types" from npm package group name
       hash: b47247210efe941763724305763d0148e3ff1118
       body: |
