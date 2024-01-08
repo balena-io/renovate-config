@@ -22,7 +22,7 @@
   ],
   "onboarding": false,
   "allowPostUpgradeCommandTemplating": true,
-  "allowedPostUpgradeCommands": ["^npm", "^cd"],
+  "allowedPostUpgradeCommands": ["^npm", "^cd", "^sed"],
   "requireConfig": "optional",
   "repositories": [
     "balena-io/analytics-backend",
