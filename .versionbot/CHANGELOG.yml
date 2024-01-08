@@ -1,4 +1,23 @@
 - commits:
+    - subject: Remove "with types" from npm package group name
+      hash: b47247210efe941763724305763d0148e3ff1118
+      body: |
+        In many cases @types are not available at the same
+        as the package so the PR name and branch is misleading.
+
+        Just remove the "with types" from the name but
+        keep the grouping (@types/depName joins depName).
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.5.0
+  title: ""
+  date: 2024-01-08T17:11:13.672Z
+- commits:
     - subject: Add changelog-entry to the commit footer for the balena-ui repo
       hash: 86b411e0fc45fbf19b574d085bb0acac178fa073
       body: |
