@@ -1,4 +1,15 @@
 - commits:
+    - subject: Allow sed
+      hash: 1d672bb1f8e04655d2b728d29655e354a170fae3
+      body: ""
+      footer:
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 2.5.2
+  title: ""
+  date: 2024-01-08T21:09:12.221Z
+- commits:
     - subject: Update renovate Docker tag to v37.127.0
       hash: c6d0b84403b412049737a6b56714508033a3ec1c
       body: |
