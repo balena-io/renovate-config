@@ -1,4 +1,16 @@
 - commits:
+    - subject: Remove unsupported Flowzone options
+      hash: 1cf998cc3dc72458ede36811ab59b948a1a961c6
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Kyle Harding
+      nested: []
+  version: 2.5.7
+  title: ""
+  date: 2024-01-25T16:49:19.032Z
+- commits:
     - subject: Update renovate Docker tag to v37.128.5
       hash: b723e6b079ceb07b2d07516f3a78dc0d20065622
       body: |
