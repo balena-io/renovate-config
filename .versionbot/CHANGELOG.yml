@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v37.128.7
+      hash: 00d7d20786ed94fd85e21b29a96db1178288a2f1
+      body: |
+        Update renovate from 37.128.5 to 37.128.7
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.5.8
+  title: ""
+  date: 2024-01-25T17:08:42.265Z
+- commits:
     - subject: Remove unsupported Flowzone options
       hash: 1cf998cc3dc72458ede36811ab59b948a1a961c6
       body: ""
