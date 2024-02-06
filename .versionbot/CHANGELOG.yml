@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v37.173.3
+      hash: 9e00507483410a68ad18c7004fffad8b635ba3f7
+      body: |
+        Update renovate from 37.173.2 to 37.173.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.5.50
+  title: ""
+  date: 2024-02-06T05:01:52.202Z
+- commits:
     - subject: Update philips-software/app-token-action action to v2
       hash: 6e164b330edc9650b64c56a55e1696238bde6109
       body: |
