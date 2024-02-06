@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update philips-software/app-token-action action to v2
+      hash: 6e164b330edc9650b64c56a55e1696238bde6109
+      body: |
+        Update philips-software/app-token-action from 1.1.2 to 2.0.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.5.49
+  title: ""
+  date: 2024-02-06T00:55:40.224Z
+- commits:
     - subject: Update renovate Docker tag to v37.173.2
       hash: 5946401ad934ac4aceede0283d7ebc1d8ae5f6e8
       body: |
