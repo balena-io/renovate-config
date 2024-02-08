@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v37.177.0
+      hash: b36e6670cd1f8fc16c0cf1353d6a3f8573ecce01
+      body: |
+        Update renovate from 37.176.0 to 37.177.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.5.64
+  title: ""
+  date: 2024-02-08T18:59:42.032Z
+- commits:
     - subject: Remove no-systemd-v from open-balena-base updates commit body
       hash: aece03caf03cca4241bba7c7573b6157a4ce0853
       body: |
