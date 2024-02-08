@@ -1,4 +1,21 @@
 - commits:
+    - subject: Remove no-systemd-v from open-balena-base updates commit body
+      hash: aece03caf03cca4241bba7c7573b6157a4ce0853
+      body: |
+        Renovate expects the "compatibility" field to be a suffix of
+        the semver, not a prefix, so we need workarounds like this
+        to handle the commit body message.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.5.63
+  title: ""
+  date: 2024-02-08T14:40:13.627Z
+- commits:
     - subject: Update renovatebot/github-action action to v40.0.3
       hash: 7f07e3a9daa596a55393f71c69b2be3953617ffe
       body: |
