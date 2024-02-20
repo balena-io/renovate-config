@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v37.203.1
+      hash: dcf06dc88a78db7af1118571713538ea093ff0da
+      body: |
+        Update renovate from 37.203.0 to 37.203.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.6.1
+  title: ""
+  date: 2024-02-20T22:03:38.206Z
+- commits:
     - subject: Fix husky postUpgradeTasks to use base64-encoded script
       hash: 26eac90d6dfe2ad6486b0eb371ce42819bed3830
       body: |
