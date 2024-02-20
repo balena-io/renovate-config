@@ -1,4 +1,20 @@
 - commits:
+    - subject: Patch prepare script on husky major updates
+      hash: e8cc0dd88a327b25458c6e202e113ee6cff73af2
+      body: ""
+      footer:
+        See: https://github.com/typicode/husky/releases/tag/v9.0.1
+        see: https://github.com/typicode/husky/releases/tag/v9.0.1
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.5.130
+  title: ""
+  date: 2024-02-20T14:14:45.569Z
+- commits:
     - subject: Update renovate Docker tag to v37.202.2
       hash: 43f62ab3f8eaeb2e70ecd9b3fa0abc92cccc7edd
       body: |
