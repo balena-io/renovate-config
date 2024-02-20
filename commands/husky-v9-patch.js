@@ -8,7 +8,8 @@ data.scripts.prepare =
   "node -e \"try { require('husky').install() } catch (e) {if (e.code !== 'MODULE_NOT_FOUND') throw e}\""
     ? "node -e \"try { (await import('husky')).default() } catch (e) { if (e.code !== 'ERR_MODULE_NOT_FOUND') throw e }\" --input-type module"
     : data.scripts.prepare;
-fs.writeFileSync(packageJsonPath, JSON.stringify(data, null, 2));
+// Ensuring there is a newline at the end when writing to 'package.json'
+fs.writeFileSync(packageJsonPath, JSON.stringify(data, null, 2) + "\n");
 
 // Update .husky/pre-commit
 const preCommitPath = ".husky/pre-commit";
