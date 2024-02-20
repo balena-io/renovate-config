@@ -1,4 +1,21 @@
 - commits:
+    - subject: Fix husky postUpgradeTasks to use base64-encoded script
+      hash: 26eac90d6dfe2ad6486b0eb371ce42819bed3830
+      body: |
+        Allow the use of a fully-formatted node.js scripts
+        for postUpgradeTasks by automatically encoding them
+        and updating default.json in pre-commit.
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.6.0
+  title: ""
+  date: 2024-02-20T20:57:20.269Z
+- commits:
     - subject: Update renovate Docker tag to v37.203.0
       hash: 44a3f4d23c8b8975ea118aff2f735fdeff6c9180
       body: |
