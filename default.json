@@ -22,7 +22,7 @@
   ],
   "onboarding": false,
   "allowPostUpgradeCommandTemplating": true,
-  "allowedPostUpgradeCommands": ["^npm", "^cd", "^sed", "^jq"],
+  "allowedPostUpgradeCommands": ["^npm", "^cd", "^sed", "^node"],
   "requireConfig": "optional",
   "repositories": [
     "balena-io/analytics-backend",
@@ -132,9 +132,7 @@
       "matchUpdateTypes": ["major"],
       "postUpgradeTasks": {
         "commands": [
-          "jq '.scripts.prepare |= if . == \"node -e \\\"try { require(\\'husky\\').install() } catch (e) {if (e.code !== \\'MODULE_NOT_FOUND\\') throw e}\\\"\" then \"node -e \\\"try { (await import(\\'husky\\')).default() } catch (e) { if (e.code !== \\'ERR_MODULE_NOT_FOUND\\') throw e }\\\" --input-type module\" else . end' package.json > package.json.tmp && mv package.json.tmp package.json",
-          "sed '/#!/d' -i .husky/pre-commit",
-          "sed '/husky.sh/d' -i .husky/pre-commit"
+          "node -e \"eval(Buffer.from('Y29uc3QgZnMgPSByZXF1aXJlKCJmcyIpOwoKLy8gVXBkYXRlIHBhY2thZ2UuanNvbgpjb25zdCBwYWNrYWdlSnNvblBhdGggPSAicGFja2FnZS5qc29uIjsKY29uc3QgZGF0YSA9IEpTT04ucGFyc2UoZnMucmVhZEZpbGVTeW5jKHBhY2thZ2VKc29uUGF0aCwgInV0ZjgiKSk7CmRhdGEuc2NyaXB0cy5wcmVwYXJlID0KICBkYXRhLnNjcmlwdHMucHJlcGFyZSA9PT0KICAibm9kZSAtZSBcInRyeSB7IHJlcXVpcmUoJ2h1c2t5JykuaW5zdGFsbCgpIH0gY2F0Y2ggKGUpIHtpZiAoZS5jb2RlICE9PSAnTU9EVUxFX05PVF9GT1VORCcpIHRocm93IGV9XCIiCiAgICA/ICJub2RlIC1lIFwidHJ5IHsgKGF3YWl0IGltcG9ydCgnaHVza3knKSkuZGVmYXVsdCgpIH0gY2F0Y2ggKGUpIHsgaWYgKGUuY29kZSAhPT0gJ0VSUl9NT0RVTEVfTk9UX0ZPVU5EJykgdGhyb3cgZSB9XCIgLS1pbnB1dC10eXBlIG1vZHVsZSIKICAgIDogZGF0YS5zY3JpcHRzLnByZXBhcmU7CmZzLndyaXRlRmlsZVN5bmMocGFja2FnZUpzb25QYXRoLCBKU09OLnN0cmluZ2lmeShkYXRhLCBudWxsLCAyKSk7CgovLyBVcGRhdGUgLmh1c2t5L3ByZS1jb21taXQKY29uc3QgcHJlQ29tbWl0UGF0aCA9ICIuaHVza3kvcHJlLWNvbW1pdCI7CmlmIChmcy5leGlzdHNTeW5jKHByZUNvbW1pdFBhdGgpKSB7CiAgbGV0IGNvbnRlbnQgPSBmcy5yZWFkRmlsZVN5bmMocHJlQ29tbWl0UGF0aCwgInV0ZjgiKTsKICBjb25zdCBsaW5lc1RvUmVtb3ZlID0gWwogICAgIiMhL3Vzci9iaW4vZW52IHNoIiwKICAgICcuICIkKGRpcm5hbWUgLS0gIiQwIikvXy9odXNreS5zaCInLAogIF07CiAgY29udGVudCA9IGNvbnRlbnQKICAgIC5zcGxpdCgiXG4iKQogICAgLmZpbHRlcigobGluZSkgPT4gIWxpbmVzVG9SZW1vdmUuaW5jbHVkZXMobGluZSkpCiAgICAuam9pbigiXG4iKTsKICBmcy53cml0ZUZpbGVTeW5jKHByZUNvbW1pdFBhdGgsIGNvbnRlbnQpOwp9Cg==', 'base64').toString('utf-8'))\""
         ],
         "fileFilters": ["package.json", ".husky/pre-commit"]
       }

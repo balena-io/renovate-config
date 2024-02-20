@@ -1,0 +1,4 @@
+# shellcheck disable=SC2148
+node updatePackageRules.js
+npm run lint:fix
+git add default.json

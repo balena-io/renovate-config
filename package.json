@@ -8,11 +8,15 @@
   },
   "description": "Shared renovate configuration and GitHub Action",
   "scripts": {
-    "test": "renovate-config-validator default.json"
+    "test": "renovate-config-validator default.json",
+    "lint:fix": "prettier --write default.json",
+    "prepare": "node -e \"try { (await import('husky')).default() } catch (e) { if (e.code !== 'ERR_MODULE_NOT_FOUND') throw e }\" --input-type module"
   },
   "author": "Balena.io. <hello@balena.io>",
   "license": "Apache-2.0",
   "devDependencies": {
+    "husky": "^9.0.11",
+    "prettier": "^3.2.5",
     "renovate": "^37.0.0"
   },
   "engines": {
