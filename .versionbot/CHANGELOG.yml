@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add a test to ensure commit hooks have run
+      hash: b41fa758fb47ef809eb8aabef6a6daebf4893572
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.6.5
+  title: ""
+  date: 2024-02-21T17:50:58.250Z
+- commits:
     - subject: Update renovate Docker tag to v37.203.3
       hash: e2f10ecbfab2473dba6dc8f2e77b3b03d47d4f32
       body: |
