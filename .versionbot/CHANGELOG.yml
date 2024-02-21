@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v37.203.2
+      hash: 40392d4ea64cdcb7572ffc58c2a2838ccc69ae28
+      body: |
+        Update renovate from 37.203.1 to 37.203.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.6.3
+  title: ""
+  date: 2024-02-21T07:59:31.052Z
+- commits:
     - subject: Avoid stripping trailing newline from package.json
       hash: a64536cd1b1c2c6f663129b797cf0200a6ad0432
       body: ""
