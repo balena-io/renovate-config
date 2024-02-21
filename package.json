@@ -8,7 +8,9 @@
   },
   "description": "Shared renovate configuration and GitHub Action",
   "scripts": {
-    "test": "renovate-config-validator default.json",
+    "build": "node build && npm run lint:fix", 
+    "test": "npm run test:hooks && renovate-config-validator default.json",
+    "test:hooks": "npm run build && git diff --exit-code default.json",
     "lint:fix": "prettier --write default.json",
     "prepare": "node -e \"try { (await import('husky')).default() } catch (e) { if (e.code !== 'ERR_MODULE_NOT_FOUND') throw e }\" --input-type module"
   },
