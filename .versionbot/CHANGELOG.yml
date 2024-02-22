@@ -1,4 +1,17 @@
 - commits:
+    - subject: Add environments-base to renovate
+      hash: bf6c70da9a0f28dab6a1bf5d8ba89a66c7e400b4
+      body: |
+        This repo was moved from product-os
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Kyle Harding
+      nested: []
+  version: 2.6.18
+  title: ""
+  date: 2024-02-22T18:14:03.762Z
+- commits:
     - subject: Update renovate Docker tag to v37.210.0
       hash: 9cd230ef5bd651ab40ca402c4e43b76d71f7576a
       body: |
