@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v37.215.0
+      hash: 063216b6d264b3021ddba078917e4c7374c4e4d8
+      body: |
+        Update renovate from 37.214.5 to 37.215.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.6.33
+  title: ""
+  date: 2024-02-27T16:05:56.726Z
+- commits:
     - subject: Remove open-balena-base compatibility workarounds
       hash: 04484c9217f4e2673c7a6fdaa38893c3a6fca8d8
       body: |
