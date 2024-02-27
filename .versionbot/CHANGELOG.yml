@@ -1,4 +1,17 @@
 - commits:
+    - subject: Remove open-balena-base compatibility workarounds
+      hash: 04484c9217f4e2673c7a6fdaa38893c3a6fca8d8
+      body: |
+        See: https://github.com/balena-io-modules/open-balena-base/pull/343
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Kyle Harding
+      nested: []
+  version: 2.6.32
+  title: ""
+  date: 2024-02-27T15:12:09.248Z
+- commits:
     - subject: Update renovate Docker tag to v37.214.5
       hash: c2038830e05e0175fcfe1be60d6ef9f62c782db4
       body: |
