@@ -93,19 +93,8 @@
   },
   "packageRules": [
     {
-      "matchDatasources": ["docker"],
-      "matchPackagePatterns": ["^balena/open-balena-base$"],
-      "versioning": "regex:^((?<compatibility>.*)-)?v(?<major>\\d+)(\\.(?<minor>\\d+))(\\.(?<patch>\\d+))$"
-    },
-    {
       "matchUpdateTypes": ["major", "minor", "patch"],
       "commitBody": "Update {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: patch"
-    },
-    {
-      "matchPackagePatterns": ["^balena/open-balena-base$"],
-      "matchUpdateTypes": ["major", "minor", "patch"],
-      "matchCurrentValue": "/^no-systemd-v/",
-      "commitBody": "Update {{depName}} from {{{replace 'no-systemd-v' '' currentVersion}}} to {{{replace 'no-systemd-v' '' newVersion}}}\n\nChange-type: patch"
     },
     {
       "groupName": "{{{replace '^@types/' '' depName}}}",
