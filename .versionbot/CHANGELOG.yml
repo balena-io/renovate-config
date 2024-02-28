@@ -1,4 +1,18 @@
 - commits:
+    - subject: Limit husky post upgrade task to major v9
+      hash: 5b09330f6b98578002e2c3168c9b4d940d567799
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.6.38
+  title: ""
+  date: 2024-02-28T00:09:21.062Z
+- commits:
     - subject: Update renovate Docker tag to v37.218.0
       hash: 314912af8ccc2a4cd83a81084562f56f9eedd072
       body: |
