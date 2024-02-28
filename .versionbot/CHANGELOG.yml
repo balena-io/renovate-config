@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v37.219.0
+      hash: 11ea957ff1b16dbbffce9f665a8b2eab7dee5588
+      body: |
+        Update renovate from 37.218.0 to 37.219.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.6.39
+  title: ""
+  date: 2024-02-28T07:01:37.830Z
+- commits:
     - subject: Limit husky post upgrade task to major v9
       hash: 5b09330f6b98578002e2c3168c9b4d940d567799
       body: ""
