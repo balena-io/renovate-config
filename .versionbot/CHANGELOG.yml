@@ -1,4 +1,15 @@
 - commits:
+    - subject: Update default.json
+      hash: 4cca8fdfc02775106b0e5560edf2efe289c9ff95
+      body: ""
+      footer:
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 2.6.82
+  title: ""
+  date: 2024-03-07T23:17:10.834Z
+- commits:
     - subject: Update renovate Docker tag to v37.231.2
       hash: 059d6a0b37cd57bb3488f5901ba85022630b5835
       body: |
