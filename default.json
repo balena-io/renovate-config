@@ -49,8 +49,10 @@
     "balena-io/deploy-to-balena-action",
     "balena-io/e2e",
     "balena-io/environment-production",
+    "balena-io/environment-restricted",
     "balena-io/environment-staging",
     "balena-io/environments-base",
+    "balena-io/environment-playground",
     "balena-io/logs-to-vector",
     "balena-io/open-balena-api",
     "balena-io/open-balena-db",
@@ -68,7 +70,7 @@
   ],
   "printConfig": true,
   "prHourlyLimit": 0,
-  "cloneSubmodules": true,
+  "cloneSubmodules": false,
   "rebaseWhen": "behind-base-branch",
   "git-submodules": {
     "enabled": true
