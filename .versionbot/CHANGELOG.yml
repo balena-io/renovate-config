@@ -1,4 +1,16 @@
 - commits:
+    - subject: Optionally match literal ^ or ~ or v in husky newValue
+      hash: 9db5615240f77aa0f62bb5a4b03f3a0e8a708de5
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Kyle Harding
+      nested: []
+  version: 2.6.166
+  title: ""
+  date: 2024-04-01T17:38:31.478Z
+- commits:
     - subject: Fix husky v9 matching
       hash: 5255e35738e9abc5d6967bab5c2171b19af4050b
       body: ""
