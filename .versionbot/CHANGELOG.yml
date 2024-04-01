@@ -1,4 +1,16 @@
 - commits:
+    - subject: Fix husky v9 matching
+      hash: 5255e35738e9abc5d6967bab5c2171b19af4050b
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Kyle Harding
+      nested: []
+  version: 2.6.165
+  title: ""
+  date: 2024-04-01T14:55:38.083Z
+- commits:
     - subject: Update renovate Docker tag to v37.279.0
       hash: 39a569d2b190e376efccd3e61145b31f99b8a9ba
       body: |
