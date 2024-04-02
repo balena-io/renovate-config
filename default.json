@@ -93,6 +93,15 @@
     "enabled": true,
     "automerge": true
   },
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**",
+    "**/examples/**",
+    "**/__tests__/**",
+    "**/tests/**",
+    "**/__fixtures__/**"
+  ],
   "packageRules": [
     {
       "matchUpdateTypes": ["major", "minor", "patch"],
