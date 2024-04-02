@@ -1,4 +1,21 @@
 - commits:
+    - subject: Allow custom test actions to be managed by Renovate
+      hash: 9218b8b5f5a109bc6f354db98e63fe4f23664640
+      body: |
+        Flowzone expects .github/actions/test/action.yml
+        as the path for a custom test action and we want those
+        files to be managed as github-actions files.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.6.167
+  title: ""
+  date: 2024-04-02T19:31:51.339Z
+- commits:
     - subject: Optionally match literal ^ or ~ or v in husky newValue
       hash: 9db5615240f77aa0f62bb5a4b03f3a0e8a708de5
       body: ""
