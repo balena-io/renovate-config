@@ -1,4 +1,16 @@
 - commits:
+    - subject: Handle trailing text in husky prepare script
+      hash: 48850c2c6c7488d7a5f105bf9c25b17300b3bae8
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Josh Bowling
+      nested: []
+  version: 2.6.194
+  title: ""
+  date: 2024-04-12T22:23:01.723Z
+- commits:
     - subject: Update renovate Docker tag to v37.290.1
       hash: 48760b4b66d347fc7c97b1c6744fbf608342d555
       body: |
