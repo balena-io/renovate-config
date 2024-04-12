@@ -1,13 +1,16 @@
 const fs = require("fs");
 
+// Define a regex to match the old prepare script and any trailing text
+const oldPrepareRegex = /^node -e "try { require\('husky'\)\.install\(\) } catch \(e\) {if \(e\.code !== 'MODULE_NOT_FOUND'\) throw e}"(.*)$/;
+
 // Update package.json
 const packageJsonPath = "package.json";
 const data = JSON.parse(fs.readFileSync(packageJsonPath, "utf8"));
-data.scripts.prepare =
-  data.scripts.prepare ===
-  "node -e \"try { require('husky').install() } catch (e) {if (e.code !== 'MODULE_NOT_FOUND') throw e}\""
-    ? "node -e \"try { (await import('husky')).default() } catch (e) { if (e.code !== 'ERR_MODULE_NOT_FOUND') throw e }\" --input-type module"
-    : data.scripts.prepare;
+const match = data.scripts.prepare.match(oldPrepareRegex);
+if (match) {
+  const trailingText = match[1];
+  data.scripts.prepare = `node -e "try { (await import('husky')).default() } catch (e) { if (e.code !== 'ERR_MODULE_NOT_FOUND') throw e }" --input-type module${trailingText}`;
+}
 // Ensuring there is a newline at the end when writing to 'package.json'
 fs.writeFileSync(packageJsonPath, JSON.stringify(data, null, 2) + "\n");
 
