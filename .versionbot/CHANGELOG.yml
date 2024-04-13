@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v37.291.0
+      hash: 2ea6c04de0f7677a529248824334d41d847c9c2e
+      body: |
+        Update renovate from 37.290.1 to 37.291.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.6.195
+  title: ""
+  date: 2024-04-13T10:05:59.515Z
+- commits:
     - subject: Handle trailing text in husky prepare script
       hash: 48850c2c6c7488d7a5f105bf9c25b17300b3bae8
       body: ""
