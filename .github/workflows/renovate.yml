@@ -8,6 +8,10 @@ on:
       - master
       - main
 
+permissions:
+  contents: read
+  id-token: "write"  # AWS GitHub OIDC required: write
+
 env:
   LOG_LEVEL: debug
   # renovate: datasource=docker depName=renovate packageName=ghcr.io/renovatebot/renovate
@@ -16,6 +20,29 @@ env:
 jobs:
   renovate:
     runs-on: ubuntu-22.04
+    strategy:
+      fail-fast: true
+      matrix:
+        environment:
+          - balena-staging
+          - balena-production
+          - balena-playground
+          - balena-restricted
+        include:
+          # TODO: future overrides to narrow Renovate config to a specific AWS environment
+          # .. to prevent (re)processing the same repo(s)
+          - environment: balena-staging
+            config_file: default.json
+          - environment: balena-production
+            config_file: default.json
+          - environment: balena-playground
+            config_file: default.json
+          - environment: balena-restricted
+            config_file: default.json
+
+    environment:
+      name: ${{ matrix.environment }}
+
     steps:
       # https://github.com/actions/checkout
       - name: Checkout
@@ -32,6 +59,14 @@ jobs:
           app_base64_private_key: ${{ secrets.RENOVATE_APP_PRIVATE_KEY_B64 }}
           auth_type: installation
 
+      # https://docs.renovatebot.com/modules/datasource/aws-machine-image/
+      # https://docs.renovatebot.com/modules/datasource/aws-rds/
+      - uses: aws-actions/configure-aws-credentials@c7680c32522b91cf6f7481e49535e154b93bed6d
+        with:
+          aws-region: ${{ vars.AWS_REGION || 'us-east-1' }}
+          role-session-name: github-${{ github.job }}-${{ github.run_id }}-${{ github.run_attempt }}
+          role-to-assume: '${{ vars.AWS_IAM_ROLE }}'  # environment specific
+
       - name: Enable dry-run
         run: echo "RENOVATE_DRY_RUN=full" >> $GITHUB_ENV
         if: github.event_name == 'pull_request'
@@ -41,10 +76,17 @@ jobs:
         with:
           # https://docs.renovatebot.com/configuration-options
           # https://docs.renovatebot.com/self-hosted-configuration
-          configurationFile: default.json
+          configurationFile: ${{ matrix.config_file }}
           token: ${{ steps.app_token.outputs.token }}
           renovate-version: ${{ env.RENOVATE_VERSION }}
+          # https://github.com/renovatebot/github-action?tab=readme-ov-file#env-regex
+          env-regex: "^(?:RENOVATE_\\w+|LOG_LEVEL|AWS_\\w+)$"
         env:
+          AWS_REGION: ${{ env.AWS_REGION }}
+          AWS_DEFAULT_REGION: ${{ env.AWS_REGION }}
+          AWS_ACCESS_KEY_ID: ${{ env.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ env.AWS_SECRET_ACCESS_KEY }}
+          AWS_SESSION_TOKEN: ${{ env.AWS_SESSION_TOKEN }}
           RENOVATE_DRY_RUN: ${{ env.RENOVATE_DRY_RUN }}
           RENOVATE_HOST_RULES: |
             [
