@@ -1,4 +1,20 @@
 - commits:
+    - subject: Separate each major version of dependencies
+      hash: e33bf3db7d183819d29003609f6f09f56187445c
+      body: >
+        See:
+        https://docs.renovatebot.com/presets-default/#separatemultiplemajorreleases
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.6.492
+  title: ""
+  date: 2024-06-19T14:18:01.429Z
+- commits:
     - subject: Update renovate Docker tag to v37.413.1
       hash: d04c9b02429803826b4feb5a6a1164aa2fbf153d
       body: |
