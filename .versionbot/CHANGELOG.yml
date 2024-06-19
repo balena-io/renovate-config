@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v37.413.0
+      hash: db9aa2e4c4a8f82faf8957721af1bc64ba0fe62b
+      body: |
+        Update renovate from 37.412.2 to 37.413.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.6.490
+  title: ""
+  date: 2024-06-19T10:11:15.256Z
+- commits:
     - subject: Update renovate Docker tag to v37.412.2
       hash: ecf57e1de32dd4c64d1730a1bfea0556e0e5f03a
       body: |
