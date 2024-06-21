@@ -1,4 +1,16 @@
 - commits:
+    - subject: Add balena-cli to managed repositories
+      hash: 1d8e7dd7aae1523450bc2794272941cf0c83bfb9
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Kyle Harding
+      nested: []
+  version: 2.6.496
+  title: ""
+  date: 2024-06-21T16:37:36.273Z
+- commits:
     - subject: Update renovate Docker tag to v37.414.0
       hash: 45f8f723dfcd1e7979249bbe129d96178ccf37bc
       body: |
