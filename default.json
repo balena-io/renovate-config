@@ -35,6 +35,7 @@
     "balena-io/balena-blog",
     "balena-io/balena-builder",
     "balena-io/balena-builder-worker",
+    "balena-io/balena-cli",
     "balena-io/balena-cloud",
     "balena-io/balena-delta",
     "balena-io/balena-git",
