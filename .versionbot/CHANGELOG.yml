@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v37.414.1
+      hash: de227d08b23f66a17ccd66575f7a492a3cdfe87b
+      body: |
+        Update renovate from 37.414.0 to 37.414.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.6.497
+  title: ""
+  date: 2024-06-22T05:11:20.184Z
+- commits:
     - subject: Add balena-cli to managed repositories
       hash: 1d8e7dd7aae1523450bc2794272941cf0c83bfb9
       body: ""
