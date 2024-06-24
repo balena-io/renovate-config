@@ -1,4 +1,16 @@
 - commits:
+    - subject: environment configs extend default
+      hash: c37abee6e12cb0a630c6e8c7c1d0d0c54f2d15b6
+      body: |
+        * don't run Renovate multiple times over the same repos
+      footer:
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 2.7.2
+  title: ""
+  date: 2024-06-24T19:31:15.881Z
+- commits:
     - subject: Update aws-actions/configure-aws-credentials digest to 61a1105
       hash: 5de11ce6d53aae998710644778ad9368b7f36a5f
       body: |
