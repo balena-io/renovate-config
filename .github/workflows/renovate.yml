@@ -29,16 +29,14 @@ jobs:
           - balena-playground
           - balena-restricted
         include:
-          # TODO: future overrides to narrow Renovate config to a specific AWS environment
-          # .. to prevent (re)processing the same repo(s)
-          - environment: balena-staging
-            config_file: default.json
           - environment: balena-production
             config_file: default.json
+          - environment: balena-staging
+            config_file: balena-staging.json
           - environment: balena-playground
-            config_file: default.json
+            config_file: balena-playground.json
           - environment: balena-restricted
-            config_file: default.json
+            config_file: balena-restricted.json
 
     environment:
       name: ${{ matrix.environment }}
