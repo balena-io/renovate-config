@@ -1,4 +1,23 @@
 - commits:
+    - subject: Authenticate with AWS to enable Renovation of AMIs and RDS engines
+      hash: 14269bdc25bcade5099138f99830a24c3e0f833e
+      body: |
+        Requires:
+        * https://github.com/balena-io/environment-playground/pull/123
+        * https://github.com/balena-io/environment-staging/pull/3628
+        * https://github.com/balena-io/environment-staging/pull/3627
+        * https://github.com/balena-io/environment-production/pull/2456
+        * https://github.com/balena-io/environment-production/pull/2455
+        * https://github.com/balena-io/environment-restricted/pull/35
+        * https://github.com/balena-io/environment-restricted/pull/34
+      footer:
+        change-type: minor
+      author: Anton Belodedenko
+      nested: []
+  version: 2.7.0
+  title: ""
+  date: 2024-06-24T17:20:43.510Z
+- commits:
     - subject: Update renovate Docker tag to v37.415.0
       hash: ae163d36a66d1ac6fb7f80cce4409bb334030683
       body: |
