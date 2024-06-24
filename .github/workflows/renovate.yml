@@ -61,7 +61,7 @@ jobs:
 
       # https://docs.renovatebot.com/modules/datasource/aws-machine-image/
       # https://docs.renovatebot.com/modules/datasource/aws-rds/
-      - uses: aws-actions/configure-aws-credentials@c7680c32522b91cf6f7481e49535e154b93bed6d
+      - uses: aws-actions/configure-aws-credentials@61a110527dcc9ccef6c109117050c80a00bec898
         with:
           aws-region: ${{ vars.AWS_REGION || 'us-east-1' }}
           role-session-name: github-${{ github.job }}-${{ github.run_id }}-${{ github.run_attempt }}
