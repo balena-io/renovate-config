@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update aws-actions/configure-aws-credentials digest to 61a1105
+      hash: 5de11ce6d53aae998710644778ad9368b7f36a5f
+      body: |
+        Update aws-actions/configure-aws-credentials
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.7.1
+  title: ""
+  date: 2024-06-24T19:16:14.368Z
+- commits:
     - subject: Authenticate with AWS to enable Renovation of AMIs and RDS engines
       hash: 14269bdc25bcade5099138f99830a24c3e0f833e
       body: |
