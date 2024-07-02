@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update aws-actions/configure-aws-credentials digest to febab93
+      hash: 7469567de205a3618b7864b04cd3e54d40894ebd
+      body: |
+        Update aws-actions/configure-aws-credentials
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.7.21
+  title: ""
+  date: 2024-07-02T05:07:20.298Z
+- commits:
     - subject: Update renovate Docker tag to v37.421.7
       hash: 07b859c2c86ea32c6d59ce42fb849e077f7c8d4c
       body: |
