@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update aws-actions/configure-aws-credentials digest to e26e190
+      hash: 3cbc06a4282f809d8fffee24f24028cdb127100d
+      body: |
+        Update aws-actions/configure-aws-credentials
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.7.104
+  title: ""
+  date: 2024-09-03T04:07:14.225Z
+- commits:
     - subject: Update aws-actions/configure-aws-credentials digest to 0fc95ed
       hash: 4ea818cc28db6f3d8084fc320791af2f28359c83
       body: |
