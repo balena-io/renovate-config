@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovatebot/github-action action to v40.2.9
+      hash: 28de079f3fe3474689ee39f1ac5c841786b56ee8
+      body: |
+        Update renovatebot/github-action from 40.2.8 to 40.2.9
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.7.109
+  title: ""
+  date: 2024-09-16T10:09:39.352Z
+- commits:
     - subject: Update aws-actions/configure-aws-credentials digest to bd13543
       hash: f3bbe4a427e15ddfa4fbef55d37dc95c503c2b75
       body: |
