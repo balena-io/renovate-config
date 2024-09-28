@@ -1,6 +1,0 @@
-{
-  "extends": ["github>balena-io/renovate-config"],
-  "repositories": [
-    "balena-io/environment-playground"
-  ]
-}
