@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovatebot/github-action action to v40.2.11
+      hash: 37a182925fb6cc8025ecfb7e7999265de3744ff7
+      body: |
+        Update renovatebot/github-action from 40.2.10 to 40.2.11
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.7.114
+  title: ""
+  date: 2024-09-30T10:14:18.659Z
+- commits:
     - subject: "CI: opt out of auth persistence"
       hash: 2e3a70f3a4969b3c6be0d1b97c59def1cbc081ce
       body: ""
