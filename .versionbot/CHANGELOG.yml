@@ -1,4 +1,22 @@
 - commits:
+    - subject: Remove renovate workflow from this repository
+      hash: d863fc22dd759e093c2bf8786576f80cb8063b77
+      body: |
+        The workflow and self-hosted config is being relocated.
+
+        This repo will be dedicated to the balena-io shared repository
+        config preset.
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.8.0
+  title: ""
+  date: 2024-09-30T15:29:36.248Z
+- commits:
     - subject: Update renovatebot/github-action action to v40.3.0
       hash: 93907bcf0d76b70421ae66eb4fd19085a73c5456
       body: |
