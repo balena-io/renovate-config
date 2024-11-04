@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency renovate to v38
+      hash: de95fc8faac85129bc50db16a56720a36e21a551
+      body: |
+        Update renovate from 37.440.7 to 38.101.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 2.8.1
+  title: ""
+  date: 2024-11-04T17:32:58.175Z
+- commits:
     - subject: Remove renovate workflow from this repository
       hash: d863fc22dd759e093c2bf8786576f80cb8063b77
       body: |
