@@ -1,4 +1,19 @@
 - commits:
+    - subject: Enable automated dependency updates for pre-commit
+      hash: bc68c20112ce9b811cd1a387eec831cd8ba082ef
+      body: |
+        See: https://docs.renovatebot.com/modules/manager/pre-commit/
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.8.3
+  title: ""
+  date: 2024-12-30T16:40:12.452Z
+- commits:
     - subject: Update dependency renovate to v39
       hash: 3dec1f0ec17996b094c8c0fb81b0d63193796e41
       body: |
@@ -1652,9 +1667,8 @@
 - commits:
     - subject: Separate each major version of dependencies
       hash: e33bf3db7d183819d29003609f6f09f56187445c
-      body: >
-        See:
-        https://docs.renovatebot.com/presets-default/#separatemultiplemajorreleases
+      body: |
+        See: https://docs.renovatebot.com/presets-default/#separatemultiplemajorreleases
       footer:
         Change-type: patch
         change-type: patch
