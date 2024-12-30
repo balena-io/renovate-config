@@ -24,6 +24,9 @@
   "git-submodules": {
     "enabled": true
   },
+  "pre-commit": {
+    "enabled": true
+  },
   "labels": ["renovate"],
   "commitBody": "Update {{depName}}\n\nChange-type: patch",
   "prConcurrentLimit": 3,
