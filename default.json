@@ -90,6 +90,19 @@
         ],
         "fileFilters": ["package.json", ".husky/pre-commit"]
       }
+    },
+    {
+      "matchManagers": ["helmv3"],
+      "matchPackagePatterns": ["loki"],
+      "postUpgradeTasks": {
+        "commands": [
+          "cd kubernetes/balenacloud/loki && helm dependency update",
+          "cd kubernetes/balenacloud/loki && helm template --values values.yaml --namespace balenacloud loki grafana/loki > simple-scalable.yaml"
+        ],
+        "fileFilters": ["kubernetes/balenacloud/loki/simple-scalable.yaml"],
+        "executionMode": "update"
+      },
+      "automerge": false
     }
   ]
 }
