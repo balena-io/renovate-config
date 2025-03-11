@@ -13,7 +13,8 @@
     ":automergeDigest",
     "npm:unpublishSafe",
     ":semanticCommitsDisabled",
-    ":separateMultipleMajorReleases"
+    ":separateMultipleMajorReleases",
+    "group:vitestMonorepo"
   ],
   "onboarding": false,
   "requireConfig": "optional",
