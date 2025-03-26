@@ -1,4 +1,18 @@
 - commits:
+    - subject: Use custom versioning for Minio
+      hash: ef5d53654850efbfa50b24c283ea69462f2c8ebd
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.8.5
+  title: ""
+  date: 2025-03-26T00:30:20.988Z
+- commits:
     - subject: Group vitest dependencies
       hash: c958e966db7446a8a517375e53ea6f3ba671d499
       body: ""
