@@ -1,4 +1,18 @@
 - commits:
+    - subject: Support migrating prepare scripts using the husky install cli command
+      hash: 4a86b4f8a7074c92526bc3adb1793b41eaa033cc
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+        Eg: https://github.com/balena-io-modules/balena-hup-action-utils/pull/48
+        eg: https://github.com/balena-io-modules/balena-hup-action-utils/pull/48
+      author: Thodoris Greasidis
+      nested: []
+  version: 2.9.0
+  title: ""
+  date: 2025-03-31T15:16:02.476Z
+- commits:
     - subject: Use custom versioning for Minio
       hash: ef5d53654850efbfa50b24c283ea69462f2c8ebd
       body: ""
