@@ -22,7 +22,7 @@
     "renovate": "^40.0.0"
   },
   "engines": {
-    "node": ">=18.12.0"
+    "node": "^22.13.0"
   },
   "versionist": {
     "publishedAt": "2025-03-31T15:16:03.039Z"
