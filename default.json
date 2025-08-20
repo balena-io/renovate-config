@@ -102,6 +102,7 @@
         "minio/minio",
         "minio/mc"
       ],
+      "groupName": "minio",
       "automerge": false
     }
   ]
