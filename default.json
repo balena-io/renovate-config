@@ -14,7 +14,8 @@
     "npm:unpublishSafe",
     ":semanticCommitsDisabled",
     ":separateMultipleMajorReleases",
-    "group:vitestMonorepo"
+    "group:vitestMonorepo",
+    "group:githubArtifactActions"
   ],
   "onboarding": false,
   "requireConfig": "optional",
