@@ -1,4 +1,29 @@
 - commits:
+    - subject: Group GitHub Actions patch and digest updates together
+      hash: 89b936fa67f3a1502d32a64b0bd5f166b6691f1d
+      body: |
+        This is primarily to reduce the number of active PRs and test runs.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+    - subject: Group download-artifact and upload-artifact major updates together.
+      hash: 8bf1f2f080eef3ea71cd97ea9704a9d247672fce
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.9.4
+  title: ""
+  date: 2025-09-03T23:00:12.999Z
+- commits:
     - subject: Group minio client and server dependency bumps
       hash: e2cc79c66ad8fa612df74fa98471ceaffe30ae18
       body: ""
