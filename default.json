@@ -14,7 +14,8 @@
     "npm:unpublishSafe",
     ":semanticCommitsDisabled",
     ":separateMultipleMajorReleases",
-    "group:vitestMonorepo"
+    "group:vitestMonorepo",
+    "group:githubArtifactActions"
   ],
   "onboarding": false,
   "requireConfig": "optional",
@@ -104,6 +105,12 @@
       ],
       "groupName": "minio",
       "automerge": false
+    },
+    {
+      "description": "Group GitHub Actions patch and digest updates",
+      "groupName": "GitHub Actions",
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["patch", "digest"]
     }
   ]
 }
