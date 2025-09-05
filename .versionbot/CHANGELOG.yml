@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add minor updates to github actions groupings
+      hash: b48b74638d6af62cb35a4c1b97e0a13024472a5a
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.9.5
+  title: ""
+  date: 2025-09-05T00:51:13.071Z
+- commits:
     - subject: Group GitHub Actions patch and digest updates together
       hash: 89b936fa67f3a1502d32a64b0bd5f166b6691f1d
       body: |
