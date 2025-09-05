@@ -107,10 +107,10 @@
       "automerge": false
     },
     {
-      "description": "Group GitHub Actions patch and digest updates",
+      "description": "Group GitHub Actions updates",
       "groupName": "GitHub Actions",
       "matchManagers": ["github-actions"],
-      "matchUpdateTypes": ["patch", "digest"]
+      "matchUpdateTypes": ["minor", "patch", "digest"]
     }
   ]
 }
