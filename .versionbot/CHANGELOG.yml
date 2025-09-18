@@ -1,4 +1,18 @@
 - commits:
+    - subject: Group pre-commit hook updates
+      hash: b5d50f0789308cd8b07c17229d38ee1efdd3b257
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.9.6
+  title: ""
+  date: 2025-09-18T19:19:25.130Z
+- commits:
     - subject: Add minor updates to github actions groupings
       hash: b48b74638d6af62cb35a4c1b97e0a13024472a5a
       body: ""
