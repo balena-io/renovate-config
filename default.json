@@ -111,6 +111,12 @@
       "groupName": "GitHub Actions",
       "matchManagers": ["github-actions"],
       "matchUpdateTypes": ["minor", "patch", "digest"]
+    },
+    {
+      "description": "Group pre-commit hook updates",
+      "groupName": "pre-commit hooks",
+      "matchManagers": ["pre-commit"],
+      "matchUpdateTypes": ["minor", "patch", "digest"]
     }
   ]
 }
