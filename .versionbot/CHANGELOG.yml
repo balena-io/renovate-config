@@ -1,4 +1,21 @@
 - commits:
+    - subject: Schedule pre-commit updates on weekends
+      hash: 11db19f095d80f9bfce90f9a10979170926096cd
+      body: |
+        Pre-commit often drops multiple releases per day,
+        and this slows down development and requires rebasing
+        of production PRs for what is effectively a devDependency.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.9.7
+  title: ""
+  date: 2025-09-29T16:35:07.719Z
+- commits:
     - subject: Group pre-commit hook updates
       hash: b5d50f0789308cd8b07c17229d38ee1efdd3b257
       body: ""
