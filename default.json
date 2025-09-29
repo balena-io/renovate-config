@@ -117,6 +117,17 @@
       "groupName": "pre-commit hooks",
       "matchManagers": ["pre-commit"],
       "matchUpdateTypes": ["minor", "patch", "digest"]
+    },
+    {
+      "description": "Lower priority for devDependencies updates",
+      "matchDepTypes": ["devDependencies"],
+      "prPriority": -1
+    },
+    {
+      "description": "Schedule pre-commit updates on weekends to not disturb production work",
+      "matchManagers": ["pre-commit"],
+      "prPriority": -1,
+      "schedule": ["* * * * 0,6"]
     }
   ]
 }
