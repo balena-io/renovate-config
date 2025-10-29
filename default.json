@@ -124,10 +124,16 @@
       "prPriority": -1
     },
     {
-      "description": "Schedule pre-commit updates on weekends to not disturb production work",
+      "description": "Schedule pre-commit updates for a small window once per month (noise reduction)",
       "matchManagers": ["pre-commit"],
       "prPriority": -1,
-      "schedule": ["* * * * 0,6"]
+      "schedule": ["* 0-3 15 * *"]
+    },
+    {
+      "description": "Packages less than 72 hours old can be unpublished from the npm registry, so wait 3 days before branch creation",
+      "matchDatasources": ["npm"],
+      "minimumReleaseAge": "3 days",
+      "internalChecksFilter": "strict"
     }
   ]
 }
