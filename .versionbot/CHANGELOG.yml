@@ -1,4 +1,23 @@
 - commits:
+    - subject: Prevent holding broken npm packages
+      hash: ca388a87897b011d126a2e43359c537497b8fbc3
+      body: |
+        From https://docs.renovatebot.com/configuration-options/#prevent-holding-broken-npm-packages
+
+        npm packages less than 72 hours (3 days) old can be unpublished fromthe npm registry,
+        which could result in a service impact if you have already updated to it.
+        Set minimumReleaseAge to 3 days for npm packages to prevent relying on a package that can be removed from the registry
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.9.8
+  title: ""
+  date: 2025-10-29T16:19:21.077Z
+- commits:
     - subject: Schedule pre-commit updates on weekends
       hash: 11db19f095d80f9bfce90f9a10979170926096cd
       body: |
