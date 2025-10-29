@@ -128,6 +128,12 @@
       "matchManagers": ["pre-commit"],
       "prPriority": -1,
       "schedule": ["* * * * 0,6"]
+    },
+    {
+      "description": "Packages less than 72 hours old can be unpublished from the npm registry, so wait 3 days before branch creation",
+      "matchDatasources": ["npm"],
+      "minimumReleaseAge": "3 days",
+      "internalChecksFilter": "strict"
     }
   ]
 }
