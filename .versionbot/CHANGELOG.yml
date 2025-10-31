@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update Node.js to v24
+      hash: 26a9eeef4652899f15c276ffa1ccbfd9898d465c
+      body: |
+        Update node from 22.21.1 to 24.11.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.9.9
+  title: ""
+  date: 2025-10-31T14:42:43.985Z
+- commits:
     - subject: Prevent holding broken npm packages
       hash: ca388a87897b011d126a2e43359c537497b8fbc3
       body: |
