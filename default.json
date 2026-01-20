@@ -56,7 +56,15 @@
     "**/tests/**",
     "**/__fixtures__/**"
   ],
+  "constraints": {
+    "npm": "<=11.6.0 || >=11.6.3"
+  },
   "packageRules": [
+    {
+      "description": "Avoid using npm 11.6.1 & 11.6.2 b/c of bug: https://github.com/npm/cli/issues/8628",
+      "matchPackageNames": ["npm"],
+      "allowedVersions": "<=11.6.0 || >=11.6.3"
+    },
     {
       "matchUpdateTypes": ["major", "minor", "patch"],
       "commitBody": "Update {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: patch"
