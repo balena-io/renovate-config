@@ -1,4 +1,18 @@
 - commits:
+    - subject: Avoid using npm 11.6.1 & 11.6.2 b/c of known bugs with package-locks
+      hash: 31c693989442b74f55c03a001dc190a8fb1af86c
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        See: https://github.com/npm/cli/issues/8628
+        see: https://github.com/npm/cli/issues/8628
+      author: Thodoris Greasidis
+      nested: []
+  version: 2.9.10
+  title: ""
+  date: 2026-01-20T14:35:31.196Z
+- commits:
     - subject: Update Node.js to v24
       hash: 26a9eeef4652899f15c276ffa1ccbfd9898d465c
       body: |
