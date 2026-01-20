@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency renovate to v42 [SECURITY]
+      hash: 7eaf83b8ead4289f939bfc249e77e00de4e699a9
+      body: |
+        Update renovate from 41.173.1 to 42.85.8
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.9.11
+  title: ""
+  date: 2026-01-20T18:04:50.963Z
+- commits:
     - subject: Avoid using npm 11.6.1 & 11.6.2 b/c of known bugs with package-locks
       hash: 31c693989442b74f55c03a001dc190a8fb1af86c
       body: ""
