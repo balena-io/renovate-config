@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add renovate shared workflow for deduplication across orgs
+      hash: cf8a339d8e1dce1b9d4704f7178b83eba0a9c032
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.10.0
+  title: ""
+  date: 2026-01-21T19:25:41.477Z
+- commits:
     - subject: Update dependency renovate to v42 [SECURITY]
       hash: 7eaf83b8ead4289f939bfc249e77e00de4e699a9
       body: |
