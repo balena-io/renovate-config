@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency npm to v11.6.4
+      hash: 5b89b01f3fba2751fb8e22d9d77c2e43e8dcd339
+      body: |
+        Update npm from 11.6.0 to 11.6.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.10.1
+  title: ""
+  date: 2026-01-21T20:15:41.444Z
+- commits:
     - subject: Add renovate shared workflow for deduplication across orgs
       hash: cf8a339d8e1dce1b9d4704f7178b83eba0a9c032
       body: ""
