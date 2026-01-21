@@ -1,0 +1,239 @@
+---
+name: Renovate
+on:
+  workflow_call:
+    inputs:
+      dry_run:
+        type: boolean
+        default: false
+        description: "If true, the Renovate will not make any changes to the repository."
+        required: false
+      environment:
+        type: string
+        required: false
+        description: "The environment to run Renovate for."
+      config_file:
+        type: string
+        required: false
+        description: "The config file to use for Renovate."
+      runs-on:
+        type: string
+        required: false
+        description: "The runner to use for Renovate."
+        default: >
+          ["self-hosted"]
+
+permissions:
+  contents: read
+  id-token: write  # AWS GitHub OIDC required: write
+  packages: read   # Manage private ghcr.io dependencies
+
+env:
+  LOG_LEVEL: debug
+  # renovate: datasource=docker depName=renovate packageName=ghcr.io/renovatebot/renovate
+  RENOVATE_VERSION: 42.86.0-full
+  # renovate: datasource=npm depName=npm
+  NPM_VERSION: 11.6.0
+  RENOVATE_DRY_RUN: ""
+
+# https://docs.github.com/en/actions/using-jobs/using-concurrency
+# https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/control-the-concurrency-of-workflows-and-jobs
+concurrency:
+  group: ${{ github.workflow }}-${{ inputs.environment || 'default' }}-${{ github.ref }}
+  # Expressions in the concurrency context do not have access
+  # to the entire github.event context so we cannot make advanced
+  # expressions beyond a few top level github event properties.
+
+  # See: https://github.com/orgs/community/discussions/69704#discussioncomment-7803351
+
+  # Cancel jobs in-progress for dry-runs or open PRs
+  cancel-in-progress: ${{ inputs.dry_run }}
+
+jobs:
+  renovate:
+    runs-on: ${{ fromJSON(inputs.runs-on) }}
+    timeout-minutes: 60
+
+    environment:
+      name: ${{ inputs.environment }}
+
+    env:
+      # See https://github.com/marketplace/actions/renovate-bot-github-action#persisting-the-repository-cache
+      RENOVATE_REPOSITORY_CACHE: 'enabled'
+      RENOVATE_CACHE_PRIVATE_PACKAGES: "true"
+      # This is the dir renovate provides -- if we set our own directory via cacheDir, we can run into permissions issues.
+      # It is also possible to cache a higher level of the directory, but it has minimal benefit. While renovate execution
+      # time gets faster, it also takes longer to upload the cache as it grows bigger.
+      cache_dir: /tmp/renovate/cache/renovate/repository
+      cache_key: renovate-cache-${{ github.repository_owner }}-${{ inputs.environment }}-${{ github.run_id }}
+      restore_key: renovate-cache-${{ github.repository_owner }}-${{ inputs.environment }}-
+
+    steps:
+      # https://github.com/actions/checkout
+      - name: Checkout
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        with:
+          persist-credentials: false
+
+      # https://github.com/actions/create-github-app-token
+      - name: Generate GitHub App installation token
+        uses: actions/create-github-app-token@29824e69f54612133e76f7eaac726eef6c875baf # v2.2.1
+        id: app_token
+        with:
+          # https://github.com/apps/balena-renovate
+          # https://github.com/organizations/product-os/settings/apps/balena-renovate
+          app-id: ${{ vars.RENOVATE_APP_ID || '335686' }}
+          private-key: ${{ secrets.RENOVATE_APP_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+
+      # https://docs.renovatebot.com/modules/datasource/aws-machine-image/
+      # https://docs.renovatebot.com/modules/datasource/aws-rds/
+      - uses: aws-actions/configure-aws-credentials@61815dcd50bd041e203e49132bacad1fd04d2708 # v5.1.1
+        if: vars.AWS_IAM_ROLE
+        with:
+          aws-region: ${{ vars.AWS_REGION || 'us-east-1' }}
+          role-session-name: github-${{ github.job }}-${{ github.run_id }}-${{ github.run_attempt }}
+          role-to-assume: '${{ vars.AWS_IAM_ROLE }}'  # environment specific
+
+      - name: Enable dry-run
+        run: echo "RENOVATE_DRY_RUN=full" >> "${GITHUB_ENV}"
+        if: inputs.dry_run
+
+      # Use local S3 cache on self-hosted runners
+      # https://github.com/tespkg/actions-cache
+      # https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows
+      - name: Restore actions cache
+        id: actions-cache
+        uses: tespkg/actions-cache/restore@a2e3f005921809689270625bc026d387f73017ae # v1.9.0
+        # Unset AWS credentials so they don't override the minio credentials
+        env:
+          AWS_ACCESS_KEY_ID: actions-svcacct
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.ACTIONS_CACHE_SECRET_KEY }}
+          AWS_SESSION_TOKEN: ''
+          AWS_DEFAULT_REGION: local
+          AWS_REGION: local
+        with:
+          endpoint: minio
+          port: 9000
+          insecure: "true"
+          accessKey: actions-svcacct
+          secretKey: ${{ secrets.ACTIONS_CACHE_SECRET_KEY }}
+          bucket: actions-cache
+          region: local
+          use-fallback: true
+          key: ${{ env.cache_key }}
+          restore-keys: |
+            ${{ env.restore_key }}
+          path: |
+            ${{ env.cache_dir }}
+
+      # Unfortunately, the permissions expected within renovate's docker container
+      # are different than the ones given after the cache is restored. We have to
+      # change ownership to solve this. We also need to have correct permissions in
+      # the entire /tmp/renovate tree, not just the section with the repo cache.
+      # See https://github.com/marketplace/actions/renovate-bot-github-action#persisting-the-repository-cache
+      - name: Fix cache permissions
+        run: |
+          mkdir -p "${cache_dir}"
+          sudo chown -R 12021:0 /tmp/renovate/
+
+      - name: Write out entrypoint script
+        run: |
+          cat <<EOF > ${{ runner.temp }}/entrypoint.sh
+          #!/bin/bash
+          set -euo pipefail
+
+          echo "=== npm version before install ==="
+          npm --version
+
+          echo "=== Installing npm@${NPM_VERSION} ==="
+          npm install -g "npm@${NPM_VERSION}" --loglevel verbose
+
+          echo "=== npm version after install ==="
+          INSTALLED_VERSION=\$(npm --version)
+          echo "Installed: \${INSTALLED_VERSION}"
+
+          if [[ "\${INSTALLED_VERSION}" != "${NPM_VERSION}" ]]; then
+            echo "ERROR: npm version mismatch! Expected ${NPM_VERSION}, got \${INSTALLED_VERSION}"
+            exit 1
+          fi
+
+          echo "=== npm location ==="
+          which npm
+
+          # Run renovate as the ubuntu user (container default)
+          exec runuser -u ubuntu -- renovate
+          
+          EOF
+
+          chmod +x ${{ runner.temp }}/entrypoint.sh
+
+      # https://github.com/renovatebot/github-action
+      - uses: renovatebot/github-action@8cb0d4a6ab7d8bb90460a005f7bd33b80dd07ca8 # v44.2.5
+        with:
+          # https://docs.renovatebot.com/configuration-options
+          # https://docs.renovatebot.com/self-hosted-configuration
+          configurationFile: ${{ inputs.config_file }}
+          token: ${{ steps.app_token.outputs.token }}
+          renovate-version: ${{ env.RENOVATE_VERSION }}
+          # Custom entrypoint to install pinned npm version before running renovate
+          docker-cmd-file: ${{ runner.temp }}/entrypoint.sh
+          docker-user: root
+          # https://github.com/renovatebot/github-action?tab=readme-ov-file#env-regex
+          env-regex: "^(?:RENOVATE_\\w+|LOG_LEVEL|AWS_\\w+)$"
+        env:
+          AWS_REGION: ${{ env.AWS_REGION }}
+          AWS_DEFAULT_REGION: ${{ env.AWS_REGION }}
+          AWS_ACCESS_KEY_ID: ${{ env.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ env.AWS_SECRET_ACCESS_KEY }}
+          AWS_SESSION_TOKEN: ${{ env.AWS_SESSION_TOKEN }}
+          GIT_CONFIG_COUNT: 1
+          GIT_CONFIG_KEY_0: "url.https://x-access-token:${{ steps.app_token.outputs.token }}@github.com/.insteadOf"
+          GIT_CONFIG_VALUE_0: "https://github.com/"
+          RENOVATE_DRY_RUN: ${{ env.RENOVATE_DRY_RUN }}
+          RENOVATE_HOST_RULES: |
+            [
+              {
+                "hostType": "docker",
+                "matchHost": "docker.io",
+                "username": "${{ secrets.DOCKERHUB_USER }}",
+                "password": "${{ secrets.DOCKERHUB_TOKEN }}"
+              },
+              {
+                "hostType": "docker",
+                "matchHost": "ghcr.io",
+                "username": "${{ github.actor }}",
+                "password": "${{ secrets.GITHUB_TOKEN }}"
+              }
+            ]
+
+      # If there was a cache miss for this key, save a new cache.
+      # Use local S3 cache on self-hosted runners.
+      # https://github.com/tespkg/actions-cache
+      # https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows
+      - name: Save actions cache
+        uses: tespkg/actions-cache/save@a2e3f005921809689270625bc026d387f73017ae # v1.9.0
+        # Do not save cache for pull_request_target events
+        # as they run in the context of the main branch and would be vulnerable to cache poisoning.
+        # https://0xn3va.gitbook.io/cheat-sheets/ci-cd/github/actions#cache-poisoning
+        # https://adnanthekhan.com/2024/05/06/the-monsters-in-your-build-cache-github-actions-cache-poisoning/
+        if: steps.actions-cache.outputs.cache-hit != true && github.event_name != 'pull_request_target' && env.RENOVATE_DRY_RUN != 'full'
+        # Unset AWS credentials so they don't override the minio credentials
+        env:
+          AWS_ACCESS_KEY_ID: actions-svcacct
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.ACTIONS_CACHE_SECRET_KEY }}
+          AWS_SESSION_TOKEN: ''
+          AWS_DEFAULT_REGION: local
+          AWS_REGION: local
+        with:
+          endpoint: minio
+          port: 9000
+          insecure: "true"
+          accessKey: actions-svcacct
+          secretKey: ${{ secrets.ACTIONS_CACHE_SECRET_KEY }}
+          bucket: actions-cache
+          region: local
+          use-fallback: true
+          key: ${{ env.cache_key }}
+          path: |
+            ${{ env.cache_dir }}

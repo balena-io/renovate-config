@@ -1,0 +1,32 @@
+name: Renovate Dry-Run
+on:
+  pull_request:
+    branches:
+      - master
+      - main
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        type: boolean
+        default: true
+        description: "If true, the Renovate will not make any changes to the repository."
+        required: false
+
+permissions:
+  contents: read
+  id-token: write  # AWS GitHub OIDC required: write
+  packages: read   # Manage private ghcr.io dependencies
+
+jobs:
+  renovate:
+    strategy:
+      matrix:
+        include:
+          - config_file: default.json
+
+    uses: ./.github/workflows/renovate.yml
+    secrets: inherit
+    with:
+      config_file: ${{ matrix.config_file }}
+      dry_run: ${{ inputs.dry_run || github.event_name == 'pull_request' }}
+      
