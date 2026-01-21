@@ -1,24 +1,32 @@
 ---
 name: Renovate
 on:
-  schedule:
-    - cron: "42 * * * *"
-  pull_request:
-    branches:
-      - master
-      - main
-  workflow_dispatch:
+  workflow_call:
     inputs:
       dry_run:
         type: boolean
         default: false
         description: "If true, the Renovate will not make any changes to the repository."
         required: false
+      environment:
+        type: string
+        required: false
+        description: "The environment to run Renovate for."
+      config_file:
+        type: string
+        required: false
+        description: "The config file to use for Renovate."
+      runs-on:
+        type: string
+        required: false
+        description: "The runner to use for Renovate."
+        default: >
+          ["self-hosted"]
 
 permissions:
   contents: read
-  id-token: "write"  # AWS GitHub OIDC required: write
-  packages: "read"   # Manage private ghcr.io dependencies
+  id-token: write  # AWS GitHub OIDC required: write
+  packages: read   # Manage private ghcr.io dependencies
 
 env:
   LOG_LEVEL: debug
@@ -26,11 +34,12 @@ env:
   RENOVATE_VERSION: 42.86.0-full
   # renovate: datasource=npm depName=npm
   NPM_VERSION: 11.6.0
+  RENOVATE_DRY_RUN: ""
 
 # https://docs.github.com/en/actions/using-jobs/using-concurrency
 # https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/control-the-concurrency-of-workflows-and-jobs
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: ${{ github.workflow }}-${{ inputs.environment || 'default' }}-${{ github.ref }}
   # Expressions in the concurrency context do not have access
   # to the entire github.event context so we cannot make advanced
   # expressions beyond a few top level github event properties.
@@ -38,32 +47,15 @@ concurrency:
   # See: https://github.com/orgs/community/discussions/69704#discussioncomment-7803351
 
   # Cancel jobs in-progress for dry-runs or open PRs
-  cancel-in-progress: ${{ inputs.dry_run || github.event_name == 'pull_request' }}
+  cancel-in-progress: ${{ inputs.dry_run }}
 
 jobs:
   renovate:
-    runs-on: ["self-hosted"]
+    runs-on: ${{ fromJSON(inputs.runs-on) }}
     timeout-minutes: 60
-    strategy:
-      fail-fast: true
-      matrix:
-        environment:
-          - balena-staging
-          - balena-production
-          - balena-playground
-          - balena-restricted
-        include:
-          - environment: balena-production
-            config_file: .github/renovate/balena-production.json
-          - environment: balena-staging
-            config_file: .github/renovate/balena-staging.json
-          - environment: balena-playground
-            config_file: .github/renovate/balena-playground.json
-          - environment: balena-restricted
-            config_file: .github/renovate/balena-restricted.json
 
     environment:
-      name: ${{ matrix.environment }}
+      name: ${{ inputs.environment }}
 
     env:
       # See https://github.com/marketplace/actions/renovate-bot-github-action#persisting-the-repository-cache
@@ -73,8 +65,8 @@ jobs:
       # It is also possible to cache a higher level of the directory, but it has minimal benefit. While renovate execution
       # time gets faster, it also takes longer to upload the cache as it grows bigger.
       cache_dir: /tmp/renovate/cache/renovate/repository
-      cache_key: renovate-cache-${{ github.repository_owner }}-${{ matrix.environment }}-${{ github.run_id }}
-      restore_key: renovate-cache-${{ github.repository_owner }}-${{ matrix.environment }}-
+      cache_key: renovate-cache-${{ github.repository_owner }}-${{ inputs.environment }}-${{ github.run_id }}
+      restore_key: renovate-cache-${{ github.repository_owner }}-${{ inputs.environment }}-
 
     steps:
       # https://github.com/actions/checkout
@@ -97,6 +89,7 @@ jobs:
       # https://docs.renovatebot.com/modules/datasource/aws-machine-image/
       # https://docs.renovatebot.com/modules/datasource/aws-rds/
       - uses: aws-actions/configure-aws-credentials@61815dcd50bd041e203e49132bacad1fd04d2708 # v5.1.1
+        if: vars.AWS_IAM_ROLE
         with:
           aws-region: ${{ vars.AWS_REGION || 'us-east-1' }}
           role-session-name: github-${{ github.job }}-${{ github.run_id }}-${{ github.run_attempt }}
@@ -104,7 +97,7 @@ jobs:
 
       - name: Enable dry-run
         run: echo "RENOVATE_DRY_RUN=full" >> "${GITHUB_ENV}"
-        if: inputs.dry_run || github.event_name == 'pull_request'
+        if: inputs.dry_run
 
       # Use local S3 cache on self-hosted runners
       # https://github.com/tespkg/actions-cache
@@ -141,22 +134,53 @@ jobs:
       # See https://github.com/marketplace/actions/renovate-bot-github-action#persisting-the-repository-cache
       - name: Fix cache permissions
         run: |
-          mkdir -p ${{ env.cache_dir }}
+          mkdir -p "${cache_dir}"
           sudo chown -R 12021:0 /tmp/renovate/
+
+      - name: Write out entrypoint script
+        run: |
+          cat <<EOF > ${{ runner.temp }}/entrypoint.sh
+          #!/bin/bash
+          set -euo pipefail
+
+          echo "=== npm version before install ==="
+          npm --version
+
+          echo "=== Installing npm@${NPM_VERSION} ==="
+          npm install -g "npm@${NPM_VERSION}" --loglevel verbose
+
+          echo "=== npm version after install ==="
+          INSTALLED_VERSION=\$(npm --version)
+          echo "Installed: \${INSTALLED_VERSION}"
+
+          if [[ "\${INSTALLED_VERSION}" != "${NPM_VERSION}" ]]; then
+            echo "ERROR: npm version mismatch! Expected ${NPM_VERSION}, got \${INSTALLED_VERSION}"
+            exit 1
+          fi
+
+          echo "=== npm location ==="
+          which npm
+
+          # Run renovate as the ubuntu user (container default)
+          exec runuser -u ubuntu -- renovate
+          
+          EOF
+
+          chmod +x ${{ runner.temp }}/entrypoint.sh
 
       # https://github.com/renovatebot/github-action
       - uses: renovatebot/github-action@8cb0d4a6ab7d8bb90460a005f7bd33b80dd07ca8 # v44.2.5
         with:
           # https://docs.renovatebot.com/configuration-options
           # https://docs.renovatebot.com/self-hosted-configuration
-          configurationFile: ${{ matrix.config_file }}
+          configurationFile: ${{ inputs.config_file }}
           token: ${{ steps.app_token.outputs.token }}
           renovate-version: ${{ env.RENOVATE_VERSION }}
           # Custom entrypoint to install pinned npm version before running renovate
-          docker-cmd-file: .github/renovate/entrypoint.sh
+          docker-cmd-file: ${{ runner.temp }}/entrypoint.sh
           docker-user: root
           # https://github.com/renovatebot/github-action?tab=readme-ov-file#env-regex
-          env-regex: "^(?:RENOVATE_\\w+|LOG_LEVEL|AWS_\\w+|NPM_VERSION)$"
+          env-regex: "^(?:RENOVATE_\\w+|LOG_LEVEL|AWS_\\w+)$"
         env:
           AWS_REGION: ${{ env.AWS_REGION }}
           AWS_DEFAULT_REGION: ${{ env.AWS_REGION }}

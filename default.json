@@ -18,6 +18,7 @@
     "group:githubArtifactActions"
   ],
   "onboarding": false,
+  "repositories": ["balena-io/renovate-config"],
   "requireConfig": "optional",
   "printConfig": true,
   "prHourlyLimit": 0,
