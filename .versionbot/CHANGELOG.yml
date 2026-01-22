@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency npm to v11.7.0
+      hash: 8b8a01cdb227a4197e763dac933c66e013e10109
+      body: |
+        Update npm from 11.6.4 to 11.7.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.10.4
+  title: ""
+  date: 2026-01-22T17:20:41.030Z
+- commits:
     - subject: Update Renovate workflow configuration
       hash: 8f6b6ca1b8af3e9293e1c8b30688e8aa5a7d6a15
       body: |
