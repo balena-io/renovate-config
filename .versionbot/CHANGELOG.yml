@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update Renovate workflow configuration
+      hash: 8f6b6ca1b8af3e9293e1c8b30688e8aa5a7d6a15
+      body: |
+        Changed config_file input to be required and increased timeout.
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Kyle Harding
+      nested: []
+  version: 2.10.3
+  title: ""
+  date: 2026-01-22T16:44:45.517Z
+- commits:
     - subject: Update renovate Docker tag to v42.86.1
       hash: b69706f02ecd1eadfbbb4a81b2a939e09aeceb91
       body: |
