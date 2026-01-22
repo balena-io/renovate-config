@@ -14,7 +14,7 @@ on:
         description: "The environment to run Renovate for."
       config_file:
         type: string
-        required: false
+        required: true
         description: "The config file to use for Renovate."
       runs-on:
         type: string
@@ -52,7 +52,7 @@ concurrency:
 jobs:
   renovate:
     runs-on: ${{ fromJSON(inputs.runs-on) }}
-    timeout-minutes: 60
+    timeout-minutes: 90
 
     environment:
       name: ${{ inputs.environment }}
