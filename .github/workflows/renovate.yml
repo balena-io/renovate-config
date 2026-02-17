@@ -33,7 +33,7 @@ env:
   # renovate: datasource=docker depName=renovate packageName=ghcr.io/renovatebot/renovate
   RENOVATE_VERSION: 42.95.1-full
   # renovate: datasource=npm depName=npm
-  NPM_VERSION: 11.8.0
+  NPM_VERSION: 11.10.0
   RENOVATE_DRY_RUN: ""
 
 # https://docs.github.com/en/actions/using-jobs/using-concurrency
