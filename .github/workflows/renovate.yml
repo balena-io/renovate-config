@@ -104,7 +104,7 @@ jobs:
       # https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows
       - name: Restore actions cache
         id: actions-cache
-        uses: tespkg/actions-cache/restore@a2e3f005921809689270625bc026d387f73017ae # v1.9.0
+        uses: tespkg/actions-cache/restore@570a8ae32f67c95bcaca3f8cc88702cd318291e9 # v1.10.0
         # Unset AWS credentials so they don't override the minio credentials
         env:
           AWS_ACCESS_KEY_ID: actions-svcacct
@@ -212,7 +212,7 @@ jobs:
       # https://github.com/tespkg/actions-cache
       # https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows
       - name: Save actions cache
-        uses: tespkg/actions-cache/save@a2e3f005921809689270625bc026d387f73017ae # v1.9.0
+        uses: tespkg/actions-cache/save@570a8ae32f67c95bcaca3f8cc88702cd318291e9 # v1.10.0
         # Do not save cache for pull_request_target events
         # as they run in the context of the main branch and would be vulnerable to cache poisoning.
         # https://0xn3va.gitbook.io/cheat-sheets/ci-cd/github/actions#cache-poisoning
