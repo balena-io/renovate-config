@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update tespkg/actions-cache action to v1.10.0
+      hash: 10c5190ed1a51798e87b87f62a3f22933aacfca8
+      body: |
+        Update tespkg/actions-cache from 1.9.0 to 1.10.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.10.43
+  title: ""
+  date: 2026-03-24T18:39:19.113Z
+- commits:
     - subject: Update renovate Docker tag to v43
       hash: cf48efd8acd9aafd80383fd70ed13cb921777806
       body: |
