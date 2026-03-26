@@ -1,4 +1,32 @@
 - commits:
+    - subject: "renovate: Disable auto-bump to renovate v43 for now"
+      hash: 44d4abe51f3a7e0e07e61a9116d854f73e577d3b
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+    - subject: Revert "Update renovate Docker tag to v43"
+      hash: 5da138323b053ceab3e7a1f88b3c9f31fa1f021a
+      body: |
+        This reverts commit cf48efd8acd9aafd80383fd70ed13cb921777806.
+
+        This version supports digests for non-semver refs in github-actions
+        which creates an infinite loop of PRs in our current configuration.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.10.44
+  title: ""
+  date: 2026-03-26T14:17:36.802Z
+- commits:
     - subject: Update tespkg/actions-cache action to v1.10.0
       hash: 10c5190ed1a51798e87b87f62a3f22933aacfca8
       body: |
