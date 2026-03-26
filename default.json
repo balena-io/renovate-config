@@ -2,16 +2,16 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     ":preserveSemverRanges",
-    "config:base",
+    "config:recommended",
     "docker:enableMajor",
     "helpers:pinGitHubActionDigests",
-    "regexManagers:dockerfileVersions",
-    "regexManagers:githubActionsVersions",
-    "regexManagers:tfvarsVersions",
+    "customManagers:dockerfileVersions",
+    "customManagers:githubActionsVersions",
+    "customManagers:tfvarsVersions",
     ":automergeStableNonMajor",
     ":automergePatch",
     ":automergeDigest",
-    "npm:unpublishSafe",
+    "security:minimumReleaseAgeNpm",
     ":semanticCommitsDisabled",
     ":separateMultipleMajorReleases",
     "group:vitestMonorepo",
@@ -72,13 +72,13 @@
     },
     {
       "groupName": "{{{replace '^@types/' '' depName}}}",
-      "matchPackagePrefixes": ["@types/"],
+      "matchPackageNames": ["@types/{/,}**"],
       "matchDepTypes": ["dependencies", "devDependencies"],
       "matchDatasources": ["npm"]
     },
     {
       "groupName": "{{depName}}",
-      "excludePackagePrefixes": ["@types/"],
+      "matchPackageNames": ["!@types/{/,}**"],
       "matchDepTypes": ["dependencies", "devDependencies"],
       "matchDatasources": ["npm"]
     },
@@ -92,7 +92,7 @@
       "commitBody": "Update {{depName}}\n\nChangelog-entry: Update {{depName}}\nChange-type: patch"
     },
     {
-      "matchPackagePatterns": ["^husky$"],
+      "matchPackageNames": ["/^husky$/"],
       "matchUpdateTypes": ["major"],
       "matchNewValue": "/^[\\^~v]?9\\./",
       "postUpgradeTasks": {
@@ -149,12 +149,6 @@
       "matchManagers": ["pre-commit"],
       "prPriority": -1,
       "schedule": ["* 0-3 15 * *"]
-    },
-    {
-      "description": "Packages less than 72 hours old can be unpublished from the npm registry, so wait 3 days before branch creation",
-      "matchDatasources": ["npm"],
-      "minimumReleaseAge": "3 days",
-      "internalChecksFilter": "strict"
     }
   ]
 }

@@ -14,7 +14,7 @@ function updateRenovateConfig(encodedCommand) {
   const config = JSON.parse(fs.readFileSync(configPath, { encoding: "utf8" }));
   const targetRule = config.packageRules.find(
     (rule) =>
-      rule.matchPackagePatterns?.includes("^husky$") &&
+      rule.matchPackageNames?.includes("/^husky$/") &&
       rule.matchUpdateTypes?.includes("major")
   );
 
