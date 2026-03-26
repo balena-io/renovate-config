@@ -1,4 +1,19 @@
 - commits:
+    - subject: Re-enable renovate docker image updates
+      hash: e098e13ed0e138ae81278195f7ca68b66ed3eee6
+      body: |
+        We now have package rules in place to restore the pre-v43 behaviour.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.11.5
+  title: ""
+  date: 2026-03-26T20:18:35.430Z
+- commits:
     - subject: Update dependency renovate to v43
       hash: bcddf86250886fe47975b59b72c330e44819b836
       body: |
