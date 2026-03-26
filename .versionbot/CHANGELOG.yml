@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency npm to v11.12.0
+      hash: dc8bda97540580b417da6ad16b6cdd8b27f8df22
+      body: |
+        Update npm from 11.10.1 to 11.12.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.11.2
+  title: ""
+  date: 2026-03-26T16:46:12.871Z
+- commits:
     - subject: Update dependency npm to v11.10.1
       hash: eb7e313b6f341ca93dfb21b3139d4114e27b3e8d
       body: |
