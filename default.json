@@ -122,6 +122,18 @@
       "matchUpdateTypes": ["minor", "patch", "digest"]
     },
     {
+      "description": "Disable digest pinning for Flowzone to prevent infinite PR loops between Flowzone and its consumers",
+      "matchManagers": ["github-actions"],
+      "matchPackageNames": ["product-os/flowzone"],
+      "pinDigests": false
+    },
+    {
+      "description": "Disable digest pinning for non-semver GitHub Actions refs (branches, feature tags) to restore pre-v43 behavior",
+      "matchManagers": ["github-actions"],
+      "matchCurrentVersion": "!/^v?\\d+/",
+      "pinDigests": false
+    },
+    {
       "description": "Group pre-commit hook updates",
       "groupName": "pre-commit hooks",
       "matchManagers": ["pre-commit"],
