@@ -9,10 +9,11 @@
   "description": "Shared renovate configuration and GitHub Action",
   "scripts": {
     "build": "node build && npm run lint:fix",
-    "test": "npm run test:hooks && renovate-config-validator default.json",
+    "test": "npm run test:hooks && npm run renovate:validate",
     "test:hooks": "npm run build && git diff --exit-code default.json",
     "lint:fix": "prettier --write default.json",
-    "prepare": "node -e \"try { (await import('husky')).default() } catch (e) { if (e.code !== 'ERR_MODULE_NOT_FOUND') throw e }\" --input-type module"
+    "prepare": "node -e \"try { (await import('husky')).default() } catch (e) { if (e.code !== 'ERR_MODULE_NOT_FOUND') throw e }\" --input-type module",
+    "renovate:validate": "renovate-config-validator --strict default.json"
   },
   "author": "Balena.io. <hello@balena.io>",
   "license": "Apache-2.0",
