@@ -31,6 +31,10 @@ permissions:
 env:
   LOG_LEVEL: debug
   # renovate: datasource=docker depName=renovate packageName=ghcr.io/renovatebot/renovate
+  # Disable auto-bump for now as v43 introduced some breaking changes and we want to control when we update.
+  # Specifically, this feature creates an infinite loop of PRs with actions that depend on each other.
+  #  feat(github-actions): Support digests for non-semver refs
+  #  https://github.com/renovatebot/renovate/pull/40225
   RENOVATE_VERSION: 42.99.0-full
   # renovate: datasource=npm depName=npm
   NPM_VERSION: 11.10.0
