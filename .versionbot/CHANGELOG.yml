@@ -1,4 +1,47 @@
 - commits:
+    - subject: Apply renovate config migrations from deprecated option names
+      hash: 76758aa052d492f4018d2526b34fc83a09d21665
+      body: |
+        Migrations applied from renovate-config-validator output:
+        - config:base -> config:recommended
+        - regexManagers:* -> customManagers:*
+        - npm:unpublishSafe -> security:minimumReleaseAgeNpm
+        - matchPackagePrefixes -> matchPackageNames with glob
+        - excludePackagePrefixes -> matchPackageNames with negated glob
+        - matchPackagePatterns -> matchPackageNames with regex
+
+        Remove redundant npm minimumReleaseAge packageRule now covered by
+        the security:minimumReleaseAgeNpm preset.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+    - subject: Disable GitHub Actions digest pinning for non-semver refs
+      hash: 47c18cd5d8878bfae12d7b7f3567c08c78b65cad
+      body: |
+        Renovate v43 introduced digest pinning for non-semver GitHub Actions
+        refs (branches, feature tags) which creates infinite PR loops for
+        actions that depend on each other, specifically Flowzone and its
+        consumers. Add two package rules as defense-in-depth:
+
+        1. Explicit exclusion for product-os/flowzone
+        2. Broad exclusion for all non-semver refs (master, main, etc.)
+
+        Semver-versioned actions (v1, v4.0.0) still get digest pinning.
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.11.0
+  title: ""
+  date: 2026-03-26T15:52:39.497Z
+- commits:
     - subject: "renovate: Disable auto-bump to renovate v43 for now"
       hash: 44d4abe51f3a7e0e07e61a9116d854f73e577d3b
       body: ""
