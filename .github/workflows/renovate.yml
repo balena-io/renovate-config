@@ -169,7 +169,7 @@ jobs:
           chmod +x ${{ runner.temp }}/entrypoint.sh
 
       # https://github.com/renovatebot/github-action
-      - uses: renovatebot/github-action@98c8f1b0835e163b9fdfc7c86dff40dadc7162ee # v45.0.3
+      - uses: renovatebot/github-action@68a3ea99af6ad249940b5a9fdf44fc6d7f14378b # v46.1.6
         with:
           # https://docs.renovatebot.com/configuration-options
           # https://docs.renovatebot.com/self-hosted-configuration
