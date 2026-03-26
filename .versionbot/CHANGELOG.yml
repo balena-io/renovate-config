@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency npm to v11.10.1
+      hash: eb7e313b6f341ca93dfb21b3139d4114e27b3e8d
+      body: |
+        Update npm from 11.10.0 to 11.10.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.11.1
+  title: ""
+  date: 2026-03-26T16:01:43.650Z
+- commits:
     - subject: Apply renovate config migrations from deprecated option names
       hash: 76758aa052d492f4018d2526b34fc83a09d21665
       body: |
