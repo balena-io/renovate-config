@@ -75,6 +75,45 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Decode the GitHub App Private Key
+        id: decode
+        shell: bash
+        working-directory: ${{ runner.temp }}
+        # Skip decode if -----BEGIN is detected in the body of the private key, which indicates that the key is not base64 encoded.
+        # This allows users to use either raw or base64 encoded keys without needing to specify which format they are using.
+        # Raw secrets are automatically masked by GitHub; the base64-decoded derivative is not, so we mask it explicitly.
+        env:
+          SECRET_VALUE: ${{ secrets.RENOVATE_APP_PRIVATE_KEY }}
+        run: |
+          set -euo pipefail
+          if [[ -z "$SECRET_VALUE" ]]; then
+            echo "::error::RENOVATE_APP_PRIVATE_KEY secret is not set"
+            exit 1
+          fi
+          if [[ "$SECRET_VALUE" == *"-----BEGIN"* ]]; then
+            echo "Detected unencoded private key, skipping base64 decode"
+            private_key="$SECRET_VALUE"
+          else
+            if ! private_key=$(echo "$SECRET_VALUE" | base64 -d); then
+              echo "::error::Failed to base64 decode RENOVATE_APP_PRIVATE_KEY. Verify the secret is valid base64."
+              exit 1
+            fi
+            while IFS= read -r line; do
+              [[ -n "$line" ]] && echo "::add-mask::$line"
+            done <<< "$private_key"
+          fi
+          if [[ "$private_key" != *"-----BEGIN"* ]]; then
+            echo "::error::Decoded private key does not look like a PEM key (missing -----BEGIN header). Check secret encoding."
+            exit 1
+          fi
+          # Random delimiter prevents injection via crafted secret values
+          delimiter="pk_$(head -c 16 /dev/urandom | od -An -tx1 | tr -d ' \n')"
+          {
+            echo "private-key<<${delimiter}"
+            echo "$private_key"
+            echo "${delimiter}"
+          } >> "$GITHUB_OUTPUT"
+
       # https://github.com/actions/create-github-app-token
       - name: Generate GitHub App installation token
         uses: actions/create-github-app-token@f8d387b68d61c58ab83c6c016672934102569859 # v3.0.0
@@ -83,7 +122,7 @@ jobs:
           # https://github.com/apps/balena-renovate
           # https://github.com/organizations/product-os/settings/apps/balena-renovate
           app-id: ${{ vars.RENOVATE_APP_ID || '335686' }}
-          private-key: ${{ secrets.RENOVATE_APP_PRIVATE_KEY }}
+          private-key: ${{ steps.decode.outputs.private-key }}
           owner: ${{ github.repository_owner }}
 
       # https://docs.renovatebot.com/modules/datasource/aws-machine-image/
