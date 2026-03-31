@@ -1,4 +1,19 @@
 - commits:
+    - subject: "workflows: Support decoding base64 private keys and mask value"
+      hash: df01eff070e05ad89e6c1b024451a5ce19f23ba3
+      body: >
+        Skip decode if PEM key format is detected and just use the raw key value.
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.12.0
+  title: ""
+  date: 2026-03-31T17:39:38.240Z
+- commits:
     - subject: Update renovate Docker tag to v43.101.5
       hash: e01999c38eb53e4a3fe0864d244197356628ff3a
       body: |
