@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v43.102.1
+      hash: 596f773b11619e9b78286d57ebdae424407f5307
+      body: |
+        Update renovate from 43.101.5 to 43.102.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.12.1
+  title: ""
+  date: 2026-04-01T00:21:27.094Z
+- commits:
     - subject: "workflows: Support decoding base64 private keys and mask value"
       hash: df01eff070e05ad89e6c1b024451a5ce19f23ba3
       body: >
