@@ -31,7 +31,7 @@ permissions:
 env:
   LOG_LEVEL: debug
   # renovate: datasource=docker depName=renovate packageName=ghcr.io/renovatebot/renovate
-  RENOVATE_VERSION: 43.110.8-full
+  RENOVATE_VERSION: 43.110.9-full
   # renovate: datasource=npm depName=npm
   NPM_VERSION: 11.12.1
   RENOVATE_DRY_RUN: ""
