@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v43.123.4
+      hash: 6ddd54b05bde4c6e21c32becb205bd998aed9fa5
+      body: |
+        Update renovate from 43.123.3 to 43.123.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.12.77
+  title: ""
+  date: 2026-04-15T21:28:54.352Z
+- commits:
     - subject: Update renovate Docker tag to v43.123.3
       hash: 8928a1983f49849725e9102b3f9368987009b505
       body: |
