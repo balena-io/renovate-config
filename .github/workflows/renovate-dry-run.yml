@@ -29,4 +29,5 @@ jobs:
     with:
       config_file: ${{ matrix.config_file }}
       dry_run: ${{ inputs.dry_run || github.event_name == 'pull_request' }}
+      repositories: ${{ github.repository }}
       

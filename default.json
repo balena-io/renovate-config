@@ -17,10 +17,6 @@
     "group:vitestMonorepo",
     "group:githubArtifactActions"
   ],
-  "onboarding": false,
-  "repositories": ["balena-io/renovate-config"],
-  "requireConfig": "optional",
-  "printConfig": true,
   "prHourlyLimit": 0,
   "cloneSubmodules": false,
   "rebaseWhen": "behind-base-branch",
