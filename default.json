@@ -112,6 +112,12 @@
       "automerge": false
     },
     {
+      "description": "Use minimum release age for Bitwarden clients",
+      "matchDepNames": ["bitwarden/clients"],
+      "matchDatasources": ["github-releases"],
+      "minimumReleaseAge": "3 days"
+    },
+    {
       "description": "Group GitHub Actions updates",
       "groupName": "GitHub Actions",
       "matchManagers": ["github-actions"],
