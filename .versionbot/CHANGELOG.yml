@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v43.141.3
+      hash: 2c166a2a4238cb4d0b90e8e457afc407407a1e06
+      body: |
+        Update renovate from 43.141.2 to 43.141.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.13.1
+  title: ""
+  date: 2026-04-24T16:27:50.436Z
+- commits:
     - subject: Use minimum release age for Bitwarden clients
       hash: 6e0c6bcb5c87f26e1afd0483667ffa431d2519a7
       body: |
