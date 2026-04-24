@@ -17,10 +17,6 @@
     "group:vitestMonorepo",
     "group:githubArtifactActions"
   ],
-  "onboarding": false,
-  "repositories": ["balena-io/renovate-config"],
-  "requireConfig": "optional",
-  "printConfig": true,
   "prHourlyLimit": 0,
   "cloneSubmodules": false,
   "rebaseWhen": "behind-base-branch",
@@ -114,6 +110,12 @@
       ],
       "groupName": "minio",
       "automerge": false
+    },
+    {
+      "description": "Use minimum release age for Bitwarden clients",
+      "matchDepNames": ["bitwarden/clients"],
+      "matchDatasources": ["github-releases"],
+      "minimumReleaseAge": "3 days"
     },
     {
       "description": "Group GitHub Actions updates",
