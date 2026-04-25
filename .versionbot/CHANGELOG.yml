@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency npm to v11.13.0
+      hash: 1c8d89cdb1696079eb0bfddaf2837c91d54e6e96
+      body: |
+        Update npm from 11.12.1 to 11.13.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.13.3
+  title: ""
+  date: 2026-04-25T21:11:01.123Z
+- commits:
     - subject: Update renovate Docker tag to v43.141.5
       hash: fabdd89d5a88b028a005573baac5b7eee748c569
       body: |
