@@ -128,7 +128,7 @@ jobs:
         with:
           # https://github.com/apps/balena-renovate
           # https://github.com/organizations/product-os/settings/apps/balena-renovate
-          app-id: ${{ vars.RENOVATE_APP_ID || '335686' }}
+          client-id: ${{ vars.RENOVATE_APP_ID || '335686' }}
           private-key: ${{ steps.decode.outputs.private-key }}
           owner: ${{ github.repository_owner }}
 
