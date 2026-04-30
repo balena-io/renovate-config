@@ -1,4 +1,17 @@
 - commits:
+    - subject: Fix client-id assignment in renovate.yml
+      hash: 15ccbd61c871b663bfcd244f78c2473bd4a54bb7
+      body: |
+        app-id has been replaced by client-id
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Kyle Harding
+      nested: []
+  version: 2.13.22
+  title: ""
+  date: 2026-04-30T14:42:38.845Z
+- commits:
     - subject: Update renovate Docker tag to v43.159.2
       hash: 38f86cd96bd813abdd922cafcb171fb137700516
       body: |
