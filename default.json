@@ -138,13 +138,27 @@
       "description": "Disable digest pinning for Flowzone to prevent infinite PR loops between Flowzone and its consumers",
       "matchManagers": ["github-actions"],
       "matchPackageNames": ["product-os/flowzone"],
-      "pinDigests": false
+      "matchUpdateTypes": ["pinDigest"],
+      "enabled": false
     },
     {
       "description": "Disable digest pinning for non-semver GitHub Actions refs (branches, feature tags) to restore pre-v43 behavior",
       "matchManagers": ["github-actions"],
       "matchCurrentVersion": "!/^v?\\d+/",
-      "pinDigests": false
+      "matchUpdateTypes": ["pinDigest"],
+      "enabled": false
+    },
+    {
+      "description": "Skip docker digest pinning for balena-controlled registries (not a primary source of supply chain attack)",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": [
+        "balena/**",
+        "ghcr.io/balena-io/**",
+        "ghcr.io/balena-io-modules/**",
+        "ghcr.io/product-os/**"
+      ],
+      "matchUpdateTypes": ["pinDigest"],
+      "enabled": false
     },
     {
       "description": "Group pre-commit hook updates",
@@ -156,6 +170,19 @@
       "description": "Lower priority for devDependencies updates",
       "matchDepTypes": ["devDependencies"],
       "prPriority": -1
+    },
+    {
+      "description": "Schedule devDependencies digest updates for weekends (noise reduction)",
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["digest"],
+      "schedule": ["every weekend"]
+    },
+    {
+      "description": "Skip range pinning @balena/ npm packages (not a primary source of supply chain attack)",
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@balena/**"],
+      "matchUpdateTypes": ["pin"],
+      "enabled": false
     },
     {
       "description": "Schedule pre-commit updates for a small window once per month (noise reduction)",
