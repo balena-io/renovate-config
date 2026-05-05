@@ -20,12 +20,23 @@
   "prHourlyLimit": 0,
   "cloneSubmodules": false,
   "rebaseWhen": "behind-base-branch",
-  "git-submodules": {
-    "enabled": true
-  },
-  "pre-commit": {
-    "enabled": true
-  },
+  "enabledManagers": [
+    "cargo",
+    "custom.regex",
+    "docker-compose",
+    "dockerfile",
+    "git-submodules",
+    "github-actions",
+    "gomod",
+    "helm-values",
+    "helmv3",
+    "kubernetes",
+    "kustomize",
+    "npm",
+    "pip_requirements",
+    "pre-commit",
+    "regex"
+  ],
   "labels": ["renovate"],
   "commitBody": "Update {{depName}}\n\nChange-type: patch",
   "prConcurrentLimit": 3,
