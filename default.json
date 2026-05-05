@@ -3,6 +3,7 @@
   "extends": [
     ":preserveSemverRanges",
     "config:recommended",
+    "config:best-practices",
     "docker:enableMajor",
     "helpers:pinGitHubActionDigests",
     "customManagers:dockerfileVersions",
@@ -52,7 +53,6 @@
   },
   "lockFileMaintenance": {
     "commitBody": "Update {{depName}}\n\nChange-type: patch",
-    "enabled": true,
     "automerge": true
   },
   "ignorePaths": [
