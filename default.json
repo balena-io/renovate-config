@@ -78,16 +78,11 @@
       "commitBody": "Update {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: patch"
     },
     {
-      "groupName": "{{{replace '^@types/' '' depName}}}",
-      "matchPackageNames": ["@types/{/,}**"],
+      "description": "Group @types/X with its parent package X so they share a single PR (e.g. react + @types/react)",
+      "matchDatasources": ["npm"],
       "matchDepTypes": ["dependencies", "devDependencies"],
-      "matchDatasources": ["npm"]
-    },
-    {
-      "groupName": "{{depName}}",
-      "matchPackageNames": ["!@types/{/,}**"],
-      "matchDepTypes": ["dependencies", "devDependencies"],
-      "matchDatasources": ["npm"]
+      "matchPackageNames": ["@types/**"],
+      "overrideDepName": "{{replace '^@types/' '' depName}}"
     },
     {
       "matchUpdateTypes": ["minor", "patch"],
