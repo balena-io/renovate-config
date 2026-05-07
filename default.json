@@ -3,6 +3,7 @@
   "extends": [
     ":preserveSemverRanges",
     "config:recommended",
+    "config:best-practices",
     "docker:enableMajor",
     "helpers:pinGitHubActionDigests",
     "customManagers:dockerfileVersions",
@@ -20,12 +21,23 @@
   "prHourlyLimit": 0,
   "cloneSubmodules": false,
   "rebaseWhen": "behind-base-branch",
-  "git-submodules": {
-    "enabled": true
-  },
-  "pre-commit": {
-    "enabled": true
-  },
+  "enabledManagers": [
+    "cargo",
+    "custom.regex",
+    "docker-compose",
+    "dockerfile",
+    "git-submodules",
+    "github-actions",
+    "gomod",
+    "helm-values",
+    "helmv3",
+    "kubernetes",
+    "kustomize",
+    "npm",
+    "pip_requirements",
+    "pre-commit",
+    "regex"
+  ],
   "labels": ["renovate"],
   "commitBody": "Update {{depName}}\n\nChange-type: patch",
   "prConcurrentLimit": 3,
@@ -41,7 +53,6 @@
   },
   "lockFileMaintenance": {
     "commitBody": "Update {{depName}}\n\nChange-type: patch",
-    "enabled": true,
     "automerge": true
   },
   "ignorePaths": [
@@ -67,16 +78,11 @@
       "commitBody": "Update {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: patch"
     },
     {
-      "groupName": "{{{replace '^@types/' '' depName}}}",
-      "matchPackageNames": ["@types/{/,}**"],
+      "description": "Group @types/X with its parent package X so they share a single PR (e.g. react + @types/react)",
+      "matchDatasources": ["npm"],
       "matchDepTypes": ["dependencies", "devDependencies"],
-      "matchDatasources": ["npm"]
-    },
-    {
-      "groupName": "{{depName}}",
-      "matchPackageNames": ["!@types/{/,}**"],
-      "matchDepTypes": ["dependencies", "devDependencies"],
-      "matchDatasources": ["npm"]
+      "matchPackageNames": ["@types/**"],
+      "overrideDepName": "{{replace '^@types/' '' depName}}"
     },
     {
       "matchUpdateTypes": ["minor", "patch"],
@@ -127,13 +133,27 @@
       "description": "Disable digest pinning for Flowzone to prevent infinite PR loops between Flowzone and its consumers",
       "matchManagers": ["github-actions"],
       "matchPackageNames": ["product-os/flowzone"],
-      "pinDigests": false
+      "matchUpdateTypes": ["pinDigest"],
+      "enabled": false
     },
     {
       "description": "Disable digest pinning for non-semver GitHub Actions refs (branches, feature tags) to restore pre-v43 behavior",
       "matchManagers": ["github-actions"],
       "matchCurrentVersion": "!/^v?\\d+/",
-      "pinDigests": false
+      "matchUpdateTypes": ["pinDigest"],
+      "enabled": false
+    },
+    {
+      "description": "Skip docker digest pinning for balena-controlled registries (not a primary source of supply chain attack)",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": [
+        "balena/**",
+        "ghcr.io/balena-io/**",
+        "ghcr.io/balena-io-modules/**",
+        "ghcr.io/product-os/**"
+      ],
+      "matchUpdateTypes": ["pinDigest"],
+      "enabled": false
     },
     {
       "description": "Group pre-commit hook updates",
@@ -145,6 +165,19 @@
       "description": "Lower priority for devDependencies updates",
       "matchDepTypes": ["devDependencies"],
       "prPriority": -1
+    },
+    {
+      "description": "Schedule devDependencies digest updates for weekends (noise reduction)",
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["digest"],
+      "schedule": ["every weekend"]
+    },
+    {
+      "description": "Skip range pinning @balena/ npm packages (not a primary source of supply chain attack)",
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@balena/**"],
+      "matchUpdateTypes": ["pin"],
+      "enabled": false
     },
     {
       "description": "Schedule pre-commit updates for a small window once per month (noise reduction)",
