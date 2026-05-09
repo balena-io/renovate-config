@@ -16,7 +16,8 @@
     ":semanticCommitsDisabled",
     ":separateMultipleMajorReleases",
     "group:vitestMonorepo",
-    "group:githubArtifactActions"
+    "group:githubArtifactActions",
+    "group:allDigest"
   ],
   "prHourlyLimit": 0,
   "cloneSubmodules": false,
