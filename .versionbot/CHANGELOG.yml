@@ -1,4 +1,43 @@
 - commits:
+    - subject: Enable config:best-practices preset
+      hash: 4aeb7f6ab8feeff92c93bb9d098c6d6688c90f30
+      body: |
+        Preset with best practices from the Renovate maintainers.
+
+        Includes:
+            "config:recommended",
+            "docker:pinDigests",
+            "helpers:pinGitHubActionDigests",
+            ":configMigration",
+            ":pinDevDependencies",
+            "abandonments:recommended",
+            "security:minimumReleaseAgeNpm",
+            ":maintainLockFilesWeekly"
+
+        Primarily to mitigate risks of supply-chain attacks.
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+    - subject: Set explicit enabledManagers
+      hash: 78ca46810024bfd9ca6b062cd9a2528a356bb9dc
+      body: |
+        List explicit enabledManagers to improve overall runtime
+        and disable features we don't use.
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.14.0
+  title: ""
+  date: 2026-05-12T17:04:43.280Z
+- commits:
     - subject: Update renovate Docker tag to v43.176.2
       hash: 878848ff88913e17027287bc4f362fb2732680f5
       body: |
