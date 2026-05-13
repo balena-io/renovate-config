@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v43.176.4
+      hash: f4f8026b6965faa783bf99c73ce656b50c65718a
+      body: |
+        Update renovate from 43.176.3 to 43.176.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.14.3
+  title: ""
+  date: 2026-05-13T02:01:16.609Z
+- commits:
     - subject: Update actions/create-github-app-token action to v3.2.0
       hash: 24c4868765d0486433a447bda77b6dc9d0582eb3
       body: |
