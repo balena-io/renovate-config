@@ -1,4 +1,22 @@
 - commits:
+    - subject: Remove group:allDigest preset
+      hash: eb0e3afb683631f7c2bcb8ad01062a2848fc0003
+      body: |
+        The intent was to reduce the PR churn, which this preset does,
+        but it also has the effect of grouping all git-submodule PRs
+        which is not desirable. Especially as balena-os is going to
+        extend this config soon.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.14.11
+  title: ""
+  date: 2026-05-13T20:23:26.014Z
+- commits:
     - subject: Update renovate Docker tag to v43.177.7
       hash: 2e01ca8baf7a10aff0cbd9ff81738236dd24e81e
       body: |
