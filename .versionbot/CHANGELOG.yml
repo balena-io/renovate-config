@@ -1,4 +1,26 @@
 - commits:
+    - subject: Clarify the behaviour of disabling pinDigest PRs
+      hash: 8fba410743fe592b96bf8024f6f22368ca6d1bd3
+      body: |
+        Disabling PRs of type pinDigest does not prevent future
+        update types from including digests. It only disables
+        the initial PR to add all the digests where missing.
+
+        For github-actions not pinned to semver, we want digests fully disabled.
+
+        For balena-controlled registries, we are okay with including
+        digests on updates.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.14.6
+  title: ""
+  date: 2026-05-13T14:33:17.516Z
+- commits:
     - subject: Update renovate Docker tag to v43.176.7
       hash: 76960d191ea37a4222519bdabf909692e915e452
       body: |
