@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update actions/create-github-app-token action to v3.2.0
+      hash: 24c4868765d0486433a447bda77b6dc9d0582eb3
+      body: |
+        Update actions/create-github-app-token from 3.1.1 to 3.2.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.14.2
+  title: ""
+  date: 2026-05-13T00:38:56.059Z
+- commits:
     - subject: Update renovate Docker tag to v43.176.3
       hash: 926379fc66451cbb1df0193204c3dbb69a608430
       body: |
