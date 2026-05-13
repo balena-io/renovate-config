@@ -133,18 +133,16 @@
       "description": "Disable digest pinning for Flowzone to prevent infinite PR loops between Flowzone and its consumers",
       "matchManagers": ["github-actions"],
       "matchPackageNames": ["product-os/flowzone"],
-      "matchUpdateTypes": ["pinDigest"],
-      "enabled": false
+      "pinDigests": false
     },
     {
       "description": "Disable digest pinning for non-semver GitHub Actions refs (branches, feature tags) to restore pre-v43 behavior",
       "matchManagers": ["github-actions"],
       "matchCurrentVersion": "!/^v?\\d+/",
-      "matchUpdateTypes": ["pinDigest"],
-      "enabled": false
+      "pinDigests": false
     },
     {
-      "description": "Skip docker digest pinning for balena-controlled registries (not a primary source of supply chain attack)",
+      "description": "Disable pinDigest PRs for balena-controlled registries (defer digest pinning until they have a new version)",
       "matchDatasources": ["docker"],
       "matchPackageNames": [
         "balena/**",
