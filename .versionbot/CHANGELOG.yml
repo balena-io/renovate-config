@@ -1,4 +1,20 @@
 - commits:
+    - subject: "default.json: Restore enabled flags for beta managers"
+      hash: 29f630bd566612047d5d931edddc9dc59148e443
+      body: |
+        git-submodules and pre-commit are beta managers and still
+        require the enabled flag in addition to the enabledManagers array.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.14.43
+  title: ""
+  date: 2026-05-20T17:53:48.286Z
+- commits:
     - subject: Update renovate Docker tag to v43.188.0
       hash: 7235b448349a125ce91178e44d8bedfd7c808326
       body: |
