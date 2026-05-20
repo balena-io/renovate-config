@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v43.188.1
+      hash: ca4eb2e37af1604f919414c4ed87ccaf0c0b0309
+      body: |
+        Update renovate from 43.188.0 to 43.188.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.14.44
+  title: ""
+  date: 2026-05-20T18:12:14.494Z
+- commits:
     - subject: "default.json: Restore enabled flags for beta managers"
       hash: 29f630bd566612047d5d931edddc9dc59148e443
       body: |
