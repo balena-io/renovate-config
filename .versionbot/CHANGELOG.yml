@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update aws-actions/configure-aws-credentials action to v6.1.2
+      hash: ad6e0ed8a979a6ca9a3eea1825cc05df0809501b
+      body: |
+        Update aws-actions/configure-aws-credentials from 6.1.1 to 6.1.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.14.63
+  title: ""
+  date: 2026-05-26T18:05:38.523Z
+- commits:
     - subject: Update renovate Docker tag to v43.195.8
       hash: b50b7d4b20248711e3d16995c7f247ae12691fb9
       body: |
