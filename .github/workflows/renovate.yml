@@ -37,7 +37,7 @@ env:
   # renovate: datasource=docker depName=renovate packageName=ghcr.io/renovatebot/renovate
   RENOVATE_VERSION: 43.205.1-full
   # renovate: datasource=npm depName=npm
-  NPM_VERSION: 11.15.0
+  NPM_VERSION: 11.16.0
   RENOVATE_DRY_RUN: ""
   RENOVATE_ONBOARDING: "false"
   RENOVATE_REQUIRE_CONFIG: "optional"
