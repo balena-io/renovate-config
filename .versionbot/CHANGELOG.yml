@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update GitHub Actions to v6.0.3
+      hash: 08ec78707cbde01004d7adfa79388b3122a039e3
+      body: |
+        Update actions/checkout from 6.0.2 to 6.0.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.14.96
+  title: ""
+  date: 2026-06-02T16:39:24.436Z
+- commits:
     - subject: Update renovate Docker tag to v43.209.0
       hash: 0206944ad3aeb226dc81998ee4d9ef0ae815fd1c
       body: |
