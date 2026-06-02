@@ -134,7 +134,7 @@ jobs:
 
       # https://docs.renovatebot.com/modules/datasource/aws-machine-image/
       # https://docs.renovatebot.com/modules/datasource/aws-rds/
-      - uses: aws-actions/configure-aws-credentials@99214aa6889fcddfa57764031d71add364327e59 # v6.1.3
+      - uses: aws-actions/configure-aws-credentials@e7f100cf4c008499ea8adda475de1042d6975c7b # v6.2.0
         if: vars.AWS_IAM_ROLE
         with:
           aws-region: ${{ vars.AWS_REGION || 'us-east-1' }}
