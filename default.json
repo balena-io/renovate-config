@@ -187,5 +187,61 @@
       "prPriority": -1,
       "schedule": ["* 0-3 15 * *"]
     }
-  ]
+  ],
+  "customManagers": [
+    {
+      "description": "balenaCloud registry image reference manager for Dockerfiles",
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/(^|/|\\.)([Dd]ocker|[Cc]ontainer)file$/",
+        "/(^|/)([Dd]ocker|[Cc]ontainer)file[^/]*$/"
+      ],
+      "matchStrings": [
+        "FROM[ \\t]+bh\\.cr/(?<packageName>[\\w\\-]+/[\\w\\-]+)/(?<currentValue>[0-9]+\\.[0-9]+\\.[0-9]+(\\-(rev\\d+|\\d{13}))?)",
+        "FROM[ \\t]+bh\\.cr/(?<packageName>[\\w\\-]+/[\\w\\-]+)/(?<currentDigest>[a-fA-F0-9]{7,40})"
+      ],
+      "datasourceTemplate": "custom.balena-cloud",
+      "versioningTemplate": "regex:^(?<major>\\d+)(\\.(?<minor>\\d+))?(\\.(?<patch>\\d+))?(\\-(rev)?(?<build>\\d+))?$",
+      "autoReplaceStringTemplate": "FROM {{{depName}}}/{{#if currentDigest}}{{{newDigest}}}{{else}}{{{newValue}}}{{/if}}",
+      "currentValueTemplate": "{{#if currentValue}}{{currentValue}}{{else}}0.0.0{{/if}}",
+      "depNameTemplate": "bh.cr/{{{packageName}}}"
+    },
+    {
+      "description": "balenaCloud registry image reference manager for Kubernetes manifests",
+      "customType": "regex",
+      "managerFilePatterns": ["/^kube/.+\\.ya?ml$/"],
+      "matchStrings": [
+        "image:[ \\t]+bh\\.cr/(?<packageName>[\\w\\-]+/[\\w\\-]+)/(?<currentValue>[0-9]+\\.[0-9]+\\.[0-9]+(\\-(rev\\d+|\\d{13}))?)",
+        "image:[ \\t]+bh\\.cr/(?<packageName>[\\w\\-]+/[\\w\\-]+)/(?<currentDigest>[a-fA-F0-9]{7,40})"
+      ],
+      "datasourceTemplate": "custom.balena-cloud",
+      "versioningTemplate": "regex:^(?<major>\\d+)(\\.(?<minor>\\d+))?(\\.(?<patch>\\d+))?(\\-(rev)?(?<build>\\d+))?$",
+      "autoReplaceStringTemplate": "image: {{{depName}}}/{{#if currentDigest}}{{{newDigest}}}{{else}}{{{newValue}}}{{/if}}",
+      "currentValueTemplate": "{{#if currentValue}}{{currentValue}}{{else}}0.0.0{{/if}}",
+      "depNameTemplate": "bh.cr/{{{packageName}}}"
+    },
+    {
+      "description": "balenaCloud registry image reference manager for Docker Compose files",
+      "customType": "regex",
+      "managerFilePatterns": ["/(^|/)docker-compose(\\.[\\w-]+)?\\.ya?ml$/"],
+      "matchStrings": [
+        "image:[ \\t]+bh\\.cr/(?<packageName>[\\w\\-]+/[\\w\\-]+)/(?<currentValue>[0-9]+\\.[0-9]+\\.[0-9]+(\\-(rev\\d+|\\d{13}))?)",
+        "image:[ \\t]+bh\\.cr/(?<packageName>[\\w\\-]+/[\\w\\-]+)/(?<currentDigest>[a-fA-F0-9]{7,40})"
+      ],
+      "datasourceTemplate": "custom.balena-cloud",
+      "versioningTemplate": "regex:^(?<major>\\d+)(\\.(?<minor>\\d+))?(\\.(?<patch>\\d+))?(\\-(rev)?(?<build>\\d+))?$",
+      "autoReplaceStringTemplate": "image: {{{depName}}}/{{#if currentDigest}}{{{newDigest}}}{{else}}{{{newValue}}}{{/if}}",
+      "currentValueTemplate": "{{#if currentValue}}{{currentValue}}{{else}}0.0.0{{/if}}",
+      "depNameTemplate": "bh.cr/{{{packageName}}}"
+    }
+  ],
+  "customDatasources": {
+    "balena-cloud": {
+      "description": "balenaCloud Registry Resource for bh.cr images",
+      "defaultRegistryUrlTemplate": "https://api.balena-cloud.com/v7/release?$filter=(belongs_to__application/any(a:a/slug%20eq%20'{{packageName}}'))%20and%20status%20eq%20%27success%27%20and%20is_final%20eq%20true&$select=commit,is_finalized_at__date,raw_version&$expand=belongs_to__application($filter=slug%20eq%20'{{packageName}}';$select=is_stored_at__repository_url)",
+      "transformTemplates": [
+        "{ \"releases\": $map($.d, function($v) { { \"version\": $replace($v.raw_version, \"+rev\", \"-rev\"), \"releaseTimestamp\": $v.is_finalized_at__date, \"digest\": $v.commit } }), \"sourceUrl\": $.d[0].belongs_to__application[0].is_stored_at__repository_url }"
+      ]
+    }
+  }
 }
