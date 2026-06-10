@@ -1,4 +1,21 @@
 - commits:
+    - subject: Remove types grouping rule
+      hash: aa7148dc947c1e1a5e9b2f4b13e0c44da42f5a59
+      body: |
+        This rule used overrideDepName to strip the "@types/" prefix
+        from depName but Renovate uses this depName when writing
+        the final version changes, leading to the "@types/" version
+        being used as the target version for the non-types package.
+        For now it does not appear we can reliably do this grouping.
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: joshbwlng
+      nested: []
+  version: 2.14.128
+  title: ""
+  date: 2026-06-10T12:59:38.788Z
+- commits:
     - subject: Update renovate Docker tag to v43.219.0
       hash: a80956b1d8c5ce0810c0c18af11839bbe2503134
       body: |
