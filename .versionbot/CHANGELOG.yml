@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v43.221.0
+      hash: 0fe7797a1e30f4fc5c9d798abc1b3be2cfe348e0
+      body: |
+        Update renovate from 43.219.0 to 43.221.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.14.129
+  title: ""
+  date: 2026-06-14T14:42:42.904Z
+- commits:
     - subject: Remove types grouping rule
       hash: aa7148dc947c1e1a5e9b2f4b13e0c44da42f5a59
       body: |
