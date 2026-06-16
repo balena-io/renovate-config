@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update GitHub Actions to v1.10.1
+      hash: feaba93518112be6323a42d4e8fc6473ebaf909b
+      body: |
+        Update tespkg/actions-cache from 1.10.0 to 1.10.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.14.139
+  title: ""
+  date: 2026-06-16T18:53:33.173Z
+- commits:
     - subject: Update renovate Docker tag to v43.227.0
       hash: 810aad38c1da8b0ec370a28c251d32b75250db1e
       body: |
