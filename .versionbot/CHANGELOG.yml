@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update GitHub Actions to v1.10.2
+      hash: 657539f0d80996869abcfb8dcb1befaf40d33bbb
+      body: |
+        Update tespkg/actions-cache from 1.10.1 to 1.10.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.14.140
+  title: ""
+  date: 2026-06-16T20:36:54.946Z
+- commits:
     - subject: Update GitHub Actions to v1.10.1
       hash: feaba93518112be6323a42d4e8fc6473ebaf909b
       body: |
