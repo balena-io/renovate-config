@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency npm to v11.18.0
+      hash: 4b7b2754b7570fdde3d49b32138100982f8941ff
+      body: |
+        Update npm from 11.17.0 to 11.18.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.14.203
+  title: ""
+  date: 2026-07-02T17:41:09.432Z
+- commits:
     - subject: Update actions/checkout action to v7
       hash: f72311e7bbd1127f0f5a779cdcd19b7aaeb486ed
       body: |
