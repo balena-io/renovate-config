@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update actions/checkout action to v7
+      hash: f72311e7bbd1127f0f5a779cdcd19b7aaeb486ed
+      body: |
+        Update actions/checkout from 6.0.3 to 7.0.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.14.202
+  title: ""
+  date: 2026-07-02T16:16:28.214Z
+- commits:
     - subject: Update renovate Docker tag to v43.250.0
       hash: f87bc8256f7dfd6d708f78ce5cc9fe11e73077e2
       body: |
