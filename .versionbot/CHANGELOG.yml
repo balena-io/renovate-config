@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v43.256.3
+      hash: b6486dd6d4b70d27f33bc40c09c0191260c0b763
+      body: |
+        Update renovate from 43.256.2 to 43.256.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.14.228
+  title: ""
+  date: 2026-07-09T22:34:24.540Z
+- commits:
     - subject: "packageRules: Add change-type footer for all non-versioned updates"
       hash: 4ad2587fd99569a84ad8e22db86bc876765454a6
       body: |
