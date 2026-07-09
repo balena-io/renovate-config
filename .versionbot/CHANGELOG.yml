@@ -1,4 +1,24 @@
 - commits:
+    - subject: "packageRules: Add change-type footer for all non-versioned updates"
+      hash: 4ad2587fd99569a84ad8e22db86bc876765454a6
+      body: |
+        Where this config is extended (balena-os) the top level commitBody rule
+        is not easily inherited when other package rules are in play.
+
+        By ensuring a packageRule exists that explicitly sets the commitBody
+        for each update type, we can ensuring the ordering of config inheritance
+        is respected.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.14.227
+  title: ""
+  date: 2026-07-09T18:46:46.852Z
+- commits:
     - subject: Update renovate Docker tag to v43.256.2
       hash: fe38b2152425a90791c9168756c14b4ed92d8903
       body: |
