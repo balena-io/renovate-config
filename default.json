@@ -49,15 +49,12 @@
   "automerge": false,
   "automergeStrategy": "merge-commit",
   "pinDigest": {
-    "commitBody": "Update {{depName}}\n\nChange-type: patch",
     "automerge": true
   },
   "digest": {
-    "commitBody": "Update {{depName}}\n\nChange-type: patch",
     "automerge": true
   },
   "lockFileMaintenance": {
-    "commitBody": "Update {{depName}}\n\nChange-type: patch",
     "automerge": true
   },
   "ignorePaths": [
@@ -79,6 +76,20 @@
       "allowedVersions": "<=11.6.0 || >=11.6.3"
     },
     {
+      "description": "Add change-type footer for all non-major/minor/patch updates",
+      "matchUpdateTypes": [
+        "pin",
+        "pinDigest",
+        "digest",
+        "lockFileMaintenance",
+        "rollback",
+        "bump",
+        "replacement"
+      ],
+      "commitBody": "Update {{depName}}\n\nChange-type: patch"
+    },
+    {
+      "description": "Add change-type footer for all major/minor/patch updates - includes current and new version numbers for nested changelogs",
       "matchUpdateTypes": ["major", "minor", "patch"],
       "commitBody": "Update {{depName}} from {{{replace 'v' '' currentVersion}}} to {{{replace 'v' '' newVersion}}}\n\nChange-type: patch"
     },
