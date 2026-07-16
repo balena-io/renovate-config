@@ -68,10 +68,7 @@ jobs:
       # See https://github.com/marketplace/actions/renovate-bot-github-action#persisting-the-repository-cache
       RENOVATE_REPOSITORY_CACHE: 'enabled'
       RENOVATE_CACHE_PRIVATE_PACKAGES: "true"
-      # This is the dir renovate provides -- if we set our own directory via cacheDir, we can run into permissions issues.
-      # It is also possible to cache a higher level of the directory, but it has minimal benefit. While renovate execution
-      # time gets faster, it also takes longer to upload the cache as it grows bigger.
-      cache_dir: /tmp/renovate/cache/renovate/repository
+      RENOVATE_CACHE_DIR: /tmp/renovate/cache
       cache_key: renovate-cache-${{ github.repository_owner }}-${{ inputs.environment }}-${{ github.run_id }}
       restore_key: renovate-cache-${{ github.repository_owner }}-${{ inputs.environment }}-
 
@@ -177,7 +174,7 @@ jobs:
           restore-keys: |
             ${{ env.restore_key }}
           path: |
-            ${{ env.cache_dir }}
+            ${{ env.RENOVATE_CACHE_DIR }}
 
       # Unfortunately, the permissions expected within renovate's docker container
       # are different than the ones given after the cache is restored. We have to
@@ -186,8 +183,8 @@ jobs:
       # See https://github.com/marketplace/actions/renovate-bot-github-action#persisting-the-repository-cache
       - name: Fix cache permissions
         run: |
-          mkdir -p "${cache_dir}"
-          sudo chown -R 12021:0 /tmp/renovate/
+          mkdir -p "${RENOVATE_CACHE_DIR}"
+          sudo chown -R 12021:0 "$(dirname "${RENOVATE_CACHE_DIR}")"
 
       - name: Write out entrypoint script
         run: |
@@ -288,4 +285,4 @@ jobs:
           use-fallback: true
           key: ${{ env.cache_key }}
           path: |
-            ${{ env.cache_dir }}
+            ${{ env.RENOVATE_CACHE_DIR }}
