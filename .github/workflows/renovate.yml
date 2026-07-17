@@ -68,10 +68,7 @@ jobs:
       # See https://github.com/marketplace/actions/renovate-bot-github-action#persisting-the-repository-cache
       RENOVATE_REPOSITORY_CACHE: 'enabled'
       RENOVATE_CACHE_PRIVATE_PACKAGES: "true"
-      # This is the dir renovate provides -- if we set our own directory via cacheDir, we can run into permissions issues.
-      # It is also possible to cache a higher level of the directory, but it has minimal benefit. While renovate execution
-      # time gets faster, it also takes longer to upload the cache as it grows bigger.
-      cache_dir: /tmp/renovate/cache/renovate/repository
+      RENOVATE_CACHE_DIR: /tmp/renovate/cache
       cache_key: renovate-cache-${{ github.repository_owner }}-${{ inputs.environment }}-${{ github.run_id }}
       restore_key: renovate-cache-${{ github.repository_owner }}-${{ inputs.environment }}-
 
@@ -82,44 +79,12 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Decode the GitHub App Private Key
+      # https://github.com/product-os/decode-private-key
+      - name: Decode private key
         id: decode
-        shell: bash
-        working-directory: ${{ runner.temp }}
-        # Skip decode if -----BEGIN is detected in the body of the private key, which indicates that the key is not base64 encoded.
-        # This allows users to use either raw or base64 encoded keys without needing to specify which format they are using.
-        # Raw secrets are automatically masked by GitHub; the base64-decoded derivative is not, so we mask it explicitly.
-        env:
-          SECRET_VALUE: ${{ secrets.RENOVATE_APP_PRIVATE_KEY }}
-        run: |
-          set -euo pipefail
-          if [[ -z "$SECRET_VALUE" ]]; then
-            echo "::error::RENOVATE_APP_PRIVATE_KEY secret is not set"
-            exit 1
-          fi
-          if [[ "$SECRET_VALUE" == *"-----BEGIN"* ]]; then
-            echo "Detected unencoded private key, skipping base64 decode"
-            private_key="$SECRET_VALUE"
-          else
-            if ! private_key=$(echo "$SECRET_VALUE" | base64 -d); then
-              echo "::error::Failed to base64 decode RENOVATE_APP_PRIVATE_KEY. Verify the secret is valid base64."
-              exit 1
-            fi
-            while IFS= read -r line; do
-              [[ -n "$line" ]] && echo "::add-mask::$line"
-            done <<< "$private_key"
-          fi
-          if [[ "$private_key" != *"-----BEGIN"* ]]; then
-            echo "::error::Decoded private key does not look like a PEM key (missing -----BEGIN header). Check secret encoding."
-            exit 1
-          fi
-          # Random delimiter prevents injection via crafted secret values
-          delimiter="pk_$(head -c 16 /dev/urandom | od -An -tx1 | tr -d ' \n')"
-          {
-            echo "private-key<<${delimiter}"
-            echo "$private_key"
-            echo "${delimiter}"
-          } >> "$GITHUB_OUTPUT"
+        uses: product-os/decode-private-key@e51369845773d30f258072c37a0086b3b46c0b4f # v0.0.2
+        with:
+          secret: ${{ secrets.RENOVATE_APP_PRIVATE_KEY }}
 
       # https://github.com/actions/create-github-app-token
       - name: Generate GitHub App installation token
@@ -177,7 +142,7 @@ jobs:
           restore-keys: |
             ${{ env.restore_key }}
           path: |
-            ${{ env.cache_dir }}
+            ${{ env.RENOVATE_CACHE_DIR }}
 
       # Unfortunately, the permissions expected within renovate's docker container
       # are different than the ones given after the cache is restored. We have to
@@ -186,8 +151,8 @@ jobs:
       # See https://github.com/marketplace/actions/renovate-bot-github-action#persisting-the-repository-cache
       - name: Fix cache permissions
         run: |
-          mkdir -p "${cache_dir}"
-          sudo chown -R 12021:0 /tmp/renovate/
+          mkdir -p "${RENOVATE_CACHE_DIR}"
+          sudo chown -R 12021:0 "$(dirname "${RENOVATE_CACHE_DIR}")"
 
       - name: Write out entrypoint script
         run: |
@@ -288,4 +253,4 @@ jobs:
           use-fallback: true
           key: ${{ env.cache_key }}
           path: |
-            ${{ env.cache_dir }}
+            ${{ env.RENOVATE_CACHE_DIR }}
