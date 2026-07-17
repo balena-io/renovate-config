@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v43.268.2
+      hash: 1fee66343de0bc804836d7673e502684a531181d
+      body: |
+        Update renovate from 43.268.0 to 43.268.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.14.272
+  title: ""
+  date: 2026-07-17T14:38:35.871Z
+- commits:
     - subject: "workflows/renovate: Increase cache depth"
       hash: ba87385574d0a55ed0212dcd9a6ac9f3db6e6f6f
       body: >
