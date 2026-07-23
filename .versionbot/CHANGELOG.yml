@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v43.278.4
+      hash: 4efb49f16c018ebfe10551ae53a9773727820fa5
+      body: |
+        Update renovate from 43.278.3 to 43.278.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.14.309
+  title: ""
+  date: 2026-07-23T04:12:40.966Z
+- commits:
     - subject: Update aws-actions/configure-aws-credentials action to v6.2.3
       hash: 71c4b37ed0c966f3fc29c9e4867dd85a18d9badc
       body: |
