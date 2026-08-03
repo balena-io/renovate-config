@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovatebot/github-action action to v46.2.1
+      hash: 350e1b0078f2cdad5d498addc205d7f35af6478d
+      body: |
+        Update renovatebot/github-action from 46.2.0 to 46.2.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.14.339
+  title: ""
+  date: 2026-08-03T01:37:54.171Z
+- commits:
     - subject: Update dependency npm to v11.19.0
       hash: 62e35304307c6083b55d75de334f74aeff3ab9df
       body: |
