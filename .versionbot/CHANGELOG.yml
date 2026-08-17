@@ -1,4 +1,19 @@
 - commits:
+    - subject: "workflows/renovate: Enforce npm min-release-age for lock file
+        maintenance"
+      hash: 2a179f0c7f9ae361c0f82ff1d9ae6cccceeb392c
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.14.341
+  title: ""
+  date: 2026-08-17T20:38:58.643Z
+- commits:
     - subject: Update renovatebot/github-action action to v46.2.2
       hash: c8e8586f89a5dd6f17d2b882368ad9db313960b1
       body: |
