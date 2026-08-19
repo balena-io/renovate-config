@@ -214,6 +214,10 @@ jobs:
           GIT_CONFIG_KEY_0: "url.https://x-access-token:${{ steps.app_token.outputs.token }}@github.com/.insteadOf"
           GIT_CONFIG_VALUE_0: "https://github.com/"
           RENOVATE_DRY_RUN: ${{ env.RENOVATE_DRY_RUN }}
+          # Install tools at runtime so `constraints` (e.g. helm version) are honored
+          # https://docs.renovatebot.com/self-hosted-configuration/#self-hosted-configuration-options
+          # https://docs.renovatebot.com/self-hosted-configuration/#binarysource
+          RENOVATE_BINARY_SOURCE: install
           RENOVATE_HOST_RULES: |
             [
               {
