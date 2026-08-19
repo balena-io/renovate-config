@@ -43,6 +43,20 @@
   "pre-commit": {
     "enabled": true
   },
+  "customManagers": [
+    {
+      "description": "Track flowzonify migrations in Flowzone caller workflows. Matches a bare @master line (no marker yet, read as 0.0.0) and one already carrying a marker. Nothing but whitespace may follow @master, so a caller with any other trailing comment is skipped instead of having that comment overwritten.",
+      "customType": "regex",
+      "managerFilePatterns": ["/^\\.github/workflows/flowzone\\.yml$/"],
+      "matchStrings": [
+        "uses:[ \\t]+product-os/flowzone/\\.github/workflows/flowzone\\.yml@master(?:[ \\t]+#[ \\t]*flowzonify[ \\t]+(?<currentValue>[0-9][^\\s]*))?[ \\t]*(?:\\r?\\n|$)"
+      ],
+      "depNameTemplate": "flowzonify",
+      "datasourceTemplate": "npm",
+      "currentValueTemplate": "{{#if currentValue}}{{{currentValue}}}{{else}}0.0.0{{/if}}",
+      "autoReplaceStringTemplate": "uses: product-os/flowzone/.github/workflows/flowzone.yml@master # flowzonify {{{newValue}}}\n"
+    }
+  ],
   "labels": ["renovate"],
   "commitBody": "Update {{depName}}\n\nChange-type: patch",
   "prConcurrentLimit": 3,
@@ -190,6 +204,39 @@
       "matchManagers": ["pre-commit"],
       "prPriority": -1,
       "schedule": ["* 0-3 15 * *"]
+    },
+    {
+      "description": "Migrate Flowzone caller configs with flowzonify. Minor and major only: adding a migration unit is a minor release, so a migration shipped as a patch would reach no caller. The npm datasource minimumReleaseAge applies.",
+      "matchManagers": ["custom.regex"],
+      "matchDepNames": ["flowzonify"],
+      "matchUpdateTypes": ["minor", "major"],
+      "automerge": false,
+      "groupName": null,
+      "postUpgradeTasks": {
+        "commands": ["npm exec --yes -- flowzonify@{{{newValue}}}"],
+        "fileFilters": [".github/workflows/flowzone.yml"],
+        "executionMode": "update"
+      }
+    },
+    {
+      "description": "Staged rollout: flowzonify migrations are off everywhere by default. Remove this and the pilot rule below once the pilot PR is confirmed to carry both the marker change and real config changes.",
+      "matchManagers": ["custom.regex"],
+      "matchDepNames": ["flowzonify"],
+      "enabled": false
+    },
+    {
+      "description": "Staged rollout: enable flowzonify migrations on the pilot repo only. Must follow the disable-everywhere rule above, and the patch-suppression rule must follow this one.",
+      "matchManagers": ["custom.regex"],
+      "matchDepNames": ["flowzonify"],
+      "matchRepositories": ["balena-io/renovate-config"],
+      "enabled": true
+    },
+    {
+      "description": "Do not open flowzonify PRs for patch releases (no migration unit, would wave the fleet)",
+      "matchManagers": ["custom.regex"],
+      "matchDepNames": ["flowzonify"],
+      "matchUpdateTypes": ["patch"],
+      "enabled": false
     }
   ]
 }
