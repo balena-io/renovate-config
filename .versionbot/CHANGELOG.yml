@@ -1,4 +1,26 @@
 - commits:
+    - subject: "fix: set binarySource=install so tool constraints are honored"
+      hash: 72184e49ad4ef6763e749badc9359469bfecb48b
+      body: |
+        Renovate ran with binarySource=global, so it used the helm binary baked
+        into the renovate image (v4.2.3) and ignored `constraints.helm`. The
+        debug log confirmed: "Ignoring tool constraints because of
+        binarySource=global".
+
+        Switch to binarySource=install so containerbase installs tools at
+        runtime and applies each repo's constraint (e.g. helm 4.2.4). Repos
+        without a constraint keep the image default version.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Carlo Miguel F. Cruz <carloc@balena.io>
+        signed-off-by: Carlo Miguel F. Cruz <carloc@balena.io>
+      author: Carlo Miguel F. Cruz
+      nested: []
+  version: 2.14.342
+  title: ""
+  date: 2026-08-19T13:10:44.565Z
+- commits:
     - subject: "workflows/renovate: Enforce npm min-release-age for lock file
         maintenance"
       hash: 2a179f0c7f9ae361c0f82ff1d9ae6cccceeb392c
