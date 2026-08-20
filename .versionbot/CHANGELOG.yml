@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add flowzonify migration managers for Flowzone callers
+      hash: c922a9f8aff5348999e870a89a156c99b8ca25c6
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.14.343
+  title: ""
+  date: 2026-08-20T17:47:56.695Z
+- commits:
     - subject: "fix: set binarySource=install so tool constraints are honored"
       hash: 72184e49ad4ef6763e749badc9359469bfecb48b
       body: |
