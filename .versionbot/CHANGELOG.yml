@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v44
+      hash: 834701a1da14dc9305aee429a73547a2b0a45897
+      body: |
+        Update renovate from 43.288.0 to 44.35.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.14.344
+  title: ""
+  date: 2026-08-20T19:10:11.682Z
+- commits:
     - subject: Add flowzonify migration managers for Flowzone callers
       hash: c922a9f8aff5348999e870a89a156c99b8ca25c6
       body: ""
