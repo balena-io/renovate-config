@@ -210,26 +210,13 @@
       "matchManagers": ["custom.regex"],
       "matchDepNames": ["flowzonify"],
       "matchUpdateTypes": ["minor", "major"],
-      "automerge": false,
+      "automerge": true,
       "groupName": null,
       "postUpgradeTasks": {
         "commands": ["npm exec --yes -- flowzonify@{{{newValue}}}"],
         "fileFilters": [".github/workflows/flowzone.yml"],
         "executionMode": "update"
       }
-    },
-    {
-      "description": "Staged rollout: flowzonify migrations are off everywhere by default. Remove this and the pilot rule below once the pilot PR is confirmed to carry both the marker change and real config changes.",
-      "matchManagers": ["custom.regex"],
-      "matchDepNames": ["flowzonify"],
-      "enabled": false
-    },
-    {
-      "description": "Staged rollout: enable flowzonify migrations on the pilot repo only. Must follow the disable-everywhere rule above, and the patch-suppression rule must follow this one.",
-      "matchManagers": ["custom.regex"],
-      "matchDepNames": ["flowzonify"],
-      "matchRepositories": ["balena-io/renovate-config"],
-      "enabled": true
     },
     {
       "description": "Do not open flowzonify PRs for patch releases (no migration unit, would wave the fleet)",
