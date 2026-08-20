@@ -35,7 +35,7 @@ permissions:
 env:
   LOG_LEVEL: debug
   # renovate: datasource=docker depName=renovate packageName=ghcr.io/renovatebot/renovate
-  RENOVATE_VERSION: 44.37.0-full
+  RENOVATE_VERSION: 44.37.1-full
   # renovate: datasource=npm depName=npm
   NPM_VERSION: 11.19.0
   # Renovate's `minimumReleaseAge` does not apply to `lockFileMaintenance`, because
