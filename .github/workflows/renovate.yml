@@ -36,8 +36,6 @@ env:
   LOG_LEVEL: debug
   # renovate: datasource=docker depName=renovate packageName=ghcr.io/renovatebot/renovate
   RENOVATE_VERSION: 44.38.0-full
-  # renovate: datasource=npm depName=npm
-  NPM_VERSION: 11.19.0
   # Renovate's `minimumReleaseAge` does not apply to `lockFileMaintenance`, because
   # Renovate delegates the resolution to the package manager and never looks up a
   # release timestamp. Have npm apply the same age gate itself, so lock file refreshes
@@ -160,37 +158,6 @@ jobs:
           mkdir -p "${RENOVATE_CACHE_DIR}"
           sudo chown -R 12021:0 "$(dirname "${RENOVATE_CACHE_DIR}")"
 
-      - name: Write out entrypoint script
-        run: |
-          cat <<EOF > ${{ runner.temp }}/entrypoint.sh
-          #!/bin/bash
-          set -euo pipefail
-
-          echo "=== npm version before install ==="
-          npm --version
-
-          echo "=== Installing npm@${NPM_VERSION} ==="
-          npm install -g "npm@${NPM_VERSION}" --loglevel verbose
-
-          echo "=== npm version after install ==="
-          INSTALLED_VERSION=\$(npm --version)
-          echo "Installed: \${INSTALLED_VERSION}"
-
-          if [[ "\${INSTALLED_VERSION}" != "${NPM_VERSION}" ]]; then
-            echo "ERROR: npm version mismatch! Expected ${NPM_VERSION}, got \${INSTALLED_VERSION}"
-            exit 1
-          fi
-
-          echo "=== npm location ==="
-          which npm
-
-          # Run renovate as the ubuntu user (container default)
-          exec runuser -u ubuntu -- renovate
-          
-          EOF
-
-          chmod +x ${{ runner.temp }}/entrypoint.sh
-
       # https://github.com/renovatebot/github-action
       - uses: renovatebot/github-action@e09d604f8f803bb527bd8321ed5be06c460b8682 # v46.2.2
         with:
@@ -199,9 +166,6 @@ jobs:
           configurationFile: ${{ inputs.config_file }}
           token: ${{ steps.app_token.outputs.token }}
           renovate-version: ${{ env.RENOVATE_VERSION }}
-          # Custom entrypoint to install pinned npm version before running renovate
-          docker-cmd-file: ${{ runner.temp }}/entrypoint.sh
-          docker-user: root
           # https://github.com/renovatebot/github-action?tab=readme-ov-file#env-regex
           env-regex: "^(?:RENOVATE_\\w+|LOG_LEVEL|AWS_\\w+|NPM_CONFIG_MIN_RELEASE_AGE)$"
         env:
@@ -214,7 +178,9 @@ jobs:
           GIT_CONFIG_KEY_0: "url.https://x-access-token:${{ steps.app_token.outputs.token }}@github.com/.insteadOf"
           GIT_CONFIG_VALUE_0: "https://github.com/"
           RENOVATE_DRY_RUN: ${{ env.RENOVATE_DRY_RUN }}
-          # Install tools at runtime so `constraints` (e.g. helm version) are honored
+          # Install tools at runtime so `constraints` are honored. This is also how
+          # the npm version is pinned: `constraints.npm` in the shared config, rather
+          # than installing npm globally from a custom container entrypoint.
           # https://docs.renovatebot.com/self-hosted-configuration/#self-hosted-configuration-options
           # https://docs.renovatebot.com/self-hosted-configuration/#binarysource
           RENOVATE_BINARY_SOURCE: install
