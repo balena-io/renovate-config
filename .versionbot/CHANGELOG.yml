@@ -1,4 +1,53 @@
 - commits:
+    - subject: "workflows/renovate: Drop the npm entrypoint in favour of tool
+        constraints"
+      hash: 7e0cabc384a3b7507bbe1fcbc5d8c4dd88b3bbbd
+      body: >
+        The entrypoint installed npm globally to avoid npm 11.6.1 and 11.6.2:
+
+        https://github.com/npm/cli/issues/8628. It was the only lever available
+        under
+
+        binarySource=global, because Renovate discards constraints entirely in
+        that
+
+        mode.
+
+
+        Since #1930 switched to binarySource=install, containerbase installs npm
+        from
+
+        constraints.npm for the calls that need it. Observed in a product-os
+        run: the
+
+        entrypoint installed npm 11.19.0, then Renovate ran `install-tool npm
+        12.0.2` to
+
+        generate a lock file, so the pinned global npm was already being
+        bypassed.
+
+
+        postUpgradeTasks are the exception. They pass no toolConstraints, so
+        they use
+
+        whatever npm is on PATH, moving from 11.19.0 to the image default. Both
+        current
+
+        tasks are unaffected in practice: the husky migration calls node, and
+        flowzonify
+
+        runs `npm exec` against a git tarball.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.14.350
+  title: ""
+  date: 2026-08-21T13:18:59.395Z
+- commits:
     - subject: Update renovate Docker tag to v44.38.0
       hash: 3ae03583eb34c7110d0e8ad7c484810921747b42
       body: |
