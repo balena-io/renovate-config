@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v44.39.1
+      hash: 4bd702d290c839b099b99c662322c0285cedc0c2
+      body: |
+        Update renovate from 44.38.0 to 44.39.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.14.351
+  title: ""
+  date: 2026-08-21T14:27:24.485Z
+- commits:
     - subject: "workflows/renovate: Drop the npm entrypoint in favour of tool
         constraints"
       hash: 7e0cabc384a3b7507bbe1fcbc5d8c4dd88b3bbbd
