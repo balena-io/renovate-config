@@ -1,4 +1,22 @@
 - commits:
+    - subject: Enable flowzonify migrations on all repos with automerge
+      hash: 402a4882e2e59cb724d876ad967afd6e7e401df2
+      body: |
+        Automatically open config migration PRs on all managed
+        repos.
+
+        Automerge is enabled unless postUpgradeTasks fail.
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.15.0
+  title: ""
+  date: 2026-08-24T17:14:58.057Z
+- commits:
     - subject: Update dependency flowzonify to v0.4.0
       hash: 23609c7ac2cf09d6ef8d753e75f339a1093d4f2a
       body: |
