@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update product-os/decode-private-key action to v0.0.3
+      hash: 0c96cac59bef3da0c9afbdfe839e42f39c49cc36
+      body: |
+        Update product-os/decode-private-key from 0.0.2 to 0.0.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.15.5
+  title: ""
+  date: 2026-08-25T15:25:31.764Z
+- commits:
     - subject: Update renovate Docker tag to v44.43.1
       hash: ef18187cf73801a939a3c4c323f68144ee7f145d
       body: |
