@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovate Docker tag to v44.42.0
+      hash: a758cac242e05aaeedebe1cffd9b840d6771f406
+      body: |
+        Update renovate from 44.41.1 to 44.42.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.15.1
+  title: ""
+  date: 2026-08-25T08:31:31.903Z
+- commits:
     - subject: Enable flowzonify migrations on all repos with automerge
       hash: 402a4882e2e59cb724d876ad967afd6e7e401df2
       body: |
