@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update aws-actions/configure-aws-credentials action to v6.2.4
+      hash: 94d85064236d3c281516ed6e51c808bca394393b
+      body: |
+        Update aws-actions/configure-aws-credentials from 6.2.3 to 6.2.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.15.32
+  title: ""
+  date: 2026-09-01T00:19:30.184Z
+- commits:
     - subject: Update renovatebot/github-action action to v46.2.5
       hash: c73a48cfbeb10ddca891d5cf4dbf9c1f8e5f2885
       body: |
