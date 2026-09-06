@@ -73,6 +73,15 @@ jobs:
       RENOVATE_REPOSITORY_CACHE: 'enabled'
       RENOVATE_CACHE_PRIVATE_PACKAGES: "true"
       RENOVATE_CACHE_DIR: /tmp/renovate/cache
+      # Renovate's entrypoint logs an unhandled rejection but never sets an exit
+      # code, so a crash before the run starts exits 0 and the job passes green.
+      # Write the log to a file so the "Detect swallowed Renovate crash" step
+      # can read it.
+      # Renovate lowercases the value of this variable, so the path must be
+      # lowercase. Keep the file out of `RENOVATE_CACHE_DIR` so it is not cached.
+      # https://docs.renovatebot.com/self-hosted-configuration/#logfile
+      RENOVATE_LOG_FILE: /tmp/renovate/renovate.log
+      RENOVATE_LOG_FILE_LEVEL: warn
       cache_key: renovate-cache-${{ github.repository_owner }}-${{ inputs.environment }}-${{ github.run_id }}
       restore_key: renovate-cache-${{ github.repository_owner }}-${{ inputs.environment }}-
 
@@ -199,6 +208,29 @@ jobs:
                 "password": "${{ secrets.GITHUB_TOKEN }}"
               }
             ]
+
+      # Renovate returns a non-zero exit code for every error it catches inside
+      # `start()`, and the action fails the step on it. A failure before `start()`
+      # runs escapes that path: `lib/renovate.ts` registers an `unhandledRejection`
+      # handler that only logs, leaves `process.exitCode` unset, and lets the
+      # container exit 0. Renovate 44.64.0 failed this way for two days and every
+      # job reported success. Read the marker out of the log file instead.
+      #
+      # This step inherits the default `success()` condition, so it runs only when
+      # the action reported success. It also runs before the cache is saved, so a
+      # crashed run cannot write its cache.
+      # https://github.com/renovatebot/renovate/blob/main/lib/renovate.ts
+      - name: Detect swallowed Renovate crash
+        run: |
+          if [ ! -f "${RENOVATE_LOG_FILE}" ]; then
+            echo "::error::Renovate wrote no log file at ${RENOVATE_LOG_FILE}. Renovate did not start."
+            exit 1
+          fi
+          if grep -q '"msg":"unhandledRejection"' "${RENOVATE_LOG_FILE}"; then
+            echo "::error::Renovate crashed with an unhandled rejection and exited 0. No repository was processed."
+            grep '"msg":"unhandledRejection"' "${RENOVATE_LOG_FILE}"
+            exit 1
+          fi
 
       # If there was a cache miss for this key, save a new cache.
       # Use local S3 cache on self-hosted runners.
