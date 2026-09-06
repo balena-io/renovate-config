@@ -147,6 +147,15 @@
       "minimumReleaseAge": "3 days"
     },
     {
+      "description": "Use minimum release age for the Renovate image. Renovate maintains its own version pin, so a broken release stops the run that would open the PR to fix it.",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": [
+        "ghcr.io/renovatebot/renovate",
+        "renovate/renovate"
+      ],
+      "minimumReleaseAge": "3 days"
+    },
+    {
       "description": "Group GitHub Actions updates",
       "groupName": "GitHub Actions",
       "matchManagers": ["github-actions"],
