@@ -1,4 +1,59 @@
 - commits:
+    - subject: "workflows/renovate: Fail the job when Renovate swallows a startup crash"
+      hash: f21b25999ae0a32a20ab1d77c09da1f27424aa4f
+      body: |
+        Renovate returns a non-zero exit code for every error it catches inside
+        start(), and the action fails the step on it. A failure before start()
+        runs escapes that path. lib/renovate.ts registers an unhandledRejection
+        handler that only logs the error, so process.exitCode stays unset and
+        the container exits 0. The 44.64.0 crash reported success for two days.
+
+        Write the log to a file and grep it for the marker. The step inherits
+        the default success() condition, so it runs only when the action passed,
+        and it runs before the cache is saved, so a crashed run cannot write its
+        cache.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+    - subject: "workflows/renovate: Bump Renovate to 44.65.5"
+      hash: 73fe23d393fc3640246de9c2407e9b3fbac52ede
+      body: |
+        44.64.0 imports the tar package in its new apk datasource but ships
+        without it, so the container dies on an unhandled rejection before any
+        repository is processed. Upstream promoted tar to a prod dependency in
+        44.64.1.
+
+        Renovate bumps this pin itself, and it could not, because it was the
+        thing that was broken.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+    - subject: Delay Renovate's own image bump by three days
+      hash: 7b803ee2f0969bf76361b34fc3a6d66db7eec985
+      body: |
+        Renovate maintains the pin for its own container image, so a broken
+        release stops the run that would open the PR to fix it. 44.64.0 shipped
+        without the tar package, crashed at startup, and sat there for two days.
+        The upstream patch landed two hours after the bad release.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.15.58
+  title: ""
+  date: 2026-09-07T02:18:27.057Z
+- commits:
     - subject: Update renovate Docker tag to v44.64.0
       hash: bded6d8f9a7e112b54276ca134f95f9bb297c232
       body: |
