@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update renovatebot/github-action action to v46.2.6
+      hash: fc0a7b1958c41060c0ba31f359a0f9acbf9607ee
+      body: |
+        Update renovatebot/github-action from 46.2.5 to 46.2.6
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.15.59
+  title: ""
+  date: 2026-09-07T13:40:36.829Z
+- commits:
     - subject: "workflows/renovate: Fail the job when Renovate swallows a startup crash"
       hash: f21b25999ae0a32a20ab1d77c09da1f27424aa4f
       body: |
