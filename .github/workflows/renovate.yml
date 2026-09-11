@@ -168,7 +168,7 @@ jobs:
           sudo chown -R 12021:0 "$(dirname "${RENOVATE_CACHE_DIR}")"
 
       # https://github.com/renovatebot/github-action
-      - uses: renovatebot/github-action@37beffda261423addd537c33f2d126df7f6ffbab # v46.2.6
+      - uses: renovatebot/github-action@c314dda4a9a93b08239ec978f2043b9a433b9ac4 # v46.3.0
         with:
           # https://docs.renovatebot.com/configuration-options
           # https://docs.renovatebot.com/self-hosted-configuration
