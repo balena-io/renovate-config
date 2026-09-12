@@ -1,4 +1,17 @@
 - commits:
+    - subject: Pin dependencies
+      hash: 958f152d9c4dc792a976444b4d608a85accabc5e
+      body: |
+        Update husky
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.15.61
+  title: ""
+  date: 2026-09-12T01:31:53.699Z
+- commits:
     - subject: Update renovatebot/github-action action to v46.3.0
       hash: 03029d5cb8216e930946f451283f1a0bd222f3a0
       body: |
