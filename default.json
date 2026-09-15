@@ -135,7 +135,9 @@
         "quay.io/minio/minio",
         "quay.io/minio/mc",
         "minio/minio",
-        "minio/mc"
+        "minio/mc",
+        "pgsty/minio",
+        "pgsty/mc"
       ],
       "groupName": "minio",
       "automerge": false
