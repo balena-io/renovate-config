@@ -1,4 +1,17 @@
 - commits:
+    - subject: Include pgsty mirrors in the custom minio versioning
+      hash: 9d7f2c22cf9a05263308c1267652774497b3ca38
+      body: |
+        https://balena.fibery.io/Work/Project/2938
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+      nested: []
+  version: 2.15.64
+  title: ""
+  date: 2026-09-15T16:21:52.399Z
+- commits:
     - subject: Update aws-actions/configure-aws-credentials action to v6.3.0
       hash: f7e1ba6a27690535d28b52f5f7d7a34f63ae3292
       body: |
