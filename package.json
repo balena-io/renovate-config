@@ -20,7 +20,7 @@
   "devDependencies": {
     "husky": "9.1.7",
     "prettier": "3.9.8",
-    "renovate": "44.97.2"
+    "renovate": "44.97.3"
   },
   "engines": {
     "node": "^24.0.0"
