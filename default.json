@@ -149,13 +149,19 @@
       "minimumReleaseAge": "3 days"
     },
     {
-      "description": "Use minimum release age for the Renovate image. Renovate maintains its own version pin, so a broken release stops the run that would open the PR to fix it.",
+      "description": "Use minimum release age for the Renovate image. Renovate maintains its own version pin, so a broken release stops the run that would open the PR to fix it. Look the image up on Docker Hub, because ghcr.io returns no release timestamps and the age check then never passes.",
       "matchDatasources": ["docker"],
       "matchPackageNames": [
         "ghcr.io/renovatebot/renovate",
         "renovate/renovate"
       ],
       "minimumReleaseAge": "3 days"
+    },
+    {
+      "description": "Disable digest pinning for docker deps from regex managers. The bundled customManagers presets capture no currentDigest, so a pin branch fails with 'Digest is not updated'. The scope is intentionally broad and also covers consumer regex managers. Deps that already carry a digest still get digest updates.",
+      "matchManagers": ["custom.regex"],
+      "matchDatasources": ["docker"],
+      "pinDigests": false
     },
     {
       "description": "Group GitHub Actions updates",

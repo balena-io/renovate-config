@@ -34,7 +34,12 @@ permissions:
 
 env:
   LOG_LEVEL: debug
-  # renovate: datasource=docker depName=renovate packageName=ghcr.io/renovatebot/renovate
+  # Look up tags on Docker Hub, because ghcr.io returns no release timestamps and
+  # `minimumReleaseAge` then never passes. The action still pulls from ghcr.io,
+  # which publishes the same tags. The depName names the pulled image, and keeps
+  # this branch apart from the npm `renovate` dep in package.json.
+  # https://docs.renovatebot.com/modules/datasource/docker/
+  # renovate: datasource=docker depName=ghcr.io/renovatebot/renovate packageName=renovate/renovate
   RENOVATE_VERSION: 44.65.5-full
   # Renovate's `minimumReleaseAge` does not apply to `lockFileMaintenance`, because
   # Renovate delegates the resolution to the package manager and never looks up a
