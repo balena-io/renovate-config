@@ -1,4 +1,32 @@
 - commits:
+    - subject: Look up the Renovate image on Docker Hub so the age gate can pass
+      hash: 03fc2e062ae7f8fcea3cb6092724e1858585fd93
+      body: |
+        The docker datasource only returns release timestamps for Docker Hub.
+        ghcr.io returns none, and the default minimumReleaseAgeBehaviour of
+        timestamp-required never passes a release without one. The image has
+        sat at 44.65.5 since the age rule landed.
+
+        Point the annotation at renovate/renovate, which has the same tags. The
+        action still pulls from ghcr.io. Set depName to the ghcr.io image so the
+        branch no longer collides with the npm renovate dep, which also used
+        renovate/renovate-44.x.
+
+        Skip digest pinning for docker deps found by regex managers. The bundled
+        customManagers presets capture no currentDigest, so a pinDigest branch
+        fails with "Digest is not updated" once the age gate stops blocking it.
+        Deps that already carry a digest still get digest updates.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.15.106
+  title: ""
+  date: 2026-09-28T12:32:43.149Z
+- commits:
     - subject: Update renovatebot/github-action action to v46.3.5
       hash: 5e7a2ace0dded2afc3a0722a2e204c97a00cae53
       body: |
