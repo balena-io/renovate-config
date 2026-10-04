@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency renovate to v44.130.0
+      hash: 11873b0e62d62925f889a97e14a66c01d2ac8abc
+      body: |
+        Update renovate from 44.129.0 to 44.130.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.15.122
+  title: ""
+  date: 2026-10-04T18:43:52.236Z
+- commits:
     - subject: Update dependency renovate to v44.129.0
       hash: 0e96c080321d4433b3106e91b73b073265f5e178
       body: |
