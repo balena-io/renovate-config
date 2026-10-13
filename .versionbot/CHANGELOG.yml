@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update product-os/decode-private-key action to v0.0.4
+      hash: e47f8f8d4548a2a1dbff0a1df9818c0285d47b37
+      body: |
+        Update product-os/decode-private-key from 0.0.3 to 0.0.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.15.142
+  title: ""
+  date: 2026-10-13T01:45:07.750Z
+- commits:
     - subject: Update actions/create-github-app-token action to v3.3.0
       hash: 7fa1b3256ad5965e942feb98ffe5ea4cd2fe98c0
       body: |
