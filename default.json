@@ -83,6 +83,8 @@
   "constraints": {
     "npm": "<=11.6.0 || >=11.6.3"
   },
+  "npmrc": "min-release-age=3",
+  "npmrcMerge": true,
   "packageRules": [
     {
       "description": "Avoid using npm 11.6.1 & 11.6.2 b/c of bug: https://github.com/npm/cli/issues/8628. The matching constraints.npm range also selects the npm version installed at runtime, since binarySource=install.",

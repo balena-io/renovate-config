@@ -41,12 +41,6 @@ env:
   # https://docs.renovatebot.com/modules/datasource/docker/
   # renovate: datasource=docker depName=ghcr.io/renovatebot/renovate packageName=renovate/renovate
   RENOVATE_VERSION: 44.65.5-full
-  # Renovate's `minimumReleaseAge` does not apply to `lockFileMaintenance`, because
-  # Renovate delegates the resolution to the package manager and never looks up a
-  # release timestamp. Have npm apply the same age gate itself, so lock file refreshes
-  # cannot pull in a package published minutes ago.
-  # https://docs.npmjs.com/cli/v11/using-npm/config#min-release-age
-  NPM_CONFIG_MIN_RELEASE_AGE: "3"
   RENOVATE_DRY_RUN: ""
   RENOVATE_ONBOARDING: "false"
   RENOVATE_REQUIRE_CONFIG: "optional"
@@ -181,7 +175,7 @@ jobs:
           token: ${{ steps.app_token.outputs.token }}
           renovate-version: ${{ env.RENOVATE_VERSION }}
           # https://github.com/renovatebot/github-action?tab=readme-ov-file#env-regex
-          env-regex: "^(?:RENOVATE_\\w+|LOG_LEVEL|AWS_\\w+|NPM_CONFIG_MIN_RELEASE_AGE)$"
+          env-regex: "^(?:RENOVATE_\\w+|LOG_LEVEL|AWS_\\w+)$"
         env:
           AWS_REGION: ${{ env.AWS_REGION }}
           AWS_DEFAULT_REGION: ${{ env.AWS_REGION }}
