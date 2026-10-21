@@ -40,7 +40,7 @@ env:
   # this branch apart from the npm `renovate` dep in package.json.
   # https://docs.renovatebot.com/modules/datasource/docker/
   # renovate: datasource=docker depName=ghcr.io/renovatebot/renovate packageName=renovate/renovate
-  RENOVATE_VERSION: 44.65.5-full
+  RENOVATE_VERSION: 44.175.5-full
   RENOVATE_DRY_RUN: ""
   RENOVATE_ONBOARDING: "false"
   RENOVATE_REQUIRE_CONFIG: "optional"
