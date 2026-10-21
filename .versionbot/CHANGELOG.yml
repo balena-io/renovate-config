@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency renovate to v44.167.1
+      hash: af5eac9407804eba9f4268d92f3a7efc218e9007
+      body: |
+        Update renovate from 44.164.6 to 44.167.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.15.166
+  title: ""
+  date: 2026-10-21T16:26:27.586Z
+- commits:
     - subject: Move npm min-release-age from workflow env to preset npmrc
       hash: 9f699ac075bc6448244e6adfd2ef01bc85948286
       body: |
