@@ -1,4 +1,24 @@
 - commits:
+    - subject: Ignore basejump commits when checking for modified branches
+      hash: 7349ed7a0018d8684191b7634458db2b47dfec42
+      body: |
+        Basejump rebases leave it as committer on Renovate PRs, which Renovate
+        reads as a manual edit and stops updating the branch. Ignore its email
+        so basejump can rebase Renovate PRs without detaching them.
+
+        The list replaces the org global value, so the whitesource entry is
+        carried over here. The balena-ci entry is no longer needed.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.15.228
+  title: ""
+  date: 2026-11-11T20:12:21.375Z
+- commits:
     - subject: Update renovatebot/github-action action to v46.3.13
       hash: 74125c3300241a6bd02ff7021592d0d7e05ff693
       body: |
