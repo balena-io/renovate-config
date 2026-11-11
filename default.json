@@ -21,6 +21,10 @@
   "prHourlyLimit": 0,
   "cloneSubmodules": false,
   "rebaseWhen": "behind-base-branch",
+  "gitIgnoredAuthors": [
+    "renovate@whitesourcesoftware.com",
+    "accounts+basejump.app@balena.io"
+  ],
   "enabledManagers": [
     "cargo",
     "custom.regex",
