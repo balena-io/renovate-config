@@ -19,7 +19,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "husky": "9.1.7",
-    "prettier": "3.9.10",
+    "prettier": "3.10.0",
     "renovate": "44.227.4"
   },
   "engines": {
