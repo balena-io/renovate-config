@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency renovate to v44.221.6
+      hash: d4baf1daf4db618df281d7dcb29ad85f44b68e73
+      body: |
+        Update renovate from 44.221.1 to 44.221.6
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.15.229
+  title: ""
+  date: 2026-11-14T01:43:30.361Z
+- commits:
     - subject: Ignore basejump commits when checking for modified branches
       hash: 7349ed7a0018d8684191b7634458db2b47dfec42
       body: |
