@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency renovate to v44.235.2
+      hash: 2217907ab801e653b4e11c87b8fe984870d43ce4
+      body: |
+        Update renovate from 44.235.1 to 44.235.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.15.238
+  title: ""
+  date: 2026-11-15T09:08:54.460Z
+- commits:
     - subject: Update dependency prettier to v3.10.1
       hash: 30c286b877374bb0ee1bd173a5a9374fb9e5f46f
       body: |
