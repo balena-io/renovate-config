@@ -94,7 +94,7 @@ jobs:
       # https://github.com/product-os/decode-private-key
       - name: Decode private key
         id: decode
-        uses: product-os/decode-private-key@3071829495dd84f241ff35769a394229e84f94d0 # v0.0.4
+        uses: product-os/decode-private-key@f257e404ce6b385b179b6132c1db691f2142c015 # v0.0.5
         with:
           secret: ${{ secrets.RENOVATE_APP_PRIVATE_KEY }}
 
