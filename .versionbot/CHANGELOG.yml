@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update product-os/decode-private-key action to v0.0.5
+      hash: e2012d0aa00813c21afaf6643e0a3e1609d314c8
+      body: |
+        Update product-os/decode-private-key from 0.0.4 to 0.0.5
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.15.248
+  title: ""
+  date: 2026-11-18T20:41:55.052Z
+- commits:
     - subject: Update renovatebot/github-action action to v46.3.14
       hash: 52e036a2f7363283cd34253b742e08eb4983f042
       body: |
