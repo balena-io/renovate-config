@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency renovate to v44.252.0
+      hash: efaf3ff52c0b86bbdf4c19758f68e1471292d1b9
+      body: |
+        Update renovate from 44.236.5 to 44.252.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 2.15.250
+  title: ""
+  date: 2026-11-21T13:05:43.440Z
+- commits:
     - subject: Update actions/create-github-app-token action to v3.4.0
       hash: 5e2397bc162120ad040d1f7c6102d54bdebdba65
       body: |
