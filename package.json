@@ -23,7 +23,7 @@
     "renovate": "44.255.1"
   },
   "engines": {
-    "node": "^24.0.0"
+    "node": "^26.0.0"
   },
   "versionist": {
     "publishedAt": "2026-11-25T20:08:40.295Z"
